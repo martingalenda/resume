@@ -1,0 +1,123 @@
+
+// Nav:
+.main__nav {
+    position: fixed;
+   /*  padding: 2em 0; */
+    top: 0;
+    bottom: 0;
+    width: 15vw;
+    overflow-y: auto;
+    overflow-x: hidden;
+    background: rgb(13 20 35 / 37%);
+    padding-bottom: 7em;
+    ol {
+        li {
+            list-style: none;
+        }
+    }
+} 
+
+/////////////////////////////////////////////////////////
+
+
+// Socials:
+.socials {
+    display: flex;
+    position: fixed;
+    z-index: 100;
+    gap: 1em;
+    width: 18em;
+    background: linear-gradient(to top, #131828 29%, rgb(15 22 37 / 63%) 170%);
+    bottom: 0;
+    height: 7em;
+    place-content: center;
+    align-items: center;
+    img {
+        width: 2em;
+    }
+    svg {
+        font-size: 2em;
+        color: $main-DColor;
+    }
+}
+
+
+/////////////////////////////////////////////////////////
+
+
+// List Sections:
+.menu__container {
+    margin-top: 8vh;
+    @include fhd {
+        margin-top: 0;
+    }
+}
+.container__list {
+    background-color: transparent;
+    min-width: 14vw;
+    .list__header {
+        position: relative;
+        background: linear-gradient(to right, #1b2c4599, rgba(255, 255, 255, 0));
+        color: $hover-DColor; 
+        text-transform: uppercase;
+        padding: 0.5em 0.75em;
+        font-weight: 600;
+        width: 15vw;
+        font-size: 0.8em;
+        @include fhd {
+            padding: 0 0 0 0.75em;
+        }
+    }
+}
+
+// List Topics:
+.topic__name {
+    color: $scnd-DColor;
+    
+}
+
+.topic__content {
+    display: flex;
+    padding-right: 1em;
+    span {
+        font-size: 0.8em;
+        font-weight: bold;
+    }
+}
+.topic {
+    /* border-bottom: 0.01em solid $bg-DColor; */
+    &:last-child {
+        border-bottom: none;
+    }
+}
+.topic__urls {
+    display: flex;
+    align-items: center;
+    gap: 0.4em;
+    padding-top: 0.4em;
+    a {
+        color: $scnd-DColor;
+        &:hover{
+            color: $hover-DColor;
+        }
+    }
+}
+.topic__redirect {
+    color: $main-DColor;
+    span {
+        font-size: 0.8em;
+    }
+    &:hover{
+      color: $hover-DColor;
+    }
+}
+
+
+// Search / Autocomplete
+.search__container {
+    top: 0;
+}
+.autocomplete {
+    width: 15em;
+    margin: 1em auto;
+}

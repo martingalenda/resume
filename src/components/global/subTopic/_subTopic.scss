@@ -1,0 +1,24 @@
+.subTopic {
+    position: fixed;
+    right: 0;
+    width: 14vw;
+    top: 0;
+    bottom: 0;
+    margin-right: 4em;
+    padding-top: 2em;
+    a {
+        color: $main-DColor;
+        &:hover {
+            color: $hover-DColor;
+        }
+    }
+    h2 {
+        font-size: 1.25em;
+        font-weight: 600;
+        color: $hover-DColor;
+        padding-bottom: 0.5em;
+    }
+    li {
+        list-style: inside;
+    }
+}
