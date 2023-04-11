@@ -2,8 +2,7 @@
 
 /* Dark Mode - Colors */
 $main-DColor: #94a3b8;
-$scnd-DColor: #657181;
-$title-DColor: #e2e8ef;
+$scnd-DColor: #94a3b8;
 $hover-DColor: #e2e8ef;
 $bg-DColor: #131829;
 $bg-DScndColor: rgb(40 45 56);
@@ -21,7 +20,7 @@ $scnd-typo:  Calibri, 'Trebuchet MS', sans-serif;
 }
 
 ::-webkit-scrollbar-thumb {
-    background: linear-gradient(rgb(174 246 253 / 0%), rgb(43 77 108));
+    background: linear-gradient(rgba(174, 246, 253, 0), rgb(29 43 67));
     border-radius: 0 0 10px 10px;
 }
 

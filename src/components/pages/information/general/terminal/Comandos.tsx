@@ -37,7 +37,7 @@ code .
                     }
                 </CodeBox>
                 <small>Ruta : Refiere a la dirección del archivo/carpeta.</small> 
-
+                <br/><br/><br/>
                 <h4>Comandos básico <strong>npm</strong>:</h4>
                 <CodeBox lang="bash"> 
                     {
@@ -52,7 +52,7 @@ npm u "dependency"
 `
                     }
                 </CodeBox>
-
+                <br/>
                 <h4>Comandos básicos terminal windows <strong>cmd</strong>:</h4>
                 <small>Algunos comandos son iguales a Unix: cd, mkdir ...</small>
                 <CodeBox lang="bash"> 

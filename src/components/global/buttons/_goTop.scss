@@ -14,8 +14,8 @@
     transition: all 1s;
     &:hover {
         background-color: #11192e;
-        border: 0.1em solid $title-DColor;
-        color: $title-DColor;
+        border: 0.1em solid $hover-DColor;
+        color: $hover-DColor;
     }
     svg {
         position: relative;

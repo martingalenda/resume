@@ -7,7 +7,7 @@
         export const particlesEffect = {
             "particles": {
                 "number": {
-                    "value": 3,
+                    "value": 6,
                     "density": {
                         "enable": true,
                         "value_area": 2051.7838682439087

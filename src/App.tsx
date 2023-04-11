@@ -90,8 +90,9 @@
   import ComandosBash from './components/pages/information/general/terminal/Comandos';
 
   import IntroduccionGIT from './components/pages/information/general/git/Introduccion';
-  import ComandosGIT from './components/pages/information/general/git/Comandos';
-  import Conflictos from './components/pages/information/general/git/Conflictos';
+  import Consultas from './components/pages/information/general/git/Consultas';
+  import GestionandoCambios from './components/pages/information/general/git/GestionandoCambios';
+  import Ramas from './components/pages/information/general/git/Ramas';
   import GhPages from './components/pages/information/general/git/GhPages';
   import UtilidadesGIT from './components/pages/information/general/git/Utilidades';
   
@@ -198,8 +199,9 @@ function App() {
         {/* VSCODE */}
         {/* GIT */}
         <Route path="/general/git/introduccion" element={<IntroduccionGIT/>}/>
-        <Route path="/general/git/comandos" element={<ComandosGIT/>}/>
-        <Route path="/general/git/conflictos" element={<Conflictos/>}/>
+        <Route path="/general/git/consultas" element={<Consultas/>}/>
+        <Route path="/general/git/cambios" element={<GestionandoCambios/>}/>
+        <Route path="/general/git/ramas" element={<Ramas/>}/>
         <Route path="/general/git/ghpages" element={<GhPages/>}/>
         <Route path="/general/git/utilidades" element={<UtilidadesGIT/>}/>
 

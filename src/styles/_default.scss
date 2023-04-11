@@ -113,6 +113,16 @@ body {
     font-smooth: always;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
+
+
+    background-image: url(../../public/bg1.png);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+    @include hd {
+        background-size: inherit;
+    }
 }
 
 .disNone {

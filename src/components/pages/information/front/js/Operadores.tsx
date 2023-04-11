@@ -65,16 +65,19 @@ x || y // or (si x (|| - or) y son true ..)`
                     }
                 </CodeBox>
                 <h4>Cortocircuito </h4> 
+                <small>Ejemplo de operadores cortocircuito: <a target="_blank" href="https://www.youtube.com/watch?v=SK7CCXjzVgA&list=PLvq-jIkSeTUZ6QgYYO3MwG9EMqC-KoLXA&index=31&t=418s">Link</a> </small>
+                
                 <CodeBox lang="javascript"> 
                     {
 `// Cortocircuito OR ( || ) - Devuelve el primer valor verdadero. Si ninguno lo es, devuelve el último.
 // Cortocircuito AND ( && ) - Devuelve el primer valor falso. Si ninguno lo es, devuelve el último.
-// Cortocircuito Nullish ( ?? ) - Devuelve primer valor definido, ignorando los valores indefinidos (null o undefined)
+// Cortocircuito Nullish ( ?? ) - Devuelve el primer valor definido, ignorando los indefinidos (null o undefined)
 
 // EJ: Cortocircuito OR en una función básica:
 function saludar (nombre) {
     nombre = nombre || "Desconocido";
-    console.log({\`Hola  \${nombre}\`}) // Si existe, (si recibe como parametro) un nombre, saluda a la persona, sino saluda a un desconocido.
+    console.log({\`Hola  \${nombre}\`}) 
+    // Si existe, (si recibe como parametro) un nombre, saluda a la persona, sino saluda a un desconocido.
 } 
 
 saludar("Martín")
@@ -92,7 +95,6 @@ console.log(null ?? "Cortocircuito Nullish") // Devuelve Cortocircuito Nullish
 console.log(undefined ?? "Cortocircuito Nullish") // Devuelve Cortocircuito Nullish`
                     }
                 </CodeBox>
-                <small>Ejemplo de operadores cortocircuito: <a target="_blank" href="https://www.youtube.com/watch?v=SK7CCXjzVgA&list=PLvq-jIkSeTUZ6QgYYO3MwG9EMqC-KoLXA&index=31&t=418s">Link</a> </small>
                 
                 
             </TopicContainer>

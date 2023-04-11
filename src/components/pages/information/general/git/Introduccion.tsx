@@ -36,6 +36,7 @@ const IntroduccionGIT = () => {
                     <li><strong>Repositorio local</strong>: Refiere al control de versiones local de nuestros archivos (HEAD).<br/> <small>Para clarificar: Nosotros podemos realizar commits para ir guardando las distintas versiones de nuestro trabajo de formal local (en nuestro ordenador). Para, a futuro, actualizar el repositorio remoto mediante el comando push.</small></li> 
                     <li><strong>Repositorio remoto</strong>: Refiere al control de versiones remoto de nuestros archivos (GITHUB en este caso).</li> 
                     <li><strong>Ramas (branch)</strong>: Refiere a una bifuración en nuestro flujo de registros/commits/trabajo.</li> 
+                    <li><strong>Commit</strong>: Un versión/registro de nuestro proyecto en el tiempo.</li> 
                 </ul> 
             </TopicContainer>
 

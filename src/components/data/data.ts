@@ -1320,11 +1320,11 @@ const data = {
                     "tutorial": "https://www.youtube.com/watch?v=suzMNqDQiyU",
                     "array": [
                         {
-                            "topic": "Introducción a GIT & GITHUB",
+                            "topic": "Introducción a GIT",
                             "url": "/general/git/introduccion",
                             "subTopic": [
                                 { 
-                                    "subTopic": "GIT & GITHUB - Introducción",
+                                    "subTopic": "GIT - Introducción",
                                     "url": "/general/git/introduccion#git"
                                 },
                                 { 
@@ -1342,36 +1342,52 @@ const data = {
                             ]
                         },
                         {
-                            "topic": "Comandos",
-                            "url": "/general/git/comandos",
+                            "topic": "Comandos de consulta",
+                            "url": "/general/git/consultas",
                             "subTopic": [
                                 { 
-                                    "subTopic": "Consultas",
-                                    "url": "/general/git/comandos#consultas"
+                                    "subTopic": "Consultando el estado general",
+                                    "url": "/general/git/consultas#wd_stage"
                                 },
                                 { 
-                                    "subTopic": "Gestión de cambios",
-                                    "url": "/general/git/comandos#cambios"
+                                    "subTopic": "Consultando historial de commits",
+                                    "url": "/general/git/consultas#commits"
                                 },
                                 { 
-                                    "subTopic": "Gestión de ramas",
-                                    "url": "/general/git/comandos#ramas"
+                                    "subTopic": "Chequeando versiones anteriores",
+                                    "url": "/general/git/consultas#chequeos"
                                 },
                                 { 
-                                    "subTopic": "Tags",
-                                    "url": "/general/git/comandos#tags"
+                                    "subTopic": "Consultando diferencias",
+                                    "url": "/general/git/consultas#diferencias"
+                                },
+                                { 
+                                    "subTopic": "Consultando ramas",
+                                    "url": "/general/git/consultas#ramas"
                                 },
                             ]
                         },
                         {
-                            "topic": "Solución de conflictos",
-                            "url": "/general/git/conflictos",
+                            "topic": "Gestionando cambios",
+                            "url": "/general/git/cambios",
                             "subTopic": [
+                                { 
+                                    "subTopic": "Subiendo cambios",
+                                    "url": "/general/git/cambios#push"
+                                },
+                                { 
+                                    "subTopic": "Bajando cambios",
+                                    "url": "/general/git/cambios#pull"
+                                },
+                                { 
+                                    "subTopic": "Revirtiendo cambios",
+                                    "url": "/general/git/cambios#revert"
+                                },
                             ]
                         },
                         {
-                            "topic": "GITHUB Pages",
-                            "url": "/general/git/ghpages",
+                            "topic": "Gestionando ramas",
+                            "url": "/general/git/ramas",
                             "subTopic": [
                             ]
                         },

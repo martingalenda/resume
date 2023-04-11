@@ -1,0 +1,23 @@
+.search {
+    width: 19em;
+    cursor: pointer;
+    border: 0.01em solid #2a3147;
+    gap: 1em;
+    padding: 0.5em 1em;
+    background: #172338;
+    display: flex;
+    justify-content: center;
+    border-radius: 0.1em;
+    font-size: 0.8em;
+    align-items: center;
+    margin: 1em auto;
+    transition: background, 1s;
+    &:hover {
+        background: #33486e;
+    }
+    &__atajo {
+        background: #131829;
+        padding: 0.5em;
+        border-radius: 0.1em;
+    }
+}

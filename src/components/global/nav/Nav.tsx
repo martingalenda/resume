@@ -1,14 +1,11 @@
-import { Button } from "@mui/material";
 import ListTechnologies from "./ListTechnologies";
-import Search from "./Search";
-import Socials from "./Socials";
+import TopNav from "./TopNav";
 
 const Nav = () => {
 
     return (
         <nav className="main__nav">
-                <Socials/>
-                {/* <Search/> */}
+            <TopNav/>
             <ListTechnologies/>
         </nav>
     );
