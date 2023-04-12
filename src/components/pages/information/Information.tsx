@@ -1,4 +1,4 @@
-import GoTop from '../../global/buttons/GoTop';
+import GoTop from '../../global/buttons/goTopBtn/GoTop';
 import SubTopic from '../../global/subTopic/SubTopic';
 
 const Information = ({children, subTopic = false}: any) => { 

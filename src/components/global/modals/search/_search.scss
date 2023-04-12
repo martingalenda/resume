@@ -1,0 +1,16 @@
+.search__modal {
+    background: rgba($bg-DColor, 80%);
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    display: grid;
+    place-content: center;
+    width: 100vw;
+    height: 100vh;
+    backdrop-filter: blur(0.3em);
+    fieldset {
+        border-width: 0;
+    }
+}

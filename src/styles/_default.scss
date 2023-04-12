@@ -101,8 +101,8 @@ svg {
 body {
     min-height : 100vh;
     font-size : 100%;
-    font-family : $main-typo, $scnd-typo;
-    color : $main-DColor !important;
+    font-family : $main-typo, $scnd-typo !important;
+    color : $scnd-DColor !important;
     background-color: #131829 !important;
     background-image: url('../../public/bg.png');
     background-size: contain;
@@ -114,12 +114,11 @@ body {
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
 
-
+/* 
     background-image: url(../../public/bg1.png);
-    background-repeat: no-repeat;
     background-attachment: fixed;
     background-position: center;
-    background-size: cover;
+    background-size: cover; */
     @include hd {
         background-size: inherit;
     }

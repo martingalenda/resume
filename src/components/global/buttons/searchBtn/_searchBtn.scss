@@ -1,23 +1,23 @@
-.search {
-    width: 19em;
+.search-btn {
+    max-width: 19em;
     cursor: pointer;
-    border: 0.01em solid #2a3147;
-    gap: 1em;
-    padding: 0.5em 1em;
-    background: #172338;
+    border: 0.01em solid $black;
+    padding: 0.5em;
+    background: $bg-DScndColor;
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     border-radius: 0.1em;
     font-size: 0.8em;
     align-items: center;
     margin: 1em auto;
-    transition: background, 1s;
+    transition: background, border, 1s;
     &:hover {
-        background: #33486e;
+        background: $bg-DColor;
+        border: 0.01em solid $scnd-DColor;
     }
-    &__atajo {
-        background: #131829;
+    &__shortcut {
+        background: $bg-DColor;
         padding: 0.5em;
-        border-radius: 0.1em;
+        border-radius: 0.1em;   
     }
 }

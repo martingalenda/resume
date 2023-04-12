@@ -59,18 +59,19 @@
         width: 75%;
         border: 0.01em solid  #173662;
     }
+    //rgb(18 47 59 / 15%)
     pre {
-        background: rgb(18 47 59 / 15%) !important;
+        background: rgba($bg-DScndColor, 45%) !important;
         overflow: auto;
         padding: 2em 4.75em 2em 0.75em !important;
         margin: 2em 0;
         border: 0.01em solid #b0b0b014;
     }
     h4 {
-        border-left: 0.2em solid $hover-DColor;
+        border-left: 0.2em solid $main-DColor;
         padding-left: 0.5em;
         font-weight: 600;
-        color: $main-DColor;
+        color: $scnd-DColor;
     }
     .firstL  {
         &::first-letter {

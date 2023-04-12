@@ -6,9 +6,13 @@
 /* Globals components */
 @import '../components/global/nav/_nav',
         '../components/global/subTopic/_subTopic',
-        '../components/global/code/_codeBox',
+        
+        '../components/global/modals/search/search',
+        
         '../components/global/topicContainer/_topicContainer',
-        '../components/global/buttons/_goTop',
+        '../components/global/code/_codeBox',
+        
+        '../components/global/buttons/goTopBtn/_goTop',
         '../components/global/buttons/searchBtn/searchBtn';
 
 /* Pages */

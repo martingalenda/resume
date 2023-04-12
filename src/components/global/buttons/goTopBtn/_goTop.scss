@@ -2,9 +2,9 @@
     width: 3em;
     height: 3em;
     border-radius: 100%;
-    border: 0.1em solid $main-DColor;
+    border: 0.1em solid $scnd-DColor;
     position: absolute;
-    z-index: 100;
+    z-index: 20;
     right: 3em;
     bottom: 3em;
     cursor: pointer;
@@ -14,8 +14,8 @@
     transition: all 1s;
     &:hover {
         background-color: #11192e;
-        border: 0.1em solid $hover-DColor;
-        color: $hover-DColor;
+        border: 0.1em solid $main-DColor;
+        color: $main-DColor;
     }
     svg {
         position: relative;

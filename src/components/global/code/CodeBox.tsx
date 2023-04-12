@@ -19,8 +19,9 @@ const CodeBox = ({children, lang}: any) => {
                         backgroundColor: 'transparent',
                         color: '#94a3b8',
                         border: '0.1em solid #94a3b8',
+                        zIndex: '20',
                         '&:hover': {
-                            backgroundColor: '#11192e',
+                            backgroundColor: '#131829',
                             color: '#e2e8ef'
                         }
                     }} 
@@ -28,7 +29,11 @@ const CodeBox = ({children, lang}: any) => {
                     <ContentCopyIcon sx={{fontSize: '1.25em'}} /> 
                 </Fab>  
             </CopyToClipboard>
-            <SyntaxHighlighter language={lang} showLineNumbers wrapLongLines={true}/*  useInlineStyles={false} */ lineNumberStyle={{color: '#7d7d7d'}} style={androidstudio}>
+            <SyntaxHighlighter language={lang} 
+                showLineNumbers 
+                wrapLongLines={true} 
+                lineNumberStyle={{color: 'rgb(69 79 108)'}} 
+                style={androidstudio}>
                 {children}
             </SyntaxHighlighter>
         </div>

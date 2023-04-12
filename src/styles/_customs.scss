@@ -1,16 +1,19 @@
 /* **** CONFIGS | CUSTOM PROPERTY **** */
 
 /* Dark Mode - Colors */
-$main-DColor: #94a3b8;
+$main-DColor: #e2e8ef;
 $scnd-DColor: #94a3b8;
-$hover-DColor: #e2e8ef;
+$hover-DColor: #9ed6ff;
+
 $bg-DColor: #131829;
-$bg-DScndColor: rgb(40 45 56);
-$error: #ff2727e8;
-$success: #05ad05;
+$bg-DScndColor: #172338;
+$bg-DThirdColor: #111626;
+$dg-DColor: #2c61afa8;
+
+$black: #000000;
 
 /* Tipografias */
-$main-typo: 'Beaufort'; 
+$main-typo: 'Blinker'; 
 $scnd-typo:  Calibri, 'Trebuchet MS', sans-serif;
 
 /* --- SCROLLBAR PRO CSS - HABILITADA ---*/ 
@@ -26,7 +29,7 @@ $scnd-typo:  Calibri, 'Trebuchet MS', sans-serif;
 
 /* --- TEXTO SELECCIONADO ---*/
 ::selection {
-    background-color: rgba(41, 44, 57, 70%);
+    background-color: $bg-DColor;
     color: $main-DColor;
 } 
 

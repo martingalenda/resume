@@ -87,7 +87,7 @@ const Events = () => {
                     }
                 </CodeBox>
             </TopicContainer>
-            <TopicContainer id="teclado" topic="Eventos del teclado" ytUrl="https://youtu.be/xOinGb2MZSk?t=8356">
+            <TopicContainer id="teclado" topic="Eventos del teclado" ytUrl="https://youtu.be/xOinGb2MZSk?t=8356" docUrl="https://www.toptal.com/developers/keycode">
                 <p></p> 
                 <CodeBox lang="javascript"> 
                     {
