@@ -1025,12 +1025,6 @@ const data = {
                             ]
                         },
                         {
-                            "topic": "React MUI",
-                            "url": "/front/react/mui",
-                            "subTopic": [
-                            ]
-                        },
-                        {
                             "topic": "Utilidades",
                             "url": "/front/react/utilidades",
                             "subTopic": [
@@ -1039,10 +1033,10 @@ const data = {
                     ]
                 },
                 {
-                    "name": "TAILWIND",
-                    "ref": "tailwind",
-                    "doc": "https://tailwindcss.com/docs/installation",
-                    "tutorial": "https://www.youtube.com/watch?v=3xlUAMXui2c&list=PLPl81lqbj-4JdoHDiERR2ptkw9zRggXAL",
+                    "name": "REACT MUI",
+                    "ref": "mui",
+                    "doc": "https://mui.com/material-ui/getting-started/overview/",
+                    "tutorial": "https://www.youtube.com/watch?v=-ipl60m5eQA&list=PLPl81lqbj-4Kn-PRUvHuzh_591Euc3688",
                     "array": [
                         {}
                     ]
@@ -1273,8 +1267,8 @@ const data = {
                 {
                     "name": "JAVA",
                     "ref": "java",
-                    "doc": "https://google.com",
-                    "tutorial": "https://google.com",
+                    "doc": "https://docs.oracle.com/en/java/",
+                    "tutorial": "https://www.youtube.com/watch?v=coK4jM5wvko&list=PLU8oAlHdN5BktAXdEVCLUYzvDyqRQJ2lk&index=2",
                     "array": [
                         {}
                     ]
@@ -1408,10 +1402,153 @@ const data = {
                 {
                     "name": "SCRUM",
                     "ref": "scrum",
-                    "doc": "https://google.com",
-                    "tutorial": "https://google.com",
+                    "doc": "https://www.atlassian.com/es/agile/scrum",
+                    "tutorial": "https://www.youtube.com/@AgilEsPorCrisRua/videos",
                     "array": [
-                        {}
+                        {
+                            "topic": "Introducción",
+                            "url": "/management/scrum/introduccion",
+                            "subTopic": [
+                                { 
+                                    "subTopic": "Scrum - Introducción",
+                                    "url": "/management/scrum/introduccion#resume"
+                                },
+                                { 
+                                    "subTopic": "Valores y principios",
+                                    "url": "/management/scrum/introduccion#values"
+                                },
+                                { 
+                                    "subTopic": "Ventajas de usar Scrum",
+                                    "url": "/management/scrum/introduccion#advanges"
+                                },
+                            ]
+                        },
+                        {
+                            "topic": "Conceptos",
+                            "url": "/management/scrum/conceptos",
+                            "subTopic": [
+                                { 
+                                    "subTopic": "Historias de usuario",
+                                    "url": "/management/scrum/conceptos#hdu"
+                                },
+                                { 
+                                    "subTopic": "Sprint",
+                                    "url": "/management/scrum/conceptos#sprint"
+                                },
+                                { 
+                                    "subTopic": "Épicas",
+                                    "url": "/management/scrum/conceptos#epics"
+                                },
+                                { 
+                                    "subTopic": "Versiones",
+                                    "url": "/management/scrum/conceptos#versiones"
+                                },
+                            ]
+                        },
+                        {
+                            "topic": "Artefactos",
+                            "url": "/management/scrum/artefactos",
+                            "subTopic": [
+                                { 
+                                    "subTopic": "Product backlog",
+                                    "url": "/management/scrum/artefactos#pb"
+                                },
+                                { 
+                                    "subTopic": "Sprint backlog",
+                                    "url": "/management/scrum/artefactos#sb"
+                                },
+                                { 
+                                    "subTopic": "Incremento",
+                                    "url": "/management/scrum/artefactos#incremento"
+                                },
+                            ]
+                        },
+                        {
+                            "topic": "El equipo",
+                            "url": "/management/scrum/team",
+                            "subTopic": [
+                                { 
+                                    "subTopic": "El equipo Scrum",
+                                    "url": "/management/scrum/team#intro"
+                                },
+                                { 
+                                    "subTopic": "Scrum Master",
+                                    "url": "/management/scrum/team#master"
+                                },
+                                { 
+                                    "subTopic": "Product Owner",
+                                    "url": "/management/scrum/team#po"
+                                },
+                                { 
+                                    "subTopic": "Equipo de desarrollo",
+                                    "url": "/management/scrum/team#devs"
+                                },
+                            ]
+                        },
+                        {
+                            "topic": "Eventos ( Reuniones )",
+                            "url": "/management/scrum/events",
+                            "subTopic": [
+                                { 
+                                    "subTopic": "Flujo de trabajo ( Eventos )",
+                                    "url": "/management/scrum/events#intro"
+                                },
+                                { 
+                                    "subTopic": "Sprint planning",
+                                    "url": "/management/scrum/events#planning"
+                                },
+                                { 
+                                    "subTopic": "Daily Scrum",
+                                    "url": "/management/scrum/events#daily"
+                                },
+                                { 
+                                    "subTopic": "Sprint Review",
+                                    "url": "/management/scrum/events#review"
+                                },
+                                { 
+                                    "subTopic": "Sprint Retrospective",
+                                    "url": "/management/scrum/events#retro"
+                                },
+                            ]
+                        },
+                        {
+                            "topic": "Estimación del esfuerzo",
+                            "url": "/management/scrum/estimacion",
+                            "subTopic": [
+                                { 
+                                    "subTopic": "Estimación del esfuerzo",
+                                    "url": "/management/scrum/estimacion#unidades"
+                                },
+                                { 
+                                    "subTopic": "Scrum Poker",
+                                    "url": "/management/scrum/estimacion#poker"
+                                },
+                            ]
+                        },
+                        {
+                            "topic": "Métricas",
+                            "url": "/management/scrum/metricas",
+                            "subTopic": [
+                            ]
+                        },
+                        {
+                            "topic": "Gestión del riesgo",
+                            "url": "/management/scrum/riesgos",
+                            "subTopic": [
+                            ]
+                        },
+                        {
+                            "topic": "Scrum a gran escala",
+                            "url": "/management/scrum/escalado",
+                            "subTopic": [
+                            ]
+                        },
+                        {
+                            "topic": "Utilidades",
+                            "url": "/management/scrum/utilidades",
+                            "subTopic": [
+                            ]
+                        },
                     ]
                 },
                 {
@@ -1432,7 +1569,7 @@ const data = {
                 {
                     "name": "ChatGPT",
                     "ref": "chatGpt",
-                    "doc": "https://openai.com/blog/chatgpt",
+                    "doc": "https://chat.openai.com/",
                     "tutorial": "https://www.youtube.com/watch?v=IvMKwI-H03A",
                     "array": [
                         {}

@@ -27,7 +27,7 @@ const SearchBtn = () => {
                 <ManageSearchIcon/>
                 <span>Look for a topic...</span>
                 <div className="search-btn__shortcut">
-                    <span>Ctrl + k</span>
+                    <span>ç</span>
                 </div> 
             </div>
             {

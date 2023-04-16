@@ -103,8 +103,9 @@ body {
     font-size : 100%;
     font-family : $main-typo, $scnd-typo !important;
     color : $scnd-DColor !important;
+    //background-color: #171717 !important; /* Dark mode - modo lectura */
     background-color: #131829 !important;
-    background-image: url('../../public/bg.png');
+/*     background-image: url('../../public/bg.png'); */
     background-size: contain;
     background-repeat: no-repeat;
     background-position-x: right;

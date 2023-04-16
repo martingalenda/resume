@@ -44,12 +44,17 @@ code .
 `npm i
 # Nos instala todas las dependencias del archivo package.json
 
-npm i "dependency"
-# Instalamos una libreria en concreto
+npm i <dependency>
+# Instalamos una librería en concreto
 
-npm u "dependency"
+npm update <dependency>     ||      npm up <dependency>
+# Actualiza una librería en concreto
+
+npm uninstall <dependency>  ||      npm un <dependency>
 # Desinstalamos una librería en concreto
-`
+
+npm run kill-port -- <port_number>
+# Finaliza el proceso del puerto definido`
                     }
                 </CodeBox>
                 <br/>

@@ -4,7 +4,7 @@ import TopicContainer from "../../../../global/topicContainer/TopicContainer"
 import CodeBox from "../../../../global/code/CodeBox"
 
 const Consultas = () => {
-
+ 
     return (
         <Information subTopic={data.menu[2].array[2].array[1].subTopic}>
 
@@ -40,23 +40,24 @@ const Consultas = () => {
 </TopicContainer>
 
 <TopicContainer id="chequeos" topic="git checkout = Chequeando versiones anteriores, y regresando"> 
-<p><em>Importante</em>: Es importante mencionar que, al hacer checkout a un commit anterior, se creará un estado "detached HEAD", lo que significa que el HEAD ya no apunta a una rama, sino a un commit específico. Por lo tanto, cualquier cambio que realicemos en ese estado no se reflejará en ninguna rama, y se perderá si no lo guardamos en una nueva rama. </p>  
+<p><em>Importante</em>: Es importante mencionar que, al hacer checkout a un commit anterior, se creará un estado de "detached HEAD", lo que significa que el HEAD ya no apuntará a una rama, sino a un commit específico. Por lo tanto, cualquier cambio que realicemos durante ese estado, no se vera reflejando en ninguna rama, y se perderá si no lo guardamos en una nueva. </p>  
 <CodeBox lang="bash"> 
                     {
-`# Restablece nuestro directorio de trabajo a la versión definida. Al hacerlo, reposiciona solamente el puntero HEAD.
+`# Restablece nuestro directorio de trabajo al commit definido.
     git checkout <id del commit>
 
-# Para regresar a la rama sobre la cual estabamos trabajando
-    git checkout <nombre de la rama>`
-}
-</CodeBox>
-<small>Cuando volvemos a una versión anterior, al hacer git log, perderemos los commits posteriores. Para recuperarlos, y regresar a cualquier versión posterior, debemos hacer uso de git reflog.</small><br/> 
-    <CodeBox lang="bash"> 
-    {
-`# Nos muestra un registro detallado de todos los cambios realizados en el repositorio.
-    git reflog
-# Luego deberíamos de apuntar nuevamente a una rama para salir del estado "detached HEAD"
-    git checkout <nombre de la rama>`
+# Para regresar a última versión de la rama sobre la cual estabamos trabajando:
+    git checkout <nombre de la rama>
+    
+# En caso de que busquemos regresar a un commit posterior, pero no al último de la rama en cuestión. Deberemos buscar el hash del commit al cual queremos trasladarnos. Pero si hicieramos un simple git log, los posteriores ya no los veriamos. Para verlos, tenemos varias opciones:
+
+    # 1- Nos traer todos los commits, incluyendo los posteriores sobre el cual estamos posicionados
+        git log --oneline <nombre del repo> <nombre de la rama>
+
+    # 2- Este nos trae todos los registros del repositorio, incluyendo los commits con sus respectivos hash.
+        git reflog
+
+    # 3- Desde la interface propia de git, yendo a la rama y buscando la solapa commits.`
 }
 </CodeBox>
 
@@ -80,7 +81,10 @@ const Consultas = () => {
     git diff <id del commit1> <id del commit2>
 
 # Nos muestra las diferencias de un archivo, en distintas versiones/commits:
-    git diff <id del commit1> <path/to/file.txt>`
+    git diff <id del commit1> <path/to/file.txt>
+    
+# Nos muestra las diferencias entre dos ramas:
+    git diff <id de la rama1> <id de la rama2>`
                     }
                 </CodeBox>
                 </TopicContainer>

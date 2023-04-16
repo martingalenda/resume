@@ -25,7 +25,7 @@ const IntroduccionGIT = () => {
                 </ul>
 
                 <h4><strong>GitHub</strong></h4> 
-                <p>GitHub, por otro lado, es una plataforma web que utiliza el sistema de control de versiones GIT para alojar, compartir y colaborar en proyectos de software de código abierto. Además de alojar repositorios de código, GitHub ofrece una serie de herramientas y servicios que permiten a los desarrolladores trabajar juntos de manera efectiva, como herramientas de seguimiento de problemas, revisiones de código y herramientas de integración continua. GitHub se ha convertido en uno de los lugares más populares para alojar proyectos de software de código abierto y se utiliza ampliamente por empresas, organizaciones y desarrolladores individuales de todo el mundo.</p> 
+                <p>GitHub, por otro lado, es una plataforma web que utiliza el sistema de control de versiones GIT para alojar, compartir y colaborar en proyectos de software de código abierto. Además de ofrecer el servicio de hosting para almacenar nuestros repositorios de código, GitHub ofrece una serie de herramientas y servicios que permiten a los desarrolladores trabajar juntos de manera efectiva, como herramientas de seguimiento de problemas, revisiones de código y herramientas de integración continua. GitHub se ha convertido en uno de los lugares más populares para alojar proyectos de software de código abierto y se utiliza ampliamente por empresas, organizaciones y desarrolladores individuales de todo el mundo.</p> 
 
             </TopicContainer>
 
@@ -33,7 +33,7 @@ const IntroduccionGIT = () => {
                 <ul>
                     <li><strong>Directorio de trabajo</strong>: Refiere a nuestro entorno local de trabajo.</li> 
                     <li><strong>Stage</strong>: Area de preparación. Refiere a una especie de zona intermedia entre: el directorio de trabajo, y el repositorio local de git (HEAD).</li> 
-                    <li><strong>Repositorio local</strong>: Refiere al control de versiones local de nuestros archivos (HEAD).<br/> <small>Para clarificar: Nosotros podemos realizar commits para ir guardando las distintas versiones de nuestro trabajo de formal local (en nuestro ordenador). Para, a futuro, actualizar el repositorio remoto mediante el comando push.</small></li> 
+                    <li><strong>Repositorio local (HEAD)</strong>: Refiere al control de versiones local de nuestros archivos.<br/> <small>Para clarificar: Nosotros podemos realizar commits para ir guardando las distintas versiones de nuestro trabajo de formal local. Para, a futuro, actualizar el repositorio remoto.</small></li> 
                     <li><strong>Repositorio remoto</strong>: Refiere al control de versiones remoto de nuestros archivos (GITHUB en este caso).</li> 
                     <li><strong>Ramas (branch)</strong>: Refiere a una bifuración en nuestro flujo de registros/commits/trabajo.</li> 
                     <li><strong>Commit</strong>: Un versión/registro de nuestro proyecto en el tiempo.</li> 

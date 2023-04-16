@@ -105,7 +105,7 @@ export const subTopics = [
     { title: 'Ajax',  category: 'JS', url: '/front/js/peticiones' },
     { title: 'Api fetch',  category: 'JS', url: '/front/js/peticiones' },
     { title: 'Libreria Axios',  category: 'JS', url: '/front/js/peticiones' },
-    { title: 'Modularización',  category: 'JS', url: '/front/js/modulos' },
+    { title: 'Modularizacion',  category: 'JS', url: '/front/js/modulos' },
     { title: 'Almacenamiento local storage',  category: 'JS', url: '/front/js/almacenamiento' },
     { title: 'Almacenamiento session storage',  category: 'JS', url: '/front/js/almacenamiento' },
     { title: 'Almacenamiento cookies',  category: 'JS', url: '/front/js/almacenamiento' },
@@ -152,7 +152,6 @@ export const subTopics = [
     { title: 'Estado global - Redux',  category: 'React', url: '/front/react/redux' },
     { title: 'Peticiones API',  category: 'React', url: '/front/react/peticiones' },
     { title: 'React router',  category: 'React', url: '/front/react/router' },
-    { title: 'React MUI',  category: 'React', url: '/front/react/mui' },
     { title: 'Utilidades',  category: 'React', url: '/front/react/utilidades' },
   
     { title: 'BBDD Relacionales',  category: 'SQL', url: '/back/sql/bbdd' },
@@ -183,5 +182,27 @@ export const subTopics = [
     { title: 'Gestionando cambios',  category: 'GIT', url: '/general/git/cambios' },
     { title: 'Gestionando ramas',  category: 'GIT', url: '/general/git/ramas' },
     { title: 'Utilidades',  category: 'GIT', url: '/general/git/utilidades' },
+
+    { title: 'Comandos de terminal',  category: 'TERMINAL', url: '/general/terminal/comandos' },
+    
+    { title: 'Atajos VSCODE ( Visual Studio Code )',  category: 'VSCODE', url: '/general/vscode/atajos' },
+
+    { title: 'Introduccion',  category: 'SCRUM', url: '/management/scrum/introduccion' },
+    { title: 'El equipo Scrum',  category: 'SCRUM', url: '/management/scrum/team' },
+    { title: 'Artefactos',  category: 'SCRUM', url: '/management/scrum/artefactos' },
+    { title: 'Conceptos',  category: 'SCRUM', url: '/management/scrum/conceptos' },
+    { title: 'Historias de usuario',  category: 'SCRUM', url: '/management/scrum/conceptos' },
+    { title: 'Epicas',  category: 'SCRUM', url: '/management/scrum/conceptos' },
+    { title: 'Eventos ( Reuniones )',  category: 'SCRUM', url: '/management/scrum/events' },
+    { title: 'Sprint planning',  category: 'SCRUM', url: '/management/scrum/events' },
+    { title: 'Daily Scrum',  category: 'SCRUM', url: '/management/scrum/events' },
+    { title: 'Sprint Review',  category: 'SCRUM', url: '/management/scrum/events' },
+    { title: 'Sprint Retrospective',  category: 'SCRUM', url: '/management/scrum/events' },
+    { title: 'Estimacion de esfuerzo',  category: 'SCRUM', url: '/management/scrum/estimacion' },
+    { title: 'Scrum Poker',  category: 'SCRUM', url: '/management/scrum/estimacion' },
+    { title: 'Metricas',  category: 'SCRUM', url: '/management/scrum/metricas' },
+    { title: 'Gestion del riesgo',  category: 'SCRUM', url: '/management/scrum/riesgos' },
+    { title: 'Scrum a gran escala',  category: 'SCRUM', url: '/management/scrum/escalado' },
+    { title: 'Utilidades',  category: 'SCRUM', url: '/management/scrum/utilidades' },
   ];
   

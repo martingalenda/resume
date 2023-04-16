@@ -70,7 +70,6 @@
   import EstadosGlobales from './components/pages/information/front/react/EstadosGlobales';
   import PeticionesApi from './components/pages/information/front/react/PeticionesApi';
   import ReactRouter from './components/pages/information/front/react/ReactRouter';
-  import ReactMUI from './components/pages/information/front/react/ReactMUI';
   import UtilidadesReact from './components/pages/information/front/react/Utilidades';
 
   import BBDD from './components/pages/information/back/sql/BBDD';
@@ -96,9 +95,20 @@
   import GhPages from './components/pages/information/general/git/GhPages';
   import UtilidadesGIT from './components/pages/information/general/git/Utilidades';
   
+  import IntroduccionScrum from './components/pages/information/management/scrum/Introduccion';
+  import EquipoScrum from './components/pages/information/management/scrum/EquipoScrum';
+  import Artefactos from './components/pages/information/management/scrum/Artefactos';
+  import ConceptosScrum from './components/pages/information/management/scrum/Conceptos';
+  import EventosScrum from './components/pages/information/management/scrum/Eventos';
+  import Estimacion from './components/pages/information/management/scrum/Estimacion';
+  import Metricas from './components/pages/information/management/scrum/Metricas';
+  import GestionRiesgo from './components/pages/information/management/scrum/GestionRiesgo';
+  import ScrumEscalado from './components/pages/information/management/scrum/ScrumEscalado';
+  import UtilidadesScrum from './components/pages/information/management/scrum/Utilidades';
 
 /* Rutas */
   import { Routes, Route } from "react-router-dom";
+import AtajosVSCODE from './components/pages/information/general/vscode/VSCODE';
 
 
 
@@ -175,7 +185,6 @@ function App() {
         <Route path="/front/react/global_state" element={<EstadosGlobales/>}/>
         <Route path="/front/react/peticiones" element={<PeticionesApi/>}/>
         <Route path="/front/react/router" element={<ReactRouter/>}/>
-        <Route path="/front/react/mui" element={<ReactMUI/>}/>
         <Route path="/front/react/utilidades" element={<UtilidadesReact/>}/>
         {/* TAILWIND */}
         {/* CONCEPTOS FRONT */}
@@ -197,6 +206,7 @@ function App() {
         {/* TERMINAL */}
         <Route path="/general/terminal/comandos" element={<ComandosBash/>}/>
         {/* VSCODE */}
+        <Route path="/general/vscode/atajos" element={<AtajosVSCODE/>}/>
         {/* GIT */}
         <Route path="/general/git/introduccion" element={<IntroduccionGIT/>}/>
         <Route path="/general/git/consultas" element={<Consultas/>}/>
@@ -206,6 +216,16 @@ function App() {
         <Route path="/general/git/utilidades" element={<UtilidadesGIT/>}/>
 
         {/* SCRUM */}
+        <Route path="/management/scrum/introduccion" element={<IntroduccionScrum/>}/>
+        <Route path="/management/scrum/team" element={<EquipoScrum/>}/>
+        <Route path="/management/scrum/artefactos" element={<Artefactos/>}/>
+        <Route path="/management/scrum/conceptos" element={<ConceptosScrum/>}/>
+        <Route path="/management/scrum/events" element={<EventosScrum/>}/>
+        <Route path="/management/scrum/estimacion" element={<Estimacion/>}/>
+        <Route path="/management/scrum/metricas" element={<Metricas/>}/>
+        <Route path="/management/scrum/riesgos" element={<GestionRiesgo/>}/>
+        <Route path="/management/scrum/escalado" element={<ScrumEscalado/>}/>
+        <Route path="/management/scrum/utilidades" element={<UtilidadesScrum/>}/>
 
         {/* KANBAN */}
         {/* CHATGPT */}
