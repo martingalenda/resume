@@ -1,6 +1,0 @@
-@mixin mDegrade($degLine) {
-    background: $degLine;
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    background-clip: text;
-}
