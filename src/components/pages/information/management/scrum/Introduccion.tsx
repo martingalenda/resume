@@ -40,6 +40,13 @@ const IntroduccionScrum = () => {
             
             </TopicContainer>
 
+            <TopicContainer id="pilares" topic="Pilares">
+                <p>Scrum posee 2 pilares fundamentales:</p> 
+                <ul>
+                    <li>El empirismo: El conocimiento proviene de la experiencia y la toma de decisiones basado en lo que se observa.</li>
+                    <li>El pensamiento Lean: Reduce los desperdicios y se centra en lo esencial para maximizar el valor del producto de manera continua.</li>
+                </ul>
+            </TopicContainer>
             <TopicContainer id="advanges" topic="Ventajas de uso">
                 <p>Entre las ventajas de usar scrum nos encontraremos con que:</p> 
                 <ul>
@@ -54,8 +61,6 @@ const IntroduccionScrum = () => {
                     <li>Actualmente es la metodología de trabajo más reconocida/utilizada a nivel mundial (para desarrollo de software).</li>
                     <li>Scrum es un marco adaptable. Algunos equipos optan por refinar algunas reglas, otros incluso por convinarlos con otras metodologías agiles.</li>
                 </ul>
-
-            
             </TopicContainer>
 
         </Information>

@@ -36,22 +36,33 @@ const GestionandoCambios = () => {
     # Sube los cambios a (un remoto especifico) y (una rama especifica)`
                     }
                 </CodeBox>
+                <small>Si al llegar a este punto, nos encontramos que hay cambios remotos que afectaron a la rama sobre la cual estamos trabajando (y nosotros no los hemos descargado aún) entonces deberemos de bajar los cambios para poder luego subir los nuestros. Aquí podría o no existir conflictos (diferencias en mismos archivos). En caso de que existan, deberán ser solucionados manualmente. Veremos esto en el topico "Gestion de ramas".</small>
                 </TopicContainer>
 
-                <TopicContainer id="pull" topic="Bajando cambios ( fetch + log + pull )">
+                <TopicContainer id="pull" topic="Bajando cambios ( pull & fetch )">
                 <CodeBox lang="bash"> 
                     {
-`# Las siguientes dos sentencias nos permiten conocer los nuevos commits por/sin descargar.
-# 1 -  ...
+`# - Nos bajamos los últimos cambios de la rama sobre la cual estamos posicionados, y los fusionamos con nuestro directorio de trabajo.
+    git pull`
+}
+</CodeBox>
+    <CodeBox lang="bash"> 
+    {
+`# - Opcionalmente podríamos usar fetch en lugar de pull para descargar los últimos commits (remotos) pero SIN fusionarlos.
     git fetch
-# 2 -  ....
-    git log origin/main`
+# - Ahora podríamos revisar el historial de commits (no descargados) apuntando al repo, y la rama.
+    git log --oneline nombreRepo/nombreRama
+# - También podriamos ir a la última versión de la rama remota:
+    git checkout nombreRepo/nombreRama
+# - Y luego volver a nuestra versión local de la rama:
+    git checkout nombreRama`
                     }
                 </CodeBox>
-
+                <small>Al bajar los cambios podrían o no existir conflictos (diferencias en mismos archivos). En ese caso, estos deberán ser solucionados manualmente. Veremos esto en el tópico "Gestión de ramas".</small>
                 </TopicContainer>
+
                 <TopicContainer id="revert" topic="Revirtiendo cambios">
-                <p><em>IMPORTANTE:</em> Las acciones que veremos a continuación conllevan un riesgo en la perdida de datos/archivos , por lo que debemos utilizarlos con extremada precaución.</p>
+                <p><em>IMPORTANTE:</em> Las acciones que veremos a continuación conllevan un riesgo en la perdida de datos/archivos , por lo que debemos utilizarlos con precaución.</p>
                 <p>Sin duda habrá momentos en los que necesitemos dar uno, o varios pasos atras en nuestro código. Podría ser debido a que nos gusto más una versión pasada, o simplemente porque algo no resulto como esperabamos. Veamos como podríamos hacerlo:</p><br/>  
                 <h4>Descartando || Revirtiendo cambios de archivos en nuestro <strong>DIRECTORIO DE TRABAJO</strong> - <em> (NO SUBIDOS AL STAGE) - "ALTO RIESGO"</em></h4> 
                 <small> El riesgo es "alto" ya que (si no es realmente lo que deseamos hacer) en el siguiente ejemplo, podríamos perder nuestros últimos cambios realizados en uno o varios archivos locales. Restableciendo todo nuestro directorio respecto al último commit confirmado.</small>

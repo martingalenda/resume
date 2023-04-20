@@ -29,12 +29,14 @@ const Consultas = () => {
 <TopicContainer id="commits" topic="git log = Consultando historial de commits">  
 <CodeBox lang="bash"> 
                     {
-`# Nos otorga el historial de commits de la rama sobre la cual estemos posicionados.
+`# Nos otorga el historial de commits (local) de la rama sobre la cual estemos posicionados.
     git log
-# Nos otorga el historial de commits de una forma un poco más visual.
+# Nos otorga el historial de commits (local) de una forma un poco más visual.
     git log --graph
-# Nos otorga el historial de commits en una sola línea.
-    git log --oneline`
+# Nos otorga el historial de commits (local) en una sola línea.
+    git log --oneline
+# Nos otorga el historial de commits (local) del repositorio y rama definida.
+    git log --oneline repoName/ramaName`
                     }
 </CodeBox>
 </TopicContainer>

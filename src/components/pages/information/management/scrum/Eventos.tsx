@@ -17,15 +17,16 @@ const EventosScrum = () => {
 
             <TopicContainer id="planning" topic="Sprint planning - El inicio" ytUrl="https://www.youtube.com/watch?v=FhiOeECwsS8">
 
-                <p>Corresponde al evento que dará inicio al sprint. El objetivo será definir las HDU del product backlog con las que el equipo va a comprometerse.</p> 
-                <p>Durante el evento, el equipo coge las HDU seleccionadas, las analiza, resuelve dudas, y luega las fragmenta en tareas más pequeñas para construir el sprint backlog. Luego, en conjunto, estas tareas son estimadas y asignadas a los distintos miembros del equipo de desarrollo.<br/><small> Conoceremos metodos de estimación en el topico correspondiente.</small></p> 
+                <p>Corresponde al evento que dará inicio al sprint. El objetivo será definir las HDU del product backlog con las que el equipo va a comprometerse, y como lo hará.</p> 
+                <p>Durante el evento el equipo coge las HDU seleccionadas <small>(priorizadas por el P.O)</small>, las analiza, resuelve dudas, las estima, y luega las fragmenta en tareas más pequeñas para construir el sprint backlog. Luego, en conjunto, estas tareas son estimadas y asignadas a los distintos miembros del equipo de desarrollo.<br/><small> Conoceremos metodos de estimación en el topico correspondiente.</small></p> 
 
                 <p>Consejos útiles:</p>
 
                 <ul>
-                    <li>Si el sprint es de dos semanas, organizar una reunión de mejora del backlog a la mitad del sprint podría ser una buena idea. Al equipo le viene muy bien distanciarse del sprint y mirar qué viene a continuación. Eso no solo ayuda a prepararse para la planificación del sprint, sino que también puede darle otra perspectiva al trabajo actual.</li>
-                    <li>Centrar la primera parte de la planificación en el objetivo del sprint en vez de en los detalles del backlog. Al centrarse en el objetivo, es posible encontrar alternativas inteligentes para cómo se consigue ese objetivo.</li>
-                    <li>Si las estimaciones se utilizan de una forma negativa y confrontacional una vez que se ha terminado el trabajo, es probable que las futuras estimaciones sean superiores para asegurarse de que no vuelven a estar mal nunca más, o el tiempo necesario para crearlas sea mucho mayor, ya que el equipo se lo pensará dos veces preocupado por las consecuencias de que estén mal.</li>
+                    <li>Centrar la primera parte de la planificación en el objetivo del sprint en vez de en los detalles del backlog. Al centrarse en el objetivo, es posible encontrar alternativas inteligentes para ver cómo se consigue ese objetivo.</li>
+                    <li>Si las estimaciones se utilizan de una forma negativa y confrontacional una vez que se ha terminado el sprint, es probable que las futuras estimaciones sean superiores para asegurarse de no quedar mal nunca más.</li>
+                    <li>Cuando se realiza la estimacion por primera vez, el equipo no conoce la capacidad de story points totales que puede llegar a cubrir, lo normal es hacer hasta donde se pueda, para, en el siguiente sprint tener ese valor de referencia.</li>
+                    <li>Si el sprint es de dos semanas, organizar una reunión a la mitad del sprint para refinar el product backlog, podría ser una buena idea.<br/> Comunmente al equipo le sienta bien distanciarse del sprint y mirar qué viene a continuación. Eso no solo ayuda a prepararse para la planificación del siguiente sprint, sino que también puede darle otra perspectiva al trabajo actual.</li>
                 </ul>
                 <ul className="events-data">
                     <li>Momento en el que se realiza: Antes de iniciar el sprint.</li>
@@ -47,6 +48,11 @@ const EventosScrum = () => {
 
                 <p>Estas preguntas ayudan al equipo a actualizar el estado de las tareas, y a identificar posibles obstáculos que puedan estar impidiendo el progreso del sprint. Además, la reunión diaria fomenta la colaboración y la comunicación dentro del equipo.</p>
 
+                <p>Consejos útiles:</p>
+                <ul>
+                    <li>Resuelve tus dudas fuera de este tiempo. Si algo que dijo un compañero no lo entendiste, o te genero alguna duda en concreto, charlalo despues.</li>
+                </ul>
+
                 <ul className="events-data">
                     <li>Momento en el que se realiza: Todos los días laborales, a excepción comunmente del día de la planificación.</li>
                     <li>Participantes: Todo el equipo Scrum.</li>
@@ -57,11 +63,12 @@ const EventosScrum = () => {
 
             <TopicContainer id="review" topic="Sprint Review - Evaluación del sprint" ytUrl="https://www.youtube.com/watch?v=NPc7YyBUrMk">
 
-                <p>Este evento se lleva a cabo al final de cada Sprint, donde el equipo presenta el trabajo completado a los interesados, y al Product Owner. El objetivo principal del evento es obtener comentarios y retroalimentación sobre el trabajo realizado, para asegurarse de que se está avanzando en la dirección correcta.</p> 
+                <p>Este evento se lleva a cabo al final de cada Sprint, donde el equipo presenta el trabajo completado a los interesados, y al Product Owner. El objetivo principal del evento es obtener feedback sobre el trabajo realizado, para asegurarse de que se está avanzando en la dirección correcta.</p> 
+                <p>Si por alguna razón el equipo no llego a cumplir alguna de sus tareas, estas serán incorporadas en el siguiente sprint. Bajo ningún concepto debe modificarse la fecha del sprint.</p> 
 
                 <ul className="events-data">
                     <li>Momento en el que se realiza: Al finalizar cada Sprint.</li>
-                    <li>Participantes: Todo el equipo Scrum, y en ocasiones los stakeholders.</li>
+                    <li>Participantes: Todo el equipo Scrum, y comunmente los stakeholders.</li>
                     <li>Duración: Aprox 1 hora por semana de duración (Dependiendo la complejidad del producto).</li>
                 </ul>
             

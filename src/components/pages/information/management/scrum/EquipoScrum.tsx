@@ -30,6 +30,7 @@ const EquipoScrum = () => {
                     <li>Tener conocimientos sólidos de otras metodologías agiles, como Kanban o XP, y saber cuando aplicarlas.</li>
                     <li>Asegurar que la transparencia sea una prioridad en todo momento, y que toda la información necesaria esté al alcance de todo el equipo.</li>
                     <li>Analizar los informes de forma regular, como por ejemplo el diagrama de trabajo pendiente.</li>
+                    <p>Se espera que la persona que ocupe este rol posea buenas cualidades interpersonales. Sea empático, mediador, positivo, etc...</p>
                 </ul>
 
                 <small>Data: No debería estar en más de dos equipos Scrum. Siendo lo ideal, que forme parte de un solo equipo.</small>
@@ -42,12 +43,17 @@ const EquipoScrum = () => {
             <p>Para lograr esta meta tan importante, el product owner debe:</p>
                 <ul>
                     <li>Investigar en profundidad las necesidades del proyecto, para poder representar las expectativas del cliente. Es habitual que requiera recopilar y analizar datos, como también participar frecuentemente en reuniones con stakeholders, y con el equipo Scrum.</li>
-                    <li>Gestionar el product backlog. Sera quien establezca y comunique las prioridades y las caracateristicas del proyecto al equipo de desarrollo.</li>
                     <li>Tener un enfoque empresarial y comprender a detalle el valor que el producto aporta al negocio. Así mismo, se espera que tenga buenas habilidades comunicativas, que sea efectivo a la hora de transmitir información.</li>
+                    <li>Gestionar el product backlog. Sera quien establezca y comunique las prioridades y las caracateristicas del proyecto al equipo de desarrollo.</li>
                     <li>Ser accesible. Debe estar disponible para el equipo Scrum, y los stakeholders, bien sea para responder preguntas, dar feedback, o tomar decisiones.</li>
+                    <li>Desarrollar el Release plan (impact mapping, user story map).</li>
+                    <li>Ser muy consciente de lo que implica el MVP del producto (producto mínimo viable).</li>
                     <li>Asegurar que el equipo Scrum tenga todos los recursos necesarios para completar el trabajo, y que este, cumpla con los estandares de calidad.</li>
-                    <li>Participar en todas los eventos (ceremonias, reuniones) de Scrum.</li>
+                    <li>Participar activamente en todas los eventos (ceremonias, reuniones) de Scrum.</li>
                     <li>Ser un líder. Debe poseer poder político dentro de la compañía, ya que debe ser capaz de poder tomar decisiones informadas, y negociar con los stakeholders para asegurar que el proyecto avance de forma efectiva.</li>
+                    <li>Saber decir no cuando lo crea necesario. En ocasiones, los requerimientos de los stakeholders pueden ser meros "caprichos", y no estar alineados con el objetivo principal de incrementar el valor del producto en cada iteración, o alcanzar el MVP si el proyecto se encuentra en una etapa inicial. Es decir, si un stakeholder pretende darle prioridad a una funcionalidad que en el presente carece de importancia, es importante que el P.O sepa identificarlo, y pueda comunicar los fundamentos del porque este requerimiento debería ser tratado en un futuro.</li>
+                    <li>Estar actualizado en cuanto a las tendencias del mercado, la industria, y las tecnologías relevantes al producto.</li>
+                    <li>Asegurarse de que el producto cumpla con los estándares legales, regulatorios, y de cumplimiento necesarios (en colaboración con el departamento legal de la compañia).</li>
                 </ul>
 
                 <small>Data adicional: <br/>El product owner puede bien ser el dueño del proyecto, o el intermediario entre: El equipo Scrum, y los stakeholders.<br/> No es aconsejable que cumpla su rol en más de dos equipos, ya que sería muy dificil poder abarcar bien su función, por lo que preferentemente, debería formar parte de un solo equipo.</small>
