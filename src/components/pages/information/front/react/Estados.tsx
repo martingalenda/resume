@@ -6,7 +6,7 @@ import CodeBox from "../../../../global/code/CodeBox"
 const Estados = () => {
 
     return (
-        <Information subTopic={data.menu[0].array[5].array[3].subTopic}>
+        <Information subTopic={data.menu[0].array[5].array[3]}>
 
             <TopicContainer id="introduccion" topic="Estados">
                 <p>.</p> 

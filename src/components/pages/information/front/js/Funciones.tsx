@@ -6,7 +6,7 @@ import CodeBox from "../../../../global/code/CodeBox"
 const FuncionesJS = () => {
 
     return (
-        <Information subTopic={data.menu[0].array[3].array[5].subTopic}>
+        <Information subTopic={data.menu[0].array[3].array[5]}>
 
             <TopicContainer id="declarada" topic="Función declarada" ytUrl="https://youtu.be/H6U1Pm7x60E?list=PLvq-jIkSeTUZ6QgYYO3MwG9EMqC-KoLXA&t=208">
                 <ul>

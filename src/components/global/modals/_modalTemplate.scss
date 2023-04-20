@@ -1,0 +1,26 @@
+.modal__template {
+    background: rgba($bg-DColor, 80%);
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    display: grid;
+    place-content: center;
+    width: 100vw;
+    height: 100vh;
+    z-index: 100;
+    backdrop-filter: blur(0.3em);
+}
+
+
+.close {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 100vw;
+    height: 100vh;
+    z-index: 200;
+}

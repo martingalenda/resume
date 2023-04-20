@@ -6,7 +6,7 @@ import CodeBox from "../../../../global/code/CodeBox"
 const DOM = () => {
 
     return (
-        <Information subTopic={data.menu[0].array[3].array[8].subTopic}>
+        <Information subTopic={data.menu[0].array[3].array[8]}>
 
             <TopicContainer id="definicion" topic="DOM (Document Object Model) - Definición"  ytUrl="https://www.youtube.com/watch?v=dF7lp_qBfV0&list=PLvq-jIkSeTUZ6QgYYO3MwG9EMqC-KoLXA&index=62&pp=iAQB"> 
                 <p>Es la estructura y la representación de todos los nodos HTML requeridos para imprimir la página. (Podríamos verlo como un arbol genealógico de nodos html)</p> 

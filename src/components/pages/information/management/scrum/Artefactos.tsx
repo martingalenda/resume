@@ -5,7 +5,7 @@ import TopicContainer from "../../../../global/topicContainer/TopicContainer"
 const Artefactos = () => {
 
     return (
-        <Information subTopic={data.menu[3].array[0].array[2].subTopic}>
+        <Information subTopic={data.menu[3].array[0].array[2]}>
 
             <p>Los artefactos de Scrum son herramientas valiosas para el equipo de Scrum, ya que les ayudan a mantenerse enfocados, medir su progreso, y mantener la transparencia con los stakeholders. Si se utilizan correctamente, estos artefactos pueden ser la clave para el éxito del proyecto y la satisfacción del cliente.</p>
 

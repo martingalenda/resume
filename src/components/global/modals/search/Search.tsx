@@ -1,6 +1,7 @@
 import SearchInput from './SearchInput'
 import {useEffect} from 'react'
 
+
 const Search = ({close} : any) => {
     
     useEffect(() => {
@@ -18,9 +19,7 @@ const Search = ({close} : any) => {
 
     return (
         <div className="search__modal">
-            <div>
-                <SearchInput close={close}/>
-            </div>
+            <SearchInput close={close}/>
         </div>
     )
 }

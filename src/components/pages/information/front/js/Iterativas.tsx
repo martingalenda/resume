@@ -6,7 +6,7 @@ import CodeBox from "../../../../global/code/CodeBox"
 const Iterativas = () => {
 
     return (
-        <Information subTopic={data.menu[0].array[3].array[4].subTopic}>
+        <Information subTopic={data.menu[0].array[3].array[4]}>
 
             <TopicContainer id="dowhile" topic="DO/WHILE" ytUrl="https://youtu.be/AapgtR0Rwk0?list=PLvq-jIkSeTUZ6QgYYO3MwG9EMqC-KoLXA&t=212">
                 <p>Siempre debe existir una opción de escape para salir del bucle, de lo contrario se tornara un bucle infinito, y colapsará la aplicación por falta de memoria.</p> 

@@ -6,7 +6,7 @@ import CodeBox from "../../../../global/code/CodeBox"
 const Display = () => {
 
     return (
-        <Information subTopic={data.menu[0].array[1].array[4].subTopic}>
+        <Information subTopic={data.menu[0].array[1].array[4]}>
 
             <TopicContainer id="tipos" topic="Tipos de Display" ytUrl="https://youtu.be/OWKXEJN67FE?t=10041">
             <p>La propiedad "display" en CSS se utiliza para definir cómo se mostrará un elemento HTML en una página web. </p>

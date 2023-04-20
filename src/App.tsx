@@ -92,7 +92,6 @@
   import Consultas from './components/pages/information/general/git/Consultas';
   import GestionandoCambios from './components/pages/information/general/git/GestionandoCambios';
   import Ramas from './components/pages/information/general/git/Ramas';
-  import GhPages from './components/pages/information/general/git/GhPages';
   import UtilidadesGIT from './components/pages/information/general/git/Utilidades';
   
   import IntroduccionScrum from './components/pages/information/management/scrum/Introduccion';
@@ -212,7 +211,6 @@ function App() {
         <Route path="/general/git/consultas" element={<Consultas/>}/>
         <Route path="/general/git/cambios" element={<GestionandoCambios/>}/>
         <Route path="/general/git/ramas" element={<Ramas/>}/>
-        <Route path="/general/git/ghpages" element={<GhPages/>}/>
         <Route path="/general/git/utilidades" element={<UtilidadesGIT/>}/>
 
         {/* SCRUM */}

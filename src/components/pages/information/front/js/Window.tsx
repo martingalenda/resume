@@ -6,7 +6,7 @@ import CodeBox from "../../../../global/code/CodeBox"
 const Window = () => { 
 
     return (
-        <Information subTopic={data.menu[0].array[3].array[9].subTopic}>
+        <Information subTopic={data.menu[0].array[3].array[9]}>
 
             <TopicContainer id="general" topic="General" ytUrl="https://youtu.be/xOinGb2MZSk?t=445">
                 <p></p> 

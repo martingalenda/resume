@@ -6,7 +6,7 @@ import CodeBox from "../../../../global/code/CodeBox"
 const IntroduccionSQL = () => {
 
     return (
-        <Information subTopic={data.menu[1].array[0].array[1].subTopic}>
+        <Information subTopic={data.menu[1].array[0].array[1]}>
 
             <TopicContainer id="sql" topic="SQL - Introducción">
                 <p>.</p> 

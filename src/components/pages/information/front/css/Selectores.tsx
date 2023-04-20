@@ -6,7 +6,7 @@ import CodeBox from "../../../../global/code/CodeBox"
 const Selectores = () => {
 
     return (
-        <Information subTopic={data.menu[0].array[1].array[1].subTopic}>
+        <Information subTopic={data.menu[0].array[1].array[1]}>
 
             <TopicContainer topic="Selectores" id="tipos" docUrl="https://www.w3schools.com/cssref/css_selectors.asp" ytUrl="https://youtu.be/OWKXEJN67FE?t=1228">
                 <p>

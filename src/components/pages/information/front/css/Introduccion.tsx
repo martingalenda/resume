@@ -6,7 +6,7 @@ import CodeBox from "../../../../global/code/CodeBox"
 const IntroduccionCss = () => {
 
     return (
-        <Information subTopic={data.menu[0].array[1].array[0].subTopic}>
+        <Information subTopic={data.menu[0].array[1].array[0]}>
 
             <TopicContainer id="css" topic="CSS3 - Introducción">
                 <p>

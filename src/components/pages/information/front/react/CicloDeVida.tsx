@@ -6,7 +6,7 @@ import CodeBox from "../../../../global/code/CodeBox"
 const CicloDeVida = () => {
 
     return (
-        <Information subTopic={data.menu[0].array[5].array[7].subTopic}>
+        <Information subTopic={data.menu[0].array[5].array[7]}>
 
             <TopicContainer id="introduccion" topic="Ciclo de vida">
                 <p>.</p> 

@@ -6,7 +6,7 @@ import CodeBox from "../../../../global/code/CodeBox"
 const POOJS = () => {
 
     return (
-        <Information subTopic={data.menu[0].array[3].array[6].subTopic}>
+        <Information subTopic={data.menu[0].array[3].array[6]}>
 
             <TopicContainer id="requerimientos" topic="Requerimientos de los lenguajes POO">
                 <small><strong style={{textTransform: 'uppercase'}}>POO</strong>: Paradigma de programación enfocado en resolver problemas mediante objetos en lugar de funciones.</small><br/><br/>

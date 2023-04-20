@@ -6,7 +6,7 @@ import CodeBox from "../../../../global/code/CodeBox"
 const DDL = () => {
 
     return (
-        <Information subTopic={data.menu[1].array[0].array[2].subTopic}>
+        <Information subTopic={data.menu[1].array[0].array[2]}>
 
             <TopicContainer id="intro" topic="DDL (Data definition language) - Introducción">
                 <p>.</p> 

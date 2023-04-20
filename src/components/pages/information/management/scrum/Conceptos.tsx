@@ -5,7 +5,7 @@ import TopicContainer from "../../../../global/topicContainer/TopicContainer"
 const ConceptosScrum = () => {
 
     return (
-        <Information subTopic={data.menu[3].array[0].array[1].subTopic} >
+        <Information subTopic={data.menu[3].array[0].array[1]} >
 
             <TopicContainer id="hdu" topic="Historias de usuario" ytUrl="https://www.youtube.com/watch?v=ky6wFiF5vMk">
 

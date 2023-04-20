@@ -6,7 +6,7 @@ import CodeBox from "../../../../global/code/CodeBox"
 const TCL = () => {
 
     return (
-        <Information subTopic={data.menu[1].array[0].array[5].subTopic}>
+        <Information subTopic={data.menu[1].array[0].array[5]}>
 
             <TopicContainer id="intro" topic="TCL (Transtaction control language) - Introducción">
                 <p>.</p> 

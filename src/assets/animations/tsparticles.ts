@@ -1,10 +1,5 @@
-// !! PARTICLES.JS
-/* 
-        "fullScreen": {
-            "enable": true,
-            "zIndex": 1
-        }, */
-        export const particlesEffect = {
+
+export const particlesEffect = {
             "particles": {
                 "number": {
                     "value": 6,
@@ -61,10 +56,10 @@
                 "move": {
                     "enable": true,
                     "speed": 1,
-                    "direction": "none",
+                    "direction": "top" as const,
                     "random": true,
                     "straight": false,
-                    "out_mode": "out",
+                    "out_mode": "none" as const,
                     "bounce": false,
                     "attract": {
                         "enable": false,
@@ -74,7 +69,7 @@
                 }
             },
             "interactivity": {
-                "detect_on": "canvas",
+                "detect_on": "canvas" as const,
                 "events": {
                     "onhover": {
                         "enable": true,
@@ -113,4 +108,4 @@
                 }
             },
             "retina_detect": true
-    }
+    } 

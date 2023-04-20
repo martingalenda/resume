@@ -6,7 +6,7 @@ import CodeBox from "../../../../global/code/CodeBox"
 const Multitablas = () => {
 
     return (
-        <Information subTopic={data.menu[1].array[0].array[8].subTopic}>
+        <Information subTopic={data.menu[1].array[0].array[8]}>
 
             <TopicContainer id="externa" topic="Union Externa">
                 <p>.</p> 

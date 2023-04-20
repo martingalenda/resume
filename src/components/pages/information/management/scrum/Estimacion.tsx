@@ -5,7 +5,7 @@ import TopicContainer from "../../../../global/topicContainer/TopicContainer"
 const Estimacion = () => {
 
     return (
-        <Information subTopic={data.menu[3].array[0].array[5].subTopic}>
+        <Information subTopic={data.menu[3].array[0].array[5]}>
 
             <TopicContainer id="unidades" topic="Estimación del esfuerzo" ytUrl="https://www.youtube.com/watch?v=4I6F0nSCdmE">
 

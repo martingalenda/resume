@@ -6,7 +6,7 @@ import CodeBox from "../../../../global/code/CodeBox"
 const UtilidadesGIT = () => {
 
     return (
-        <Information subTopic={data.menu[2].array[2].array[4].subTopic}>
+        <Information subTopic={data.menu[2].array[2].array[4]}>
 
             <TopicContainer id="custom" topic="Comandos personalizados">
                 <p>Puede que querramos crear nuestros propios comandos personalizados para facilitarnos el trabajo. Veamos como hacerlo:</p> 

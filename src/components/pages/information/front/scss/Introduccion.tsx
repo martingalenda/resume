@@ -6,7 +6,7 @@ import CodeBox from "../../../../global/code/CodeBox"
 const IntroduccionScss = () => {
 
     return (
-        <Information subTopic={data.menu[0].array[2].array[0].subTopic}>
+        <Information subTopic={data.menu[0].array[2].array[0]}>
 
             <TopicContainer id="scss" topic="SCSS - Introducción">
                 <p>

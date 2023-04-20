@@ -6,7 +6,7 @@ import CodeBox from "../../../../global/code/CodeBox"
 const Consultas = () => {
  
     return (
-        <Information subTopic={data.menu[2].array[2].array[1].subTopic}>
+        <Information subTopic={data.menu[2].array[2].array[1]}>
 
             <TopicContainer id="wd_stage" topic="git status = Consultando el estado general del working directory & stage area">
                 <CodeBox lang="bash"> 

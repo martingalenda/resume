@@ -6,7 +6,7 @@ import CodeBox from "../../../../global/code/CodeBox"
 const DatosES6 = () => {
 
     return (
-        <Information subTopic={data.menu[0].array[3].array[20].subTopic}>
+        <Information subTopic={data.menu[0].array[3].array[20]}>
 
             <TopicContainer id="symbol" topic="Symbol" ytUrl="https://www.youtube.com/watch?v=XVBkTsj99so&list=PLvq-jIkSeTUZ6QgYYO3MwG9EMqC-KoLXA&index=51">
                 <p>Los Symbols son un tipo de dato primitivo. Suelen ser utilizados para mantener las propiedades y los métodos de un objeto de forma privada/anonima</p> 

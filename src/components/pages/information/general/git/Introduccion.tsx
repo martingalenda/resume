@@ -6,7 +6,7 @@ import CodeBox from "../../../../global/code/CodeBox"
 const IntroduccionGIT = () => {
 
     return (
-        <Information subTopic={data.menu[2].array[2].array[0].subTopic}>
+        <Information subTopic={data.menu[2].array[2].array[0]}>
 
             <TopicContainer id="git" topic="GIT & GITHUB - Introducción">
 

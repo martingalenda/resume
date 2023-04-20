@@ -6,7 +6,7 @@ import CodeBox from "../../../../global/code/CodeBox"
 const Asincronia = () => {
 
     return (
-        <Information subTopic={data.menu[0].array[3].array[13].subTopic}>
+        <Information subTopic={data.menu[0].array[3].array[13]}>
 
             <TopicContainer id="bloqueante" topic="Código sincrono bloqueante">
                 <p>Se refiere a un orden en la ejecución de código. En este, la tarea en ejecución debe completarse en su totalidad, antes de continuar con la siguiente. El término "bloqueante" refiere al hecho de que una tarea puede bloquear el progreso de otras tareas hasta que sea finalizada.</p> 

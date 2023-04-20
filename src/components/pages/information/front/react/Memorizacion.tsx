@@ -6,7 +6,7 @@ import CodeBox from "../../../../global/code/CodeBox"
 const Memorizacion = () => {
 
     return (
-        <Information subTopic={data.menu[0].array[5].array[11].subTopic}>
+        <Information subTopic={data.menu[0].array[5].array[11]}>
 
             <TopicContainer id="tecnicas" topic="Técinicas de memorización">
                 <p>.</p> 

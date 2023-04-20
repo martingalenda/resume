@@ -6,7 +6,7 @@ import CodeBox from "../../../../global/code/CodeBox"
 const CondicionalesJS = () => {
 
     return (
-        <Information subTopic={data.menu[0].array[3].array[3].subTopic}>
+        <Information subTopic={data.menu[0].array[3].array[3]}>
 
             <TopicContainer id="ifelse" topic="Condicional - IF/ELSE" ytUrl="https://youtu.be/9h5hyh_wDjo?list=PLvq-jIkSeTUZ6QgYYO3MwG9EMqC-KoLXA&t=142">
                 <h4>EJ1: Sentencias distintas dependiendo una condición.</h4>

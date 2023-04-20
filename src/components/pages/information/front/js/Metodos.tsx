@@ -6,7 +6,7 @@ import CodeBox from "../../../../global/code/CodeBox"
 const MetodosJS = () => {
     
     return (
-        <Information subTopic={data.menu[0].array[3].array[7].subTopic}>
+        <Information subTopic={data.menu[0].array[3].array[7]}>
 
             <TopicContainer id="string" topic="Métodos de strings" ytUrl="https://youtu.be/z95mZVUcJ-E?t=18773">
             <br/>

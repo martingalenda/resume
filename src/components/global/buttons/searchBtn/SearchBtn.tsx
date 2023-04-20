@@ -2,7 +2,7 @@
 import ManageSearchIcon from '@mui/icons-material/ManageSearch';
 import {useState, useEffect} from 'react';
 import Search from '../../modals/search/Search';
-
+import ModalTemplate from '../../modals/ModalTemplate';
 
 const SearchBtn = () => {
 
@@ -31,7 +31,10 @@ const SearchBtn = () => {
                 </div> 
             </div>
             {
-                searchOpen && <Search close={setSearchOpen}/>
+                searchOpen && 
+                <ModalTemplate close={setSearchOpen}>
+                    <Search close={setSearchOpen}/>
+                </ModalTemplate>
             }
         </>
     )

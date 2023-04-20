@@ -6,7 +6,7 @@ import CodeBox from "../../../../global/code/CodeBox"
 const IntroduccionHtml = () => {
 
     return (
-        <Information subTopic={data.menu[0].array[0].array[0].subTopic}>
+        <Information subTopic={data.menu[0].array[0].array[0]}>
 
             <TopicContainer id="html5" topic="HTML5 - Introducción">
                 <p>

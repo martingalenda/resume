@@ -5,7 +5,7 @@ import TopicContainer from "../../../../global/topicContainer/TopicContainer"
 const IntroduccionScrum = () => {
 
     return (
-        <Information subTopic={data.menu[3].array[0].array[0].subTopic}>
+        <Information subTopic={data.menu[3].array[0].array[0]}>
 
             <TopicContainer id="resume" topic="Scrum - Introducción">
 

@@ -6,7 +6,7 @@ import CodeBox from "../../../../global/code/CodeBox"
 const IntoduccionReact = () => {
 
     return (
-        <Information subTopic={data.menu[0].array[5].array[0].subTopic}>
+        <Information subTopic={data.menu[0].array[5].array[0]}>
 
             <TopicContainer id="react" topic="React - Introducción">
                 <p>.</p> 

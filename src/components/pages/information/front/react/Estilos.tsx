@@ -6,7 +6,7 @@ import CodeBox from "../../../../global/code/CodeBox"
 const Estilos = () => {
 
     return (
-        <Information subTopic={data.menu[0].array[5].array[5].subTopic}>
+        <Information subTopic={data.menu[0].array[5].array[5]}>
 
             <TopicContainer id="css" topic="Estilos con CSS">
                 <p>.</p> 

@@ -6,7 +6,7 @@ import CodeBox from "../../../../global/code/CodeBox"
 const GestionandoCambios = () => {
 
     return (
-        <Information subTopic={data.menu[2].array[2].array[2].subTopic}>
+        <Information subTopic={data.menu[2].array[2].array[2]}>
 
  
             <TopicContainer id="push" topic="Subiendo cambios ( add + commit + push )">

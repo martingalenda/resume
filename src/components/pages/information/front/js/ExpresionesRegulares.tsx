@@ -6,7 +6,7 @@ import CodeBox from "../../../../global/code/CodeBox"
 const ExpresionesRegulares = () => {
  
     return (
-        <Information subTopic={data.menu[0].array[3].array[24].subTopic}>
+        <Information subTopic={data.menu[0].array[3].array[24]}>
             <TopicContainer id="banderas" topic="Banderas" docUrl="https://developer.mozilla.org/es/docs/Web/JavaScript/Guide/Regular_Expressions" ytUrl="https://youtu.be/wfogZfIS03U">
             <p>Refiere a una secuencia de caracteres que forma un patrón de búsqueda, principalmente utilizado para la búsqueda de patrones en cadenas de caracteres/texto.</p> 
             <p>Para testeo rapido de las expresiones. Una herramienta online: <a href="https://regexr.com/" target="_blank"> https://regexr.com/ </a></p> 

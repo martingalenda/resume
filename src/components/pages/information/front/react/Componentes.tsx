@@ -6,7 +6,7 @@ import CodeBox from "../../../../global/code/CodeBox"
 const Componentes = () => {
 
     return (
-        <Information subTopic={data.menu[0].array[5].array[1].subTopic}>
+        <Information subTopic={data.menu[0].array[5].array[1]}>
 
             <TopicContainer id="hook" topic="Componentes - Hook">
                 <p>.</p> 

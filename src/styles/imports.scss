@@ -7,13 +7,14 @@
 @import '../components/global/nav/_nav',
         '../components/global/subTopic/_subTopic',
         
-        '../components/global/modals/search/search',
+        '../components/global/modals/_modalTemplate',
+        '../components/global/modals/search/_search',
         
         '../components/global/topicContainer/_topicContainer',
         '../components/global/code/_codeBox',
         
         '../components/global/buttons/goTopBtn/_goTop',
-        '../components/global/buttons/searchBtn/searchBtn';
+        '../components/global/buttons/searchBtn/_searchBtn';
 
 /* Pages */
 @import '../components/pages/_pages';

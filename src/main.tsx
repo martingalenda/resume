@@ -12,7 +12,7 @@ import {BrowserRouter as Router} from "react-router-dom";
 import Particles from "react-tsparticles";
 import { loadFull } from "tsparticles";
 import {particlesEffect} from './assets/animations/tsparticles';
-const particlesInit = async (main) => { 
+const particlesInit = async (main: any) => { 
   await loadFull(main)
 }
 

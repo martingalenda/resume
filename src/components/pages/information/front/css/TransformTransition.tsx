@@ -6,7 +6,7 @@ import CodeBox from "../../../../global/code/CodeBox"
 const TransformTransition = () => {
 
     return (
-        <Information subTopic={data.menu[0].array[1].array[6].subTopic}>
+        <Information subTopic={data.menu[0].array[1].array[6]}>
 
             <TopicContainer id="transition" topic="Transition" ytUrl="https://youtu.be/OWKXEJN67FE?t=29289">
                 <p>

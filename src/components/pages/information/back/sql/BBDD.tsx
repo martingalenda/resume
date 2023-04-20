@@ -6,7 +6,7 @@ import CodeBox from "../../../../global/code/CodeBox"
 const BBDD = () => {
 
     return (
-        <Information subTopic={data.menu[1].array[0].array[0].subTopic}>
+        <Information subTopic={data.menu[1].array[0].array[0]}>
 
             <TopicContainer id="introduccion" topic="BBDD Relacionales">
                 <p>.</p> 

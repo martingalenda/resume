@@ -27,7 +27,7 @@ const SearchInput = ({close} :any) => {
           onChange={(e, option) => optionSelected(option)}
           groupBy={(option) => option.category}
           getOptionLabel={(option) => option.title}
-          sx={{ width: '41.5em', margin: '0 auto 22em', background: '#111626', padding: '1em 2em' }}
+          sx={{ width: '41.5em', background: '#111626', padding: '1em 2em' }}
           renderInput={(params) => <TextField {...params} autoFocus label="Que es lo que buscas?" />}
         />
       </div>

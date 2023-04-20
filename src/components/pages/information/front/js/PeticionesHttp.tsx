@@ -6,7 +6,7 @@ import CodeBox from "../../../../global/code/CodeBox"
 const PeticionesHttp = () => {
 
     return (
-        <Information subTopic={data.menu[0].array[3].array[14].subTopic}>
+        <Information subTopic={data.menu[0].array[3].array[14]}>
             
             <TopicContainer id="ajax" topic="Ajax (Javascript ASÍNCRONO) - Introducción" ytUrl="https://www.youtube.com/watch?v=lN43CTpbWTU&list=PLvq-jIkSeTUZ6QgYYO3MwG9EMqC-KoLXA&index=106&pp=iAQB"><br/>
             <h4>Definición</h4>

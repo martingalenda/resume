@@ -6,7 +6,7 @@ import CodeBox from "../../../../global/code/CodeBox"
 const DatosJS = () => {
  
     return (
-        <Information subTopic={data.menu[0].array[3].array[1].subTopic}>
+        <Information subTopic={data.menu[0].array[3].array[1]}>
 
             <TopicContainer id="variables" topic="Variables" ytUrl="https://www.youtube.com/watch?v=bvkY9ey83yY">
                 <CodeBox lang="javascript"> 

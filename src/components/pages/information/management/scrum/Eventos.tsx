@@ -5,7 +5,7 @@ import TopicContainer from "../../../../global/topicContainer/TopicContainer"
 const EventosScrum = () => {
 
     return (
-        <Information subTopic={data.menu[3].array[0].array[4].subTopic}>
+        <Information subTopic={data.menu[3].array[0].array[4]}>
 
             <TopicContainer id="intro" topic="Eventos. Flujo de trabajo en scrum.">
 

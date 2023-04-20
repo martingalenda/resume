@@ -6,7 +6,7 @@ import CodeBox from "../../../../global/code/CodeBox"
 const Events = () => { 
 
     return (
-        <Information subTopic={data.menu[0].array[3].array[10].subTopic}>
+        <Information subTopic={data.menu[0].array[3].array[10]}>
 
             <TopicContainer id="general" topic="Eventos - Métodos generales" ytUrl="https://youtu.be/xOinGb2MZSk?t=6741">
                 <p>Una función manejadora de eventos no puede recibir otro parametro más que el default (event).<br/> 

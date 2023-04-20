@@ -6,7 +6,7 @@ import CodeBox from "../../../../global/code/CodeBox"
 const AlmacenamientoLocal = () => {
 
     return (
-        <Information subTopic={data.menu[0].array[3].array[16].subTopic}>
+        <Information subTopic={data.menu[0].array[3].array[16]}>
 
             <TopicContainer id="local" topic="Local storage" ytUrl="https://youtu.be/EbMi1Qj4rVE?t=7989">
                 <ul>

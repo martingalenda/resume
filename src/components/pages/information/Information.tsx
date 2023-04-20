@@ -10,7 +10,7 @@ const Information = ({children, subTopic = false}: any) => {
             </section>
 
             <GoTop/>
-            <SubTopic subTopics={subTopic}/>
+            <SubTopic subTopics={subTopic.subTopic}/>
         </>
     )
 }

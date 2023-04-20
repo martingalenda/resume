@@ -6,7 +6,7 @@ import CodeBox from "../../../../global/code/CodeBox"
 const Propiedades = () => {
 
     return (
-        <Information subTopic={data.menu[0].array[1].array[3].subTopic}>
+        <Information subTopic={data.menu[0].array[1].array[3]}>
 
             <TopicContainer id="texts" topic="Propiedades Textos" ytUrl="https://youtu.be/OWKXEJN67FE?t=4143">
                 <CodeBox lang="css"> 
