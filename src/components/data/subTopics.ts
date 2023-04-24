@@ -153,7 +153,11 @@ export const subTopics = [
     { title: 'Peticiones API',  category: 'React', url: '/front/react/peticiones' },
     { title: 'React router',  category: 'React', url: '/front/react/router' },
     { title: 'Utilidades',  category: 'React', url: '/front/react/utilidades' },
-  
+    
+    { title: 'Introduccion',  category: 'MUI', url: '/front/mui/introduccion' },
+    { title: 'Componentes',  category: 'MUI', url: '/front/mui/components' },
+    { title: 'Estilización',  category: 'MUI', url: '/front/mui/styles' },
+
     { title: 'BBDD Relacionales',  category: 'SQL', url: '/back/sql/bbdd' },
     { title: 'Modelo entidad / relación',  category: 'SQL', url: '/back/sql/bbdd' },
     { title: 'Diccionario de datos',  category: 'SQL', url: '/back/sql/bbdd' },

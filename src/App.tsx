@@ -72,6 +72,10 @@
   import ReactRouter from './components/pages/information/front/react/ReactRouter';
   import UtilidadesReact from './components/pages/information/front/react/Utilidades';
 
+  import IntroduccionMUI from './components/pages/information/front/mui/Introduccion';
+  import MUIComponents from './components/pages/information/front/mui/MUIComponents';
+  import CustomStyles from './components/pages/information/front/mui/CustomStyles';
+
   import BBDD from './components/pages/information/back/sql/BBDD';
   import IntroduccionSQL from './components/pages/information/back/sql/Introduccion';
   import DDL from './components/pages/information/back/sql/DDL';
@@ -185,7 +189,10 @@ function App() {
         <Route path="/front/react/peticiones" element={<PeticionesApi/>}/>
         <Route path="/front/react/router" element={<ReactRouter/>}/>
         <Route path="/front/react/utilidades" element={<UtilidadesReact/>}/>
-        {/* TAILWIND */}
+        {/* REACT MUI */}
+        <Route path="/front/mui/introduccion" element={<IntroduccionMUI/>}/>
+        <Route path="/front/mui/components" element={<MUIComponents/>}/>
+        <Route path="/front/mui/styles" element={<CustomStyles/>}/>
         {/* CONCEPTOS FRONT */}
         {/* SQL */}
         <Route path="/back/sql/bbdd" element={<BBDD/>}/>

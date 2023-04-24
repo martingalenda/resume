@@ -874,8 +874,8 @@ const data = {
                                     "url": "/front/react/estilos#inline"
                                 },
                                 { 
-                                    "subTopic": "Components styles",
-                                    "url": "/front/react/estilos#comp_styles"
+                                    "subTopic": "Styled Components",
+                                    "url": "/front/react/estilos#styled_comp"
                                 },
                             ]
                         },
@@ -1036,9 +1036,115 @@ const data = {
                     "name": "REACT MUI",
                     "ref": "mui",
                     "doc": "https://mui.com/material-ui/getting-started/overview/",
-                    "tutorial": "https://www.youtube.com/watch?v=-ipl60m5eQA&list=PLPl81lqbj-4Kn-PRUvHuzh_591Euc3688",
+                    "tutorial": "https://www.youtube.com/watch?v=6-Ap2Bd8mbc&list=PLergODdA95keS6fiiJp_Pca5Bfdd2zgQo",
                     "array": [
-                        {}
+                        {
+                            "topic": "Introduccion",
+                            "url": "/front/mui/introduccion",
+                            "subTopic": [
+                                { 
+                                    "subTopic": "React MUI - Introducción",
+                                    "url": "/front/mui/introduccion#resume"
+                                },
+                                { 
+                                    "subTopic": "Ventajas",
+                                    "url": "/front/mui/introduccion#ventajas"
+                                },
+                                { 
+                                    "subTopic": "Instalación",
+                                    "url": "/front/mui/introduccion#install"
+                                },
+                            ]
+                        },
+                        {
+                            "topic": "Componentes",
+                            "url": "/front/mui/components",
+                            "subTopic": [
+                                { 
+                                    "subTopic": "CssBaseline",
+                                    "url": "/front/mui/components#cssbase"
+                                },
+                                { 
+                                    "subTopic": "Container",
+                                    "url": "/front/mui/components#container"
+                                },
+                                { 
+                                    "subTopic": "Box",
+                                    "url": "/front/mui/components#box"
+                                },
+                                { 
+                                    "subTopic": "Typography",
+                                    "url": "/front/mui/components#typo"
+                                },
+                                { 
+                                    "subTopic": "Grid",
+                                    "url": "/front/mui/components#grid"
+                                },
+                                { 
+                                    "subTopic": "Stack",
+                                    "url": "/front/mui/components#stack"
+                                },
+                                { 
+                                    "subTopic": "Button",
+                                    "url": "/front/mui/components#btn"
+                                },
+                                { 
+                                    "subTopic": "Link",
+                                    "url": "/front/mui/components#link"
+                                },
+                                { 
+                                    "subTopic": "Checkbox",
+                                    "url": "/front/mui/components#check"
+                                },
+                                { 
+                                    "subTopic": "Inputs",
+                                    "url": "/front/mui/components#inputs"
+                                },
+                                { 
+                                    "subTopic": "Select",
+                                    "url": "/front/mui/components#select"
+                                },
+                                { 
+                                    "subTopic": "Radio Group",
+                                    "url": "/front/mui/components#radio"
+                                },
+                                { 
+                                    "subTopic": "Text Area",
+                                    "url": "/front/mui/components#txtarea"
+                                },
+                                { 
+                                    "subTopic": "List",
+                                    "url": "/front/mui/components#list"
+                                },
+                                { 
+                                    "subTopic": "Table",
+                                    "url": "/front/mui/components#table"
+                                },
+                                { 
+                                    "subTopic": "Otros componentes",
+                                    "url": "/front/mui/components#others"
+                                },
+                            ]
+                        },
+                        {
+                            "topic": "Estilizacion",
+                            "url": "/front/mui/styles",
+                            "subTopic": [
+                                { 
+                                    "subTopic": "Propiedad sx",
+                                    "url": "/front/mui/styles#sx"
+                                },
+                                { 
+                                    "subTopic": "Theming",
+                                    "url": "/front/mui/styles#theming"
+                                },
+                                { 
+                                    "subTopic": "Responsive",
+                                    "url": "/front/mui/styles#responsive"
+                                },
+                            ]
+                        },
+
                     ]
                 },
                 {

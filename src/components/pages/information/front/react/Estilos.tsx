@@ -35,7 +35,7 @@ const Estilos = () => {
                 </CodeBox>
             </TopicContainer>
 
-            <TopicContainer id="comp_styles" topic="Estilos en línea">
+            <TopicContainer id="styled_comp" topic="Styled Components">
                 <p>.</p> 
                 <CodeBox lang="jsx"> 
                     {
