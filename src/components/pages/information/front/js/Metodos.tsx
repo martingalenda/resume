@@ -2,6 +2,7 @@ import Information from "../../Information"
 import data from "../../../../data/data"
 import TopicContainer from "../../../../global/topicContainer/TopicContainer"
 import CodeBox from "../../../../global/code/CodeBox"
+import { Alert, AlertTitle } from "@mui/material"
 
 const MetodosJS = () => {
     
@@ -116,7 +117,15 @@ console.log(resultado);`
             
             <TopicContainer id="ao_manipulacion" topic="Métodos de manipulación - ''exclusivos'' de Arrays" ytUrl="https://youtu.be/z95mZVUcJ-E?t=20566">
             <small>Respecto al título: "exclusivos de arrays", intenta hacer referencia a que ninguno de los métodos mencionados a continuación, son aplicables de forma DIRECTA a un objeto.<br/> Para trabajar sobre estos, habría que complementar antes con métodos especificos de objetos, tales como: Object.entries, Object.keys, o Object.values. Vemos unos ejemplos más adelante.</small>
-            <p>Los métodos mencionados a continuación, <em>MODIFICAN/MANIPULAN</em> el array sobre el que trabajan, por lo que hay que tener suma atención cuando lo utilizamos, de lo contrario, podríamos caer en malas practicas, e incluso inducir a un comportamiento no deseado en nuestras aplicaciones.</p><br/>
+
+            <br/>
+            <br/>
+            <Alert severity="warning" variant="outlined">
+                  <AlertTitle>Advertencia</AlertTitle>
+                  Los métodos mencionados a continuación, MODIFICAN/MANIPULAN el array sobre el que trabajan, por lo que hay que tener suma atención cuando lo utilizamos, de lo contrario, podríamos caer en malas practicas, e incluso inducir a un comportamiento no deseado en nuestras aplicaciones.
+            </Alert>
+            <br/>
+            <br/>
             <h4><strong>push(...)</strong> =  Agrega elemento/s al final del array original.</h4>
             <h4><strong>unshift(...)</strong> = Agrega elemento/s al principio del array original.</h4>
                 <CodeBox lang="javascript"> 
@@ -266,9 +275,13 @@ console.log(Object.entries(pc[0]));`
 
             <TopicContainer id="ao_iterativos" topic="Métodos iterativos - ''exclusivos'' de Arrays " ytUrl="https://www.youtube.com/watch?v=qqR1enOceVg&t=3379s">
             <small>Respecto al título: "exclusivos de arrays", intenta hacer referencia a que ninguno de los métodos mencionados a continuación, son aplicables de forma DIRECTA a un objeto.<br/> Para trabajar sobre estos, habría que complementar antes con métodos especificos de objetos, tales como: Object.entries, Object.keys, o Object.values. Vemos unos ejemplos más adelante.</small>
+            <br/><br/>
+            <Alert severity="warning" variant="outlined">
+                  <AlertTitle>Advertencia</AlertTitle>
+                  Recordamos que en la gran mayoría de casos, es una mala práctica mutar/modificar los arrays originales. Por el contrario, es aconsejable usar métodos como map(), filter(), etc, para generar nuevos arrays. De esta forma, estaremos previniendo errores y comportamientos inesperados en nuestras aplicaciones.
+            </Alert>
 
-            <p className="firstL"><em >Recordamos que en la gran mayoría de casos, es una mala práctica mutar/modificar los arrays originales.</em><br/> Por el contrario, es aconsejable usar métodos como map(), filter(), etc, para generar nuevos arrays. De esta forma, estaremos previniendo errores y comportamientos inesperados en nuestras aplicaciones.</p>
-
+            <br/>
             <br/>
                 <h4><strong>forEach(x,x,x)</strong> = Se utiliza para recorrer un array, pudiendo ejecutar una función para cada uno de sus elementos.</h4> 
                 <ul>                    

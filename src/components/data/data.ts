@@ -1061,68 +1061,36 @@ const data = {
                             "url": "/front/mui/components",
                             "subTopic": [
                                 { 
-                                    "subTopic": "CssBaseline",
-                                    "url": "/front/mui/components#cssbase"
-                                },
-                                { 
-                                    "subTopic": "Container",
-                                    "url": "/front/mui/components#container"
-                                },
-                                { 
-                                    "subTopic": "Box",
-                                    "url": "/front/mui/components#box"
-                                },
-                                { 
-                                    "subTopic": "Typography",
-                                    "url": "/front/mui/components#typo"
-                                },
-                                { 
-                                    "subTopic": "Grid",
-                                    "url": "/front/mui/components#grid"
-                                },
-                                { 
-                                    "subTopic": "Stack",
-                                    "url": "/front/mui/components#stack"
-                                },
-                                { 
-                                    "subTopic": "Button",
-                                    "url": "/front/mui/components#btn"
-                                },
-                                { 
-                                    "subTopic": "Link",
-                                    "url": "/front/mui/components#link"
-                                },
-                                { 
-                                    "subTopic": "Checkbox",
-                                    "url": "/front/mui/components#check"
+                                    "subTopic": "A tener en cuenta",
+                                    "url": "/front/mui/components#msg"
                                 },
                                 { 
                                     "subTopic": "Inputs",
                                     "url": "/front/mui/components#inputs"
                                 },
                                 { 
-                                    "subTopic": "Select",
-                                    "url": "/front/mui/components#select"
+                                    "subTopic": "Data Display",
+                                    "url": "/front/mui/components#data_display"
                                 },
                                 { 
-                                    "subTopic": "Radio Group",
-                                    "url": "/front/mui/components#radio"
+                                    "subTopic": "Feedback",
+                                    "url": "/front/mui/components#feedback"
                                 },
                                 { 
-                                    "subTopic": "Text Area",
-                                    "url": "/front/mui/components#txtarea"
+                                    "subTopic": "Surfaces",
+                                    "url": "/front/mui/components#surfaces"
                                 },
                                 { 
-                                    "subTopic": "List",
-                                    "url": "/front/mui/components#list"
+                                    "subTopic": "Navigation",
+                                    "url": "/front/mui/components#navigation"
                                 },
                                 { 
-                                    "subTopic": "Table",
-                                    "url": "/front/mui/components#table"
+                                    "subTopic": "Layout",
+                                    "url": "/front/mui/components#layout"
                                 },
                                 { 
-                                    "subTopic": "Otros componentes",
-                                    "url": "/front/mui/components#others"
+                                    "subTopic": "Utils",
+                                    "url": "/front/mui/components#utils"
                                 },
                             ]
                         },

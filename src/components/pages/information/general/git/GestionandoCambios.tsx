@@ -2,6 +2,7 @@ import Information from "../../Information"
 import data from "../../../../data/data"
 import TopicContainer from "../../../../global/topicContainer/TopicContainer"
 import CodeBox from "../../../../global/code/CodeBox"
+import { Alert, AlertTitle } from "@mui/material"
 
 const GestionandoCambios = () => {
 
@@ -62,7 +63,11 @@ const GestionandoCambios = () => {
                 </TopicContainer>
 
                 <TopicContainer id="revert" topic="Revirtiendo cambios">
-                <p><em>IMPORTANTE:</em> Las acciones que veremos a continuación conllevan un riesgo en la perdida de datos/archivos , por lo que debemos utilizarlos con precaución.</p>
+                <Alert severity="error" variant="outlined">
+                  <AlertTitle>Precaución</AlertTitle>
+                  Las acciones que veremos a continuación conllevan un riesgo en la perdida de datos/archivos , por lo que debemos utilizarlos con suma precaución.
+            </Alert>  
+
                 <p>Sin duda habrá momentos en los que necesitemos dar uno, o varios pasos atras en nuestro código. Podría ser debido a que nos gusto más una versión pasada, o simplemente porque algo no resulto como esperabamos. Veamos como podríamos hacerlo:</p><br/>  
                 <h4>Descartando || Revirtiendo cambios de archivos en nuestro <strong>DIRECTORIO DE TRABAJO</strong> - <em> (NO SUBIDOS AL STAGE) - "ALTO RIESGO"</em></h4> 
                 <small> El riesgo es "alto" ya que (si no es realmente lo que deseamos hacer) en el siguiente ejemplo, podríamos perder nuestros últimos cambios realizados en uno o varios archivos locales. Restableciendo todo nuestro directorio respecto al último commit confirmado.</small>

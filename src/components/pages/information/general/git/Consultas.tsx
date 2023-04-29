@@ -2,6 +2,7 @@ import Information from "../../Information"
 import data from "../../../../data/data"
 import TopicContainer from "../../../../global/topicContainer/TopicContainer"
 import CodeBox from "../../../../global/code/CodeBox"
+import { Alert, AlertTitle } from "@mui/material"
 
 const Consultas = () => {
  
@@ -42,7 +43,10 @@ const Consultas = () => {
 </TopicContainer>
 
 <TopicContainer id="chequeos" topic="git checkout = Chequeando versiones anteriores, y regresando"> 
-<p><em>Importante</em>: Es importante mencionar que, al hacer checkout a un commit anterior, se creará un estado de "detached HEAD", lo que significa que el HEAD ya no apuntará a una rama, sino a un commit específico. Por lo tanto, cualquier cambio que realicemos durante ese estado, no se vera reflejando en ninguna rama, y se perderá si no lo guardamos en una nueva. </p>  
+            <Alert severity="warning" variant="outlined">
+                  <AlertTitle>Advertencia</AlertTitle>
+                  Es importante mencionar que al hacer checkout a un commit anterior, se creará un estado de "detached HEAD", es decir que el HEAD ya no apuntará a una rama, sino a un commit específico. Por lo tanto, cualquier cambio que realicemos durante ese estado, no se vera reflejando en ninguna rama, y se perderá si no lo guardamos.
+            </Alert>
 <CodeBox lang="bash"> 
                     {
 `# Restablece nuestro directorio de trabajo al commit definido.

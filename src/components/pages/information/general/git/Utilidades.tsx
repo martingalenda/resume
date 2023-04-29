@@ -29,21 +29,29 @@ const UtilidadesGIT = () => {
                 <small><em> Anotacion personal: </em>dividir el tema en sub-topic y ampliarlo</small>
             </TopicContainer>
 
+            <br/> 
             <TopicContainer id="token" topic="Token de acceso" ytUrl="https://www.youtube.com/watch?v=mBYSUUnMt9M&t=16836s">
                 <p>Los tokens de acceso proporcionan una forma adicional de autenticación en Git que puede ser más flexible y seguro que las credenciales de inicio de sesión estándar. Aunque no son necesarios para acceder a un repositorio privado, pueden ser útiles en ciertos casos, como para permitir que las aplicaciones interactúen con la API de Git sin comprometer las credenciales de inicio de sesión del usuario:</p>
                 <small><em> Anotacion personal:  </em>dividir el tema en sub-topic y ampliarlo</small>
             </TopicContainer>
 
-            <TopicContainer id="ghpages" topic="GitHub Pages">
-                <p>GitHub Pages es un servicio gratuito de alojamiento web proporcionado por GitHub que permite a los usuarios crear y alojar sitios web estáticos directamente desde sus repositorios de GitHub. Es una herramienta muy útil para desarrolladores, ya que les permite crear una presencia en línea para sus proyectos de código abierto o páginas personales. </p><br/>
+            <br/> 
+            <TopicContainer id="ghpages" topic="GitHub Pages" ytUrl="https://www.youtube.com/watch?v=G2FoSpsq3Rw&ab_channel=FaztCode">
+                <p>GitHub Pages es un servicio gratuito de alojamiento web proporcionado por GitHub. Este permite a los usuarios alojar sitios web estáticos directamente desde sus repositorios de GitHub. Es una herramienta muy útil para desarrolladores, ya que les permite crear una presencia en línea para sus proyectos de código abierto. </p><br/>
                 <h4>Alojando nuestro sitio en GHPAGES:</h4> 
+                <p>Una vez que tengas listo tu sitio, sigue estos pasos:</p> 
                 <ol>
-                    <li>A</li> 
-                    <li>B</li> 
-                    <li>C</li> 
+                    <li>Instala la siguiente dependencia en tu repositorio: npm install gh-pages --save-dev</li> 
+                    <li>Para continuar con el siguiente paso, asumo que ya tienes tu repositorio remoto creado, y actualizado en GitHub.</li> 
+                    <li>Crea una nuevama rama con el nombre " gh-pages ", y subela a tu repo remoto.</li> 
+                    <li>Dirigite a la configuración de tu remositorio remoto, y busca la sección "Pages" para confirmar que gh-pages esta vinculada a la rama.</li> 
+                    <li>(Opcional) = Puedes añadir a tus scripts de Package.json la línea: " </li> 
+                    <p>Si utilizas react-router deberás tambien:</p> 
+                    <li>Coloca la prop " basename="/repoName" "" en el componente Routes (quien engloba a todas las rutas)</li> 
                 </ol> 
             </TopicContainer>
 
+            <br/> 
             <TopicContainer id="links" topic="Utilidades">
                 <>
                     <h4>GitHub = <a href="https://github.com/" target="_blank">Link</a></h4> <br/> 

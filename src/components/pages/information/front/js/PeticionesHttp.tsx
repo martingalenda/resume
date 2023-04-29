@@ -2,6 +2,7 @@ import Information from "../../Information"
 import data from "../../../../data/data"
 import TopicContainer from "../../../../global/topicContainer/TopicContainer"
 import CodeBox from "../../../../global/code/CodeBox"
+import { Alert, AlertTitle } from "@mui/material"
 
 const PeticionesHttp = () => {
 
@@ -32,13 +33,18 @@ const PeticionesHttp = () => {
                 <li><strong>PATCH/PUT</strong>: Nos permite aplicar modificaciones/actualizaciones (Equivale a la CRUD Operation UPDATE de SQL).</li>
                 <li><strong>DELETE</strong>: Nos permite eliminar un recurso o dato (Equivale a la CRUD Operation DELETE de SQL).</li>
             </ul>  
-            
-            <hr/>
-            <em>Para testeo se requiere de un servidor (xamp/htdocs)</em><br/><br/>
+            <br/>
+            <br/>
+            <Alert severity="info">
+                  <AlertTitle>Información</AlertTitle>
+                  Para testeo se requiere de un servidor (xamp/htdocs)
+            </Alert>
+            <br/>
             <span> Api de prueba utilizada en los ejemplos: <a href="https://jsonplaceholder.typicode.com/" target="_blank">https://jsonplaceholder.typicode.com/</a></span><br/>
             <span> Link de Json Server: <a href="https://github.com/typicode/json-server" target="_blank">https://github.com/typicode/json-server</a></span><br/>
             <span> Para ejecutar json server desde la consola: json-server -w -p (puerto) ./ruta/archivo.json  (json-server -w -p 5000 ./db.json) </span><br/>
             </TopicContainer>
+            <br/>
             <TopicContainer id="http_request" topic="Objeto XMLHttpRequest (Anticuado)" ytUrl="https://www.youtube.com/watch?v=6CQrK1sS7WA&list=PLvq-jIkSeTUZ6QgYYO3MwG9EMqC-KoLXA&index=107&pp=iAQB">
             <p>Propiedades del objeto XMLHttpRequest:</p>
             <ul>
