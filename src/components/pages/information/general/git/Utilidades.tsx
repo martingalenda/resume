@@ -44,20 +44,23 @@ const UtilidadesGIT = () => {
                     <li>Instala la siguiente dependencia en tu repositorio: npm install gh-pages --save-dev</li> 
                     <small>Para continuar con el siguiente paso, asumo que ya tienes tu repositorio remoto creado, y actualizado en GitHub.</small> 
                     <li>Crea una nuevama rama con el nombre " gh-pages ", y subela al repositorio remoto.</li> 
+                    <li>Posicionate sobre la rama gh-pages.</li> 
                     <li>Añade a tus scripts de Package.json la línea: "deploy": "gh-pages -d dist" </li> 
-                    <small>Esto hara que puedas publicar con un solo comando los cambios de tu web. (dist) corresponde al directo a subir, como utilizamos React, dist es la carpeta que necesitamos publicar.</small> 
+                    <small>Esto hara que puedas publicar con un solo comando los cambios de tu web. (dist) corresponde al directo a subir, como utilizamos React & Vite, dist es la carpeta que necesitamos.</small> 
                     <br/> 
                     <p>Si utilizas react-router & vite deberás tambien:</p> 
                     <ol>
                         <li>Posicionarte en la rama gh-pages</li> 
-                        <li>Añadir la linea "homepage": "http://martingalenda.github.io/mui" , a tu archivo package.json</li> 
-                        <li>Colocar la prop " basename="/repoName" "" en el componente Routes (quien engloba a todas las rutas)</li> 
+                        <li>Añadir la linea "homepage": "http://martingalenda.github.io/repoName" , a tu archivo package.json</li> 
+                        <li>Colocar la prop " basename="/repoName" " en el componente Routes (quien engloba a todas las rutas)</li> 
+                        <li>Colocar la linea  " base: '/repoName/' ", en el archivo vite.config.js</li> 
+                        <small>Reemplaza repoName por el nombre de tu repositorio</small> 
                     </ol>
                 </ol> 
             </TopicContainer>
 
             <br/> 
-            <TopicContainer id="links" topic="Utilidades">
+            <TopicContainer id="links" topic="Aplicaciones útiles">
                 <>
                     <h4>GitHub = <a href="https://github.com/" target="_blank">Link</a></h4> <br/> 
                     <h4>GitHub Desktop = <a href="https://desktop.github.com/" target="_blank">Link</a></h4> <br/>
