@@ -54,6 +54,14 @@
   import DefinicionesJS from './components/pages/information/front/js/Definiciones';
   import UtilidadesJS from './components/pages/information/front/js/Utilidades';
   
+  import IntroduccionTS from './components/pages/information/front/ts/Introduccion';
+  import TipadoEstatico from './components/pages/information/front/ts/TipadoEstatico';
+  import TiposPrimitivos from './components/pages/information/front/ts/TiposPrimitivos';
+  import UIL from './components/pages/information/front/ts/UIL';
+  import TiposArrays from './components/pages/information/front/ts/TiposArrays';
+  import Interfaces from './components/pages/information/front/ts/Interfaces';
+  import TSX from './components/pages/information/front/ts/TSX';
+  
   import IntroduccionReact from './components/pages/information/front/react/Introduccion';
   import Componentes from './components/pages/information/front/react/Componentes';
   import PropiedadesReact from './components/pages/information/front/react/Propiedades';
@@ -75,7 +83,9 @@
   import IntroduccionMUI from './components/pages/information/front/mui/Introduccion';
   import MUIComponents from './components/pages/information/front/mui/MUIComponents';
   import CustomStyles from './components/pages/information/front/mui/CustomStyles';
-
+  
+  import ConceptosFront from './components/pages/information/front/conceptos/ConceptosFront';
+  
   import BBDD from './components/pages/information/back/sql/BBDD';
   import IntroduccionSQL from './components/pages/information/back/sql/Introduccion';
   import DDL from './components/pages/information/back/sql/DDL';
@@ -171,6 +181,14 @@ function App() {
           <Route path="/front/js/reg_exp" element={<ExpresionesRegulares/>}/>
           <Route path="/front/js/definitions" element={<DefinicionesJS/>}/>
           <Route path="/front/js/utilidades" element={<UtilidadesJS/>}/>
+        {/* TS */}
+          <Route path="/front/ts/introduccion" element={<IntroduccionTS/>}/>
+          <Route path="/front/ts/tipado_estatico" element={<TipadoEstatico/>}/>
+          <Route path="/front/ts/primitivos" element={<TiposPrimitivos/>}/>
+          <Route path="/front/ts/uil" element={<UIL/>}/>
+          <Route path="/front/ts/arrays" element={<TiposArrays/>}/>
+          <Route path="/front/ts/interfaces" element={<Interfaces/>}/>
+          <Route path="/front/ts/tsx" element={<TSX/>}/>
         {/* REACT */}
           <Route path="/front/react/introduccion" element={<IntroduccionReact/>}/>
           <Route path="/front/react/componentes" element={<Componentes/>}/>
@@ -194,6 +212,7 @@ function App() {
           <Route path="/front/mui/components" element={<MUIComponents/>}/>
           <Route path="/front/mui/styles" element={<CustomStyles/>}/>
         {/* CONCEPTOS FRONT */}
+          <Route path="/front/conceptos/generales" element={<ConceptosFront/>}/>
         {/* SQL */}
           <Route path="/back/sql/bbdd" element={<BBDD/>}/>
           <Route path="/back/sql/introduccion" element={<IntroduccionSQL/>}/>

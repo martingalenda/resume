@@ -12,14 +12,15 @@ const JSON = () => {
                 <CodeBox lang="js"> 
                     {
 `// json serializado: Cuando el valor corresponde a un string.
-const serializado = '{ "1": "Pedro", "2": "Jorge" }'
-const desSerializando = JSON.parse(serializado) // Des-serializa el json
+const json2 = '{ "1": "Pedro", "2": "Jorge" }'
+const serializado = JSON.parse(json2) // Des-serializa el json
 
 // json des-serializado: Cuando el valor corresponde a un objeto.
-const desSerializado = { "1": "Pedro", "2": "Jorge" }
-const serializando = JSON.stringify(desSerializado) // Serializa el json
+const json = { "1": "Pedro", "2": "Jorge" }
+const desSerializado = JSON.stringify(json) // Serializa el json
 
-console.log(typeof serializando)`
+console.log(typeof serializado)
+console.log(typeof desSerializado)`
                     }
                 </CodeBox>
                 <span>Las key de las propiedades en JSON deben ir entre ( " " )</span> 

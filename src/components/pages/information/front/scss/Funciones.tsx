@@ -41,9 +41,9 @@ const FuncionesScss = () => {
                 {
 `* {
     @debug $variable;
-    /* Devuelve el dato */
-    @debug typee-of($variable);
-    /* Devuelve el tipo de dato */
+    /* Devuelve el valor de la variable */
+    @debug type-of($variable);
+    /* Devuelve el tipo de dato (number, string, color, list, map) */
 }`
                 }
                 </CodeBox>

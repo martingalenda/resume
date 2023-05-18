@@ -9,7 +9,7 @@ const Animations = () => {
 
             <TopicContainer topic="Animations" ytUrl="https://youtu.be/OWKXEJN67FE?t=30211">
                 <p>
-                A veces no es necesario utilizar JS para hacer animaciones, y solo basta con unas lineas css. Veamos esta propiedad:
+                A veces no es necesario utilizar JS para hacer animaciones, y solo basta con unas lineas css. Veamos que podemos hacer con esta propiedad:
                 </p>
 
                 <CodeBox lang="css"> 
@@ -38,7 +38,6 @@ const Animations = () => {
 
 *:hover {
     animation-play-state: paused
-    /* Refiere a que al pausar el mouse, la animación se dentendrá */
 }`
                 }
                 </CodeBox>
@@ -48,12 +47,17 @@ const Animations = () => {
                     <li><strong>animation-direction </strong>= Cambia el sentido/dirección de la animación.</li>
                     <li><strong>animation-time-function </strong>= {`Funciona igual que en transition (define la curva de aceleración de la animación)`}</li>
                     <ul> 
-                        <li>ease-in | ease-in-out | linear </li>
+                        <li>ease | ease-in | ease-out | ease-in-out | linear | cubic-bezier(n,n,n,n) </li>
                     </ul>
                     <li><strong>animation-fill-mode </strong>= Define las propiedades y valores con los que quedará el elemento al finalizar la animación.</li>
                     <ul> 
                         <li>forward: Conserva las propiedades/valores finales del elemento después de la animación.</li>
                         <li>backward: {`(Para funcionar la animacion debe poseer un delay, lo que hace es mostrar antes de ese tiempo las propiedades valores iniciales del elemento 0%)`}</li>
+                    </ul>
+                    <li><strong>animation-play-state </strong>= Define el estado de la animación.</li>
+                    <ul> 
+                        <li>paused: La animación se detiene.</li>
+                        <li>running: Se ejecuta la animación</li>
                     </ul>
                 </ul>
             </TopicContainer>

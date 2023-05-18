@@ -300,7 +300,7 @@ const data = {
                     "tutorial": "https://www.youtube.com/watch?v=2SetvwBV-SU&list=PLvq-jIkSeTUZ6QgYYO3MwG9EMqC-KoLXA",
                     "array": [
                         {
-                            "topic": "Introducción a JS",
+                            "topic": "Introduccion a JS",
                             "url": "/front/js/introduccion",
                             "subTopic": [
                             ]
@@ -591,7 +591,7 @@ const data = {
                             ]
                         },
                         {
-                            "topic": "Mecanismos asíncronos",
+                            "topic": "Mecanismos asincronos",
                             "url": "/front/js/asincronia",
                             "subTopic": [
                                 { 
@@ -625,7 +625,7 @@ const data = {
                             "url": "/front/js/peticiones",
                             "subTopic": [
                                 { 
-                                    "subTopic": "Ajax - Introducción",
+                                    "subTopic": "Ajax - Introduccion",
                                     "url": "/front/js/peticiones#ajax"
                                 },
                                 { 
@@ -755,10 +755,72 @@ const data = {
                 {
                     "name": "TS",
                     "ref": "ts",
-                    "doc": "https://www.typescriptlang.org/docs/",
+                    "doc": "https://learn.microsoft.com/es-es/training/paths/build-javascript-applications-typescript/",
                     "tutorial": "https://www.youtube.com/watch?v=rsV0zmpfKrY",
                     "array": [
-                        {}
+                        {
+                            "topic": "Introduccion a TS",
+                            "url": "/front/ts/introduccion",
+                            "subTopic": [
+                            ]
+                        },
+                        {
+                            "topic": "Tipado estatico",
+                            "url": "/front/ts/tipado_estatico",
+                            "subTopic": [
+                                { 
+                                    "subTopic": "Tipado estatico",
+                                    "url": "/front/ts/tipado_estatico#estatico"
+                                },
+                                { 
+                                    "subTopic": "Inferencia de tipo implicita",
+                                    "url": "/front/ts/tipado_estatico#implicito"
+                                },
+                                { 
+                                    "subTopic": "Tipado explicito",
+                                    "url": "/front/ts/tipado_estatico#explicito"
+                                },
+                            ]
+                        },
+                        {
+                            "topic": "Tipos primitivos",
+                            "url": "/front/ts/primitivos",
+                            "subTopic": [
+                            ]
+                        },
+                        {
+                            "topic": "Union, Interseccion & Literales",
+                            "url": "/front/ts/uil",
+                            "subTopic": [
+                                { 
+                                    "subTopic": "Tipos de union",
+                                    "url": "/front/ts/uil#union"
+                                },
+                                { 
+                                    "subTopic": "Tipos de intersección",
+                                    "url": "/front/ts/uil#interseccion"
+                                },
+                            ]
+                        },
+                        {
+                            "topic": "Tipos de coleccion",
+                            "url": "/front/ts/arrays",
+                            "subTopic": [
+                            ]
+                        },
+                        {
+                            "topic": "Interfaces",
+                            "url": "/front/ts/interfaces",
+                            "subTopic": [
+                            ]
+                        },
+                        {
+                            "topic": "TSX",
+                            "url": "/front/ts/tsx",
+                            "subTopic": [
+ 
+                            ]
+                        },
                     ]
                 },
                 {
@@ -793,6 +855,10 @@ const data = {
                             "topic": "Componentes",
                             "url": "/front/react/componentes",
                             "subTopic": [
+                                { 
+                                    "subTopic": "Componentes",
+                                    "url": "/front/react/componentes#intro"
+                                },
                                 { 
                                     "subTopic": "Componentes de tipo hook",
                                     "url": "/front/react/componentes#hook"
@@ -883,7 +949,18 @@ const data = {
                             "topic": "Eventos",
                             "url": "/front/react/events",
                             "subTopic": [
-
+                                { 
+                                    "subTopic": "Eventos",
+                                    "url": "/front/react/events#intro"
+                                },
+                                { 
+                                    "subTopic": "En componentes hook",
+                                    "url": "/front/react/events#hooks"
+                                },
+                                { 
+                                    "subTopic": "En componentes de clase",
+                                    "url": "/front/react/events#class"
+                                },
                             ]
                         },
                         {
@@ -915,11 +992,11 @@ const data = {
                             "url": "/front/react/forms",
                             "subTopic": [
                                 { 
-                                    "subTopic": "Formularios nativos",
+                                    "subTopic": "Formulario nativo (controlado)",
                                     "url": "/front/react/forms#nativos"
                                 },
                                 { 
-                                    "subTopic": "Libreria: React-Forms",
+                                    "subTopic": "Libreria: React Hook Forms",
                                     "url": "/front/react/forms#react_forms"
                                 },
                             ]
@@ -1125,6 +1202,15 @@ const data = {
                             "topic": "Conceptos Generales",
                             "url": "/front/conceptos/generales",
                             "subTopic": [
+                                { 
+                                    "subTopic": "Sentencias declarativas/imperativas",
+                                    "url": "/front/conceptos/generales#sentencias"
+                                },
+                                { 
+                                    "subTopic": "API",
+                                    "url": "/front/conceptos/generales#api"
+                                },
+
                             ]
                         },
                     ]

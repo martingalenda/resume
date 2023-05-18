@@ -42,7 +42,7 @@ do {
         break; // fuerza a salir del bucle cuando x sea 10
     }
 }
-while (x < y); // El buqle prosigue hasta que esto no sea verdadero, o se cumpla un break anterior a ello.`
+while (x < y); // El bucle prosigue hasta que esto no sea verdadero, o se cumpla un break anterior a ello.`
                     }
                 </CodeBox>
             </TopicContainer>

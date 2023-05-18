@@ -51,7 +51,7 @@ let res = null
 {
     (y > x) ? res = "Verdadero" : res = "False" 
 } 
- 
+
 console.log(res)`
 }
 </CodeBox>
@@ -65,8 +65,7 @@ patas == 4 && nombre == "Negrito" ? console.log("Perro autorizado") : console.lo
 }
 </CodeBox>
             </TopicContainer>
-            <TopicContainer id="switch" topic="Condicional - Switch" ytUrl="https://youtu.be/9h5hyh_wDjo?list=PLvq-jIkSeTUZ6QgYYO3MwG9EMqC-KoLXA&t=1562">
-                <p></p> 
+            <TopicContainer id="switch" topic="Condicional - Switch" ytUrl="https://youtu.be/9h5hyh_wDjo?list=PLvq-jIkSeTUZ6QgYYO3MwG9EMqC-KoLXA&t=1562"> 
                 <CodeBox lang="javascript"> 
                     {
 `let opcion = 1

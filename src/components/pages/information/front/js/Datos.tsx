@@ -2,6 +2,7 @@ import Information from "../../Information"
 import data from "../../../../data/data"
 import TopicContainer from "../../../../global/topicContainer/TopicContainer"
 import CodeBox from "../../../../global/code/CodeBox"
+import Alert from "@mui/material/Alert"
 
 const DatosJS = () => {
  
@@ -13,21 +14,24 @@ const DatosJS = () => {
                     {
 `var estado = "Soy un string";
 // Scope global fuera de cualquier función, o scope global de función si se encuentra dentro de una. 
-// Se puede declarar e inicializar su valor infinidad de veces.
+// Se puede redeclarar infinidad de veces, como también reasignar su valor.
 
 let estado = "Soy un string"; 
-// Scope global fuera de cualquier funciòn, o scope de bloque/regional dentro de una (No se puede declarar más de una vez sobre el mismo bloque).
-// Se puede cambiar su valor, sin importar el tipo de dato que sea.
+estado = "Otro string"
+// Scope global fuera de cualquier funciòn, o scope de bloque/regional dentro de una 
+// (No se puede declarar más de una vez sobre el mismo bloque/contexto).
+// Se declara solo una vez. Se puede reasignar su valor, sin importar el tipo de dato que sea.
 
 const pi = 3.14;
-// Scope global fuera de cualquier funciòn, o scope de bloque/regional dentro de una (No se puede declarar más de una vez sobre el mismo bloque).
-// NO se puede cambiar su valor si son datos primitivos, en cambio SI se puede con datos compuestos (arrays, objetos, y funciones)
+// Scope global fuera de cualquier funciòn, o scope de bloque/regional dentro de una 
+// (No se puede declarar más de una vez sobre el mismo bloque/contexto).
+// Se declara solo una vez. NO se puede reasignar su valor. Sin embargo, en el caso de los datos compuestos (como arrays u objetos) se puede modificar las propiedades, o elementos invidiuales del dato compuesto en cuestión.
 
 estado = true
 // Si no existe la variable, "se declara como var (?", de lo contrario, se utiliza para cambiar su valor.`
                     }
                 </CodeBox>
-                <small>Se debe evitar utilizar las variables (var), para evitar conflictos entre variables.</small> 
+                <Alert variant="outlined" severity="warning">Se debe evitar utilizar las variables de tipo (var), para evitar conflictos entre variables.</Alert> 
             </TopicContainer>
             <TopicContainer id="primitivos" topic="Datos Primitivos" ytUrl="https://www.youtube.com/watch?v=cC65D2q5f8I">
                 <CodeBox lang="javascript"> 
@@ -35,14 +39,16 @@ estado = true
 `String = "valor" // El valor también puede ser escrito con comillas simples (''), o backstips (\`\`).
 Number = 9999
 Boolean = true // true or false
-undefined // Indefinido
-null // Inicializada, pero vacia
+undefined // Indefinido (ausente)
+null // Inicializada, pero vacia (anulada)
 
-// "Not a Number" NO es un tipo de dato, sino un valor que surge cuando al operar con un valor que NO es numérico.
+// "Not a Number" NO es un tipo de dato, sino un valor que surge al operar con un valor que NO es numérico.
 NaN`
                     }
                 </CodeBox>
+                <Alert variant="outlined" severity="info">El tipo de dato de una variable se determina en tiempo de ejecución. El motor de JS realiza una conversión implicita de tipos para poder concretar una operación.</Alert> 
             </TopicContainer>
+
             <TopicContainer id="transf_primitivos" topic="Transformando datos primitivos">
             <h4>Transformo un dato entero a string:</h4> 
                 <CodeBox lang="javascript"> 
@@ -75,7 +81,7 @@ NaN`
     {
 `const numero = 0    
 const boolean = Boolean(numero)    
-console.log(typeof boolean, boolean)`
+console.log(typeof boolean, boolean) // boolean false`
                     }
                 </CodeBox>
             </TopicContainer>
@@ -128,8 +134,8 @@ console.log(pc); // Devuelve el array completo
 console.log(pc[0]); // Devuelve el primer objeto del array
 console.log(pc.at(-1)); // Devuelve el último valor del array con el metodo at
 console.log(pc[0].procesador); // Devuelve el valor del procesador del primer objeto
-console.log(Object.keys(pc[0])); // Devuelve un nuevo array, cada elemento será una key/prop del objeto
-console.log(Object.values(pc[0])); // Devuelve un nuevo array, cada elemento será un valor del objeto`
+console.log(Object.keys(pc[0])); // Devuelve un nuevo array, cada elemento representa una propiedad del objeto
+console.log(Object.values(pc[0])); // Devuelve un nuevo array, cada elemento representa un valor del objeto`
                     }
                 </CodeBox>
                 <h4>EJ2: Modificaciones y consultas a un objeto literal</h4> 
@@ -140,7 +146,7 @@ console.log(Object.values(pc[0])); // Devuelve un nuevo array, cada elemento ser
     adultos: ["gustavo", "santiago", "fabian"],
     chicos: ["benja", "lio", "agus"],
     adoslescentes: ["lucas", "fede", "juan"],
-    viejos: ["roberto", "pancracio", "manolo"],
+    ancianos: ["roberto", "pancracio", "manolo"],
     profesiones: { // "Sub-objeto" anidado
         primaria: "programadores",
         secundaria: "contadores"
@@ -148,12 +154,12 @@ console.log(Object.values(pc[0])); // Devuelve un nuevo array, cada elemento ser
 };
 
 // MODIFICACIONES:
-    familia.viejos = ["chuli", "chulon", "chuleta"]; // Cambio los valores la propiedad viejos
+    familia.ancianos = ["chuli", "chulon", "chuleta"]; // Reemplaza los valores de la propiedad ancianos
     delete familia.adoslescentes; // Borro el item adolescentes completo
 
 // CONSULTAS:
     console.log(familia); // Muestra el array completo
-    console.log(familia.viejos); // Muestras los valor de la propiedad viejos
+    console.log(familia.ancianos); // Muestras los valor de la propiedad ancianos
     console.log(familia.chicos[1]); // Muestra el chico ubicado en la segunda posición del array
     console.log(familia.profesiones.primaria) // acceso a la propiedad primaria del "sub-objeto" profesiones.
 
@@ -197,6 +203,7 @@ person.name = 'Will' // TypeError: Cannot assign to read-only property of 'name'
 console.log(person)`
                     }
                 </CodeBox>
+                <Alert variant="outlined" severity="info">Además de los Arrays y los objetos, también existen otros tipos de datos complejos, como ser: las funciones, las clases, etc. Lo veremos en tópicos siguientes</Alert> 
             </TopicContainer>
             <TopicContainer id="chequeo" topic="Chequeo de datos">
                 <p></p> 

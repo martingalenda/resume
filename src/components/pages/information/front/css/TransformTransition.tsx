@@ -19,6 +19,10 @@ const TransformTransition = () => {
     transition-duration: 3s, 1s, 1s; | Obligatorio
     transition-delay: 3s;
     transition-timing-function: linear;
+}
+
+* {
+    transition: width 0.3s ease-in-out, color 0.2s linear;
 }`
                 }
                 </CodeBox>
@@ -30,6 +34,7 @@ const TransformTransition = () => {
                     <ul>
                         <li>. linear . ease . ease-in . ease-out . ease-in-out </li>
                     </ul>
+                    <li><strong>transition </strong>= Resume property, duration, y timing function en una sola </li>
                 </ul> 
             </TopicContainer>
             <TopicContainer id="transform" topic="Transform" ytUrl="https://youtu.be/OWKXEJN67FE?t=31343">
@@ -49,8 +54,10 @@ const TransformTransition = () => {
                 </CodeBox>
                 <ul>
                     <li><strong>transform</strong> = Propiedad que menos recursos consume, sirve para transformar elementos.</li> 
-                    <li><strong>{`translate(x, y)`}</strong> = translada al elemento sobre sus ejes</li>
-                    <li><strong>{`scale(x)`}</strong> = escala el tamaño del elemento</li>
+                    <ul>
+                        <li><strong>{`translate(x, y)`}</strong> = translada al elemento sobre sus ejes</li>
+                        <li><strong>{`scale(x)`}</strong> = escala el tamaño del elemento</li>
+                    </ul>
                     <li><strong>clip-path</strong> = Creamos formas vectoriales con css - Generador: <a href="https://bennettfeely.com/clippy/">Click aquí</a></li>
                 </ul>
             </TopicContainer>

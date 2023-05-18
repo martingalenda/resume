@@ -10,7 +10,7 @@ const IntroduccionScss = () => {
 
             <TopicContainer id="scss" topic="SCSS - Introducción">
                 <p>
-                Scss es un preprocesador de CSS que permite utilizar variables, anidamiento, y otras características avanzadas para hacer más eficiente y organizado el proceso de escritura de estilos para la web. Here we go!
+                Scss es un preprocesador de CSS que permite utilizar variables, anidamiento, y otras características avanzadas para hacer más eficiente la gestión de estilos. Here we go!
                 </p>
             </TopicContainer>
             <TopicContainer id="nesting" topic="Nesting (Anidamiento)" ytUrl="https://www.youtube.com/watch?v=pLU-0Ywcd2k&list=PLy7TtEmBFusKPlehbCaSyIl8OA2lf4Krh&index=3">
@@ -78,7 +78,7 @@ const IntroduccionScss = () => {
             </TopicContainer>
             <TopicContainer id="selector_placeholder" topic="Selector Placeholder ( % - @extend ) " ytUrl="https://www.youtube.com/watch?v=iwXavLqGTKo&list=PLy7TtEmBFusKPlehbCaSyIl8OA2lf4Krh&index=5">
                 <p>
-                El selector placeholder (%) es una característica que permite definir un bloque de estilos para reutilizarlos en otros selectores utilizando la directiva @extend
+                El selector placeholder (%) es una característica que permite definir un bloque de estilos para reutilizarlos en otros selectores utilizando la sentencia @extend
                 </p>
                 <CodeBox lang="scss"> 
                 {

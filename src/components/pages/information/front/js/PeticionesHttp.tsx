@@ -26,12 +26,15 @@ const PeticionesHttp = () => {
             </ul>  <br/>
 
             <h4>VERBOS/METODOS/OPERACIONES PRINCIPALES/BÁSICAS DE LAS PETICIONES TIPO: (REST).</h4>
-            <p>Las <strong>peticiones tipo REST</strong> (Representational State Transfer) son un conjunto de operaciones básicas que se utilizan para interactuar con los recursos de un sistema. Estas operaciones son:</p>
+            <p>Las <strong>peticiones tipo REST</strong> (Representational State Transfer) son un conjunto de métodos estandarizados que se utilizan para interactuar con los recursos de un sistema. Estas operaciones son:</p>
             <ul>
                 <li><strong>GET</strong>: Nos permite obtener un recurso o dato (Equivale a la CRUD Operation SELECT de SQL).</li>
                 <li><strong>POST</strong>: Nos permite enviar datos (Equivale a la CRUD Operation INSERT de SQL).</li>
-                <li><strong>PATCH/PUT</strong>: Nos permite aplicar modificaciones/actualizaciones (Equivale a la CRUD Operation UPDATE de SQL).</li>
+                <li><strong>PUT</strong>: Nos permite aplicar actualizaciones sobre un recurso (Equivale a la CRUD Operation UPDATE de SQL).</li>
                 <li><strong>DELETE</strong>: Nos permite eliminar un recurso o dato (Equivale a la CRUD Operation DELETE de SQL).</li>
+                <li><strong>OPTIONS</strong>: .</li>
+                <li><strong>HEADER</strong>: Nos permite consultar la existencia de un recurso.</li>
+                <li><strong>PATCH</strong>: Nos permite aplicar actualizaciones de forma parcial.</li>
             </ul>  
             <br/>
             <br/>
@@ -61,9 +64,15 @@ const PeticionesHttp = () => {
                 <li><strong>status</strong>: Valores posibles de estados: <a href="https://jsonplaceholder.typicode.com/" target="_blank">https://developer.mozilla.org/es/docs/Web/HTTP/Status</a>
                 </li>
                 <ul>
-                    <li>200/202- Estado correcto.</li>
-                    <li>404- No se encontro el archivo.</li>
-                    <li>403- No se tiene acceso al recurso.</li>
+                    <li>100 a 199 - Informativos.</li>
+                    <li>200 a 299 - Estado correcto.</li>
+                    <li>300 a 399 - Redirección.</li>
+                    <li>400 a 499 - Errores del cliente.</li>
+                    <ul>
+                        <li>404- No se encontro el archivo.</li>
+                        <li>403- No se tiene acceso al recurso.</li>
+                    </ul>
+                    <li>500 a 499 - Errores del servidor.</li>
                 </ul> 
             </ul>  <br/>
             

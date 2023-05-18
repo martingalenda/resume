@@ -39,8 +39,7 @@ x - x // resta
 x / x // división
 x * x // multiplicación
 x % x // mod/resto
-x ** x // potenciación
-x-- // le resto 1 a la variable x`
+x ** x // potenciación`
                     }
                 </CodeBox>
                 <h4>Comparación </h4> 
@@ -83,7 +82,7 @@ function saludar (nombre) {
 saludar("Martín")
 saludar()
 
-____________________________________________________________
+// ____________________________________________________________
 
 console.log(true || "Cortocircuito OR") // Devuelve True
 console.log(false || "Cortocircuito OR") // Devuelve Cortocircuito OR

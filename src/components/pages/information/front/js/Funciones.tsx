@@ -11,7 +11,7 @@ const FuncionesJS = () => {
             <TopicContainer id="declarada" topic="Función declarada" ytUrl="https://youtu.be/H6U1Pm7x60E?list=PLvq-jIkSeTUZ6QgYYO3MwG9EMqC-KoLXA&t=208">
                 <ul>
                     <li>Una función es "declarada" cuando la sentencia empieza con la palabra reservada function, seguido obligatoriamente de un nombre identificador, el cual será utilizado a posterior para invocarla. Utiles para definir funciones que se utilizarán varias veces en el programa. </li>
-                    <li>Poseen scope de funciòn. Es decir, las variables definidas dentro de ellas, solo son visibles dentro de la función. </li>
+                    <li>Poseen scope de función. Es decir, las variables definidas dentro de ellas, solo son visibles dentro de la función. </li>
                     <li>El valor de this dentro de una función declarada se establece en tiempo de ejecución, en función de cómo se invoca la función. </li>
                 </ul> 
                 <h4>EJ1: Sin return</h4> 
@@ -87,9 +87,10 @@ test("Juancito", 20)`
                 </CodeBox>
             </TopicContainer>
             <TopicContainer id="constructora" topic="Función constructora" ytUrl="https://youtu.be/nS5FmAx4u_0?list=PLvq-jIkSeTUZ6QgYYO3MwG9EMqC-KoLXA&t=951">
+                <li>Las funciones constructoras se utilizan para crear objetos. Actúan como un molde o plantilla para la creación de múltiples de estos, con propiedades y métodos similares. Existen desde los inicios de JS. A posterior en (ES6) se incorporaron las clases al lenguaje, que cumplen el mismo objetivo, pero cuentan con una sintaxis más clara, y con características adicionales, por ejemplo, proporcionan soporte para trabajar la herencia de los objetos mediante el método super(), mientras que para trabajar la herencia con funciones constructoras, deberíamos de trabajar con los prototipos, algo no tan utilizado en códigos modernos. </li>
                 <ul>
                     <li>Las funciones constructoras deben iniciar en Mayuscula siempre (UpperCamelCase) como buena practica </li>
-                    <li>Al contrario de los objetos literales, aquí las propiedades (las keys) deben ir con la palabra reservada this por delante</li>
+                    <li>Al contrario de los objetos literales, aquí las propiedades (las keys), y métodos deben ir con la palabra reservada this por delante</li>
                     <li>Y en lugar de " : " utilizamos el signo " = " de asignación para declarar los valores.</li>
                 </ul>  
                 <CodeBox lang="javascript"> 
@@ -138,9 +139,14 @@ persona.readName("Parametro") // Ejecutamos el método/función readName del obj
                 </CodeBox>
             </TopicContainer>
             <TopicContainer id="generadora" topic="Función generadora" ytUrl="https://youtu.be/oO-D4PsaI1A?list=PLvq-jIkSeTUZ6QgYYO3MwG9EMqC-KoLXA&t=66">
+
+                <p>
+                Las funciones generadoras son funciones especiales que permiten la creación de iteradores personalizados. A diferencia de las funciones regulares, las funciones generadoras pueden pausar y reanudar su ejecución en múltiples puntos a lo largo del tiempo, lo que las hace especialmente útiles para trabajar con secuencias de datos o tareas que se pueden dividir en partes más pequeñas.
+                </p>
                 <ul>
                     <li>Todas las funciones generadoras poseen un ( * ) despues de la palabra reservada function.  </li>
                     <li>Estas gozan la posibilidad de ejecutarse hasta cierto lugar de la propia función (determinados por yields), regresar un valor (opcional por cada yield) y detenerse hasta recibir la instrucción del método iterativo (next), quien retoma la función hasta encontrar el siguiente yield</li>
+                    <li>En resumen, son útiles cuando se requiere generar secuencias de datos bajo demanda, iterar sobre estructuras de datos complejas, trabajar con operaciones asincrónicas, o generar secuencias infinitas.</li>
                 </ul> 
                 <CodeBox lang="javascript"> 
                     {

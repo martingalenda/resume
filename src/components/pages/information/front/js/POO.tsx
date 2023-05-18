@@ -10,7 +10,7 @@ const POOJS = () => {
 
             <TopicContainer id="requerimientos" topic="Requerimientos de los lenguajes POO">
                 <small><strong style={{textTransform: 'uppercase'}}>POO</strong>: Paradigma de programación enfocado en resolver problemas mediante objetos en lugar de funciones.</small><br/><br/>
-                <span>El objetivo principal de este paradigma es proveer/garantizar: modularidad y reusabilidad de código.</span><br/>
+                <span>El objetivo principal de este paradigma es proveer/garantizar modularidad y reusabilidad de código.</span><br/>
                 <span>Para que un lenguaje (POO) pueda cumplir con estos objetivos, debe cumplir con ciertos requisitos:</span><br/>
                 <ul>
                     <li><strong>Modularidad</strong>: Capacidad de modelar problemas a travez de objetos.</li>
@@ -21,9 +21,10 @@ const POOJS = () => {
                     </ul> 
                     <li><strong>Principios</strong> dedicados a la orientación de objetos, para proveer modularidad y reusabilidad de código</li>
                     <ul>
-                        <li><strong>Encapsulamiento</strong>: Capacidad de concentrar los datos y la funcionalidad bajo una sola entidad, ocultando detalles internos, y por ende, simplificando su uso.</li>
+                        <li><strong>Encapsulamiento</strong>: Establece que los datos (propiedades) y las operaciones (métodos) relacionados deben estar agrupados y ocultos dentro de un objeto.</li>
                         <li><strong>Polimorfismo</strong>: Capacidad que poseen los objetos para comportarse distinto bajo un mismo metodo (debido a sus propiedades).</li>
-                        <li><strong>Herencia (extend & super)</strong>: Capacidad de que los objetos (clases) hereden propiedades y metodos de otros objetos (clases) "padres"`</li>
+                        <li><strong>Herencia (extend & super)</strong>: Capacidad jerarquica de los objetos (clases) para heredar propiedades y metodos de otros objetos (clases) "padres"`</li>
+                        <li><strong>Abstracción</strong>: Es el proceso de identificar las características esenciales de un objeto y modelar solo lo necesario para su representación. Permite simplificar y enfocarse en los aspectos relevantes de un objeto, ignorando los detalles innecesarios.</li>
                     </ul> 
                 </ul> 
             </TopicContainer>
