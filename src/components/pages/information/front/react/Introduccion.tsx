@@ -14,7 +14,7 @@ const IntoduccionReact = () => {
                 <p>React es una biblioteca de JavaScript de código abierto, fue diseñada para construir interfaces de usuario interactivas y escalables, utilizando un modelo de programación declarativo. Unas de sus principales características es su enfoque en separar intereses (funcionalidades) con unidades ligeramente acopladas llamadas componentes, en lugar de separar artificialmente tecnologías (trabajando el maquetado y la lógica por separado). Entre las principales ventajas de utilizar React, se incluyen: </p> 
                 <ul>
                     <li>Curva de aprendizaje moderada (especialmente para aquellos que ya controlan Javascript)</li> 
-                    <li>Altamente modular. Lo que se traduce en un código escalable y reutilizable.</li> 
+                    <li>Altamente modular. La naturaleza de los componentes fomenta el desarrollo de un código escalable y reutilizable.</li> 
                     <li>Eficiente. Gracias a tecnologías como el Virtual DOM (Del cual hablaremos más adelante) es capaz de actualizar la interface de forma óptima. </li> 
                     <li>Adaptable. Es decir que es compatible con una amplia variedad de herramientas y bibliotecas. </li> 
                     <li>Popular. Lo que significa que posee una gran comunidad activa, como así también un inmenso ecosistema por detras.</li> 
@@ -24,14 +24,14 @@ const IntoduccionReact = () => {
 
             <TopicContainer id="jsx" topic="JSX - Sintaxis" docUrl="https://es.react.dev/learn/writing-markup-with-jsx" ytUrl="https://www.youtube.com/watch?v=EH4L-EYt63Y&list=PLvq-jIkSeTUZ5XcUw8fJPTBKEHEKPMTKk&index=7&ab_channel=jonmircha">
                 <p>JSX es una extensión del lenguaje Javascript. Podríamos verlo como una unión/mezcla entre Javascript ("con super poderes") y "html" (aunque en realidad no es html, pero la sintaxis es casi idéntica). Cabe aclarar que el uso de JSX es opcional, aunque la mayoría de los desarrolladores lo encontramos mucho más práctico que usar Vainilla.js.</p> 
-                <Alert variant="outlined" severity="info">Data: Despues de compilarse, las expresiones JSX se convierten en llamadas a funciones JS regulares (BABEL) y se evalúan como objetos Javascript.<br/>  Por esto, las expresiones pueden ser enviadas como argumentos o funciones, almacenarse en variables, y ser retornadas en funciones (Objetos de primer orden)</Alert> 
+                <Alert variant="outlined" severity="info">Data: Despues de compilarse, las expresiones JSX se convierten en llamadas a funciones JS regulares (con BABEL) y se evalúan como objetos Javascript.<br/>  Por esto, las expresiones JSX pueden ser enviadas como argumentos o funciones, almacenarse en variables, y ser retornadas en funciones (Objetos de primer orden)</Alert> 
                 <br/> 
                 <br/> 
                 <h4>Diferencias principales entre JSX & HTML5:</h4> 
                 <ul> 
                     <li> El atributo class pasa a llamarse className.</li> 
                     <li> Todas las etiquetas poseen la capacidad de "auto-cerrarse" cuando no poseen contenido interno, por ejemplo {`<div/>`}</li> 
-                    <li> Todas las etiquetas deben estar cerradas, incluso el típico br debería quedar así {`<br/>`}</li> 
+                    <li> De hecho, todas las etiquetas JSX deben estar cerradas, incluso el típico {`<br>`} debería de quedar así {`<br/>`}</li> 
                     <ul> 
                         Formularios: 
                         <li> El atributo for de Html pasa a llamarse htmlFor </li> 
@@ -44,10 +44,10 @@ const IntoduccionReact = () => {
                 <h4>Expresiones JSX:</h4> 
                 <CodeBox lang="jsx"> 
                     {
-`// Un elemento JSX es la unidad mínima de valor en React, y podría verse así:
+`// Un elemento JSX es la unidad mínima de valor (expresión) en React, y podría verse así:
 <h1> Hello, world! </h1>
 
-// Un componente, no es más que un conjunto de elementos JSX:
+// Un componente, no es más que un conjunto de elementos JSX retornados en una función.
 const Componente = () => {
     return (
         <div>
@@ -79,7 +79,7 @@ const Component = () => {
                 }
             </CodeBox>
             <h4>Renderizado condicional:</h4> 
-            <p>Cuando queremos renderizar un elemento/componente u otro, dependiendo de una condición, podemos utilizar el operador ternario de JS, algo muy útil en React.</p> 
+            <p>Cuando queremos renderizar un elemento/componente u otro dependiendo de una condición, podemos utilizar el operador ternario de JS, algo muy útil en React.</p> 
             <CodeBox lang="jsx"> 
                 {
 `// EJ1: Si la variable es verdadera, muestro Componente1, de lo contrario muestro el Componente2
@@ -95,6 +95,7 @@ const Component = () => {
 
     const Component2 = () => {
         const patas = true
+        const nombre = "Pepito"
         return (
             <div>
                 <span>{ patas == 4 && nombre == "Negrito" ? "Perro autorizado" : "Perro NO autorizado" }</span>
@@ -106,7 +107,8 @@ const Component = () => {
 // EJ3: El siguiente bloque equivale a un if, sin else: Si (x) es mayor que (y) muestro Component
     
     const Component3 = () => {
-        const variable = true
+        const x = 10
+        const y = 11
         return (
             <>
                 <h1>Mostrare un componente si x es mayor que Y</h1>
@@ -116,7 +118,7 @@ const Component = () => {
     }`
 }
             </CodeBox>
-    <p>En cualquiera de los ejemplos anteriores, los valores analizados por la condición bien podrían ser propiedades, o estados del componente.</p> 
+    <p>En cualquiera de los ejemplos anteriores, los valores analizados por la condición bien podrían ser propiedades, o estados del componente, algo muy habitual en React.</p> 
     <br/> 
 
             </TopicContainer>
@@ -125,20 +127,20 @@ const Component = () => {
                 <p>A menudo como React dev seguirás estos pasos para desarrollar tu App. No te preocupes si hay conceptos que no entiendes ahora, los ampliaremos más adelante:</p> 
                 <ol> 
                     <li> Serparar la UI (el diseño) en una jerarquía de componentes: </li> 
-                    <p> Lo común es tener como mínimo un boceto de nuestras páginas antes de comenzar. Utilizalo para dividir tús páginas por funcionalidades mínimas, aquellas que terminarán por consolidar cada uno de tus componentes.</p> 
+                    <p> Lo común es tener como mínimo un wireframe de nuestras páginas (interfaces de usuario) antes de comenzar. Utilizalo para dividir tús páginas por funcionalidades mínimas, aquellas que terminarán por consolidar cada uno de tus componentes.</p> 
                     <li> Comenzar a construir una versión estática en React. </li> 
                     <p> El enfoque más sencillo consiste en construir una versión que renderiza la UI a partir de tu modelo de datos (sin añadir interactividad aún). Esto requiere de mucha escritura, y poco pensamiento. En este punto utilizaras lo que se conoce como propiedades (hablaremos sobre ello en el tópico correspondiente).</p> 
                     <li> Encontrar la representación mínima pero completa del estado de la UI.</li> 
-                    <p> En el paso anterior era mucha escritura, y poco pensamiento, en este punto comunmente es lo contrario. Para añadir interactividad necesitas que los usuarios cambien tu modelo de datos, para ello utilizaras lo que se conoce como estado (hablaremos sobre ello en el tópico correspondiente)</p> 
+                    <p> En el paso anterior era mucha escritura, y poco pensamiento, en este punto comunmente es lo contrario. Para añadir interactividad necesitas que los usuarios cambien tu modelo de datos, para ello utilizaras lo que se conoce como estado ( hablaremos sobre ello en los siguientes tópicos )</p> 
                     <li> Identificar donde debe de vivir tu estado. </li> 
-                    <p> Una vez que hayas identificado los datos mínimos del estado de tu aplicación, debes identificar que componente es responsable de cambiar, o poseer este estado.<br/> Si el estado será utilizado en toda la aplicación, o gran parte de esta, lo correcto sería trabajar con un estado global (useContext, useReducers, Redux, etc), si por el contrario es un estado que afecta a unos pocos componentes, podrías manejar un estado "local" sin problemas (useState).</p> 
+                    <p> Una vez que hayas identificado los datos mínimos del estado de tu aplicación, debes identificar que componente es responsable de cambiar, o poseer este estado.<br/> Si el estado será utilizado en toda la aplicación, o gran parte de esta, lo correcto sería trabajar con un estado global (useContext, useReducers, Redux, etc), si por el contrario es un estado que afecta a unos pocos componentes, podrías manejar un estado "local" sin problemas con useState.</p> 
                     <li> Añade un flujo de datos inverso.</li> 
-                    <p> El flujo de datos en React es unidireccional (de componentes padres, a hijos). Por lo que si un componente hijo, requiere modificar el estado de su componente padre (y no se posee un estado global desarrollado para hacerlo), se deberá de pasar como propiedad (del componente padre al hijo en cuestión) la función que manipula dicho estado.</p> 
+                    <p> El flujo de datos en React es uni-direccional (de componentes padres, a hijos). Por lo que si un componente hijo, requiere modificar el estado de su componente padre (y no se posee un estado global desarrollado para hacerlo), se deberá de pasar como propiedad (del componente padre al hijo en cuestión) la función que manipula dicho estado.</p> 
                 </ol> 
             </TopicContainer>
 
             <TopicContainer id="install" topic="Instalación" docUrl="https://es.react.dev/learn/installation" ytUrl="https://www.youtube.com/watch?v=ufAJ3lIIdbY&list=PLvq-jIkSeTUZ5XcUw8fJPTBKEHEKPMTKk&index=6&ab_channel=jonmircha">
-                <p>Existen muchísimas maneras de utilizar React en nuestras aplicaciones, está es la más sencilla para quienes van comenzando:  <Link to="https://vitejs.dev/" target="_blank">Vite</Link></p> 
+                <p>Existen muchísimas maneras de implementar React en nuestras aplicaciones. Ésta es la más sencilla para quienes van comenzando, y es con:  <Link to="https://vitejs.dev/" target="_blank">Vite</Link></p> 
                 <CodeBox lang="npm">
                     {
 `// Para crear el proyecto con Vite

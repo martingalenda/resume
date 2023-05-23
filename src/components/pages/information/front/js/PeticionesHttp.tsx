@@ -11,12 +11,12 @@ const PeticionesHttp = () => {
             
             <TopicContainer id="ajax" topic="Ajax (Javascript ASÍNCRONO) - Introducción" ytUrl="https://www.youtube.com/watch?v=lN43CTpbWTU&list=PLvq-jIkSeTUZ6QgYYO3MwG9EMqC-KoLXA&index=106&pp=iAQB"><br/>
             <h4>Definición</h4>
-            <p>AJAX: Asynchronous JavaScript And XML. En pocas palabras es el uso del objeto XMLHttpRequest</p>
+            <p>AJAX acrónimo de Asynchronous JavaScript And XML, es, en pocas palabras, una técnica de desarrollo web que permite la comunicación asincrónica entre el cliente y el servidor, actualizando partes específicas de una página, sin necesidad de recargarla por completo. Lo que otorga por supuesto una mejor performance de nuestras Apps.</p>
                 <ul>
                     <li>Intermediario de solicitudes HTTP entre el servidor y la interface de usuario (El cliente)</li>
                     <li>Permite leer datos de un servidor una vez que haya cargado la página, sin tener que recargar el navegador (la página completa) por cada solicitud</li>
                 </ul>  
-            <p>AJAX no es una tecnología en sí misma. En realidad, se trata de varias tecnologías independientes que se unen:</p>
+            <p>Debemos aclarar que AJAX no es una tecnología en sí misma, en realidad, se trata de varias tecnologías independientes que se unen:</p>
             <ul>
                 <li>HTML y CSS, para crear una presentación basada en estándares.</li>
                 <li>DOM, para la interacción y manipulación dinámica de la presentación.</li>
@@ -105,8 +105,8 @@ const PeticionesHttp = () => {
 
 
 // Info adicional:
-// En este modo tradicional de hacer una petición, en lugar de "load" algunos utilzian "readystatechange"
-// Suele utilizarse para hacer dos validaciones esenciales antes de imprimir la respuesta de la petición
+// En este modo tradicional de hacer una petición, en lugar de "load" algunos utilizan "readystatechange"
+// Suele utilizarse para hacer dos validaciones esenciales antes de imprimir la respuesta de la petición.
 // Por un lado el readyState debe ser distinto de (4), el estado que hace referencia a que se completo la petición, y por otro el status que debe ser ( >= 200 && < 300 ), que hace referencia a que ha sido resuelta de forma exitosa.
     
     peticion.addEventListener("readystatechange", (e) => {
@@ -124,13 +124,14 @@ const PeticionesHttp = () => {
     })`
 }
 </CodeBox>
+<br/>
 <h4>EJ2: CRUD API REST CON JSON-SERVER</h4> 
 <p>Video de este ejemplo completo: <a href="https://www.youtube.com/watch?v=FGBm1fjNMhI&list=PLvq-jIkSeTUZ6QgYYO3MwG9EMqC-KoLXA&index=116" target="_blank"> https://www.youtube.com/watch?v=FGBm1fjNMhI&list=PLvq-jIkSeTUZ6QgYYO3MwG9EMqC-KoLXA&index=116 </a></p> 
 <p>El archivo de este ejemplo esta en: ./peticionesAsincronas/CRUD_Ajax.html</p>
 
             </TopicContainer>
             <TopicContainer id="fetch" topic="Api Fetch">
-                <p>API Fetch es una interfaz nativa de JavaScript que permite realizar peticiones HTTP asíncronas (AJAX) y obtener recursos de manera dinámica desde una URL determinada. Es una alternativa moderna y más fácil de usar que el objeto XMLHttpRequest de AJAX</p> <br/> 
+                <p>API Fetch es una interfaz nativa de JavaScript que permite realizar peticiones HTTP asíncronas (AJAX) y obtener recursos de manera dinámica desde una URL determinada. Es una alternativa moderna, y más fácil de usar que el objeto XMLHttpRequest de AJAX.</p> <br/> 
                 <h4>EJ1: MÉTODO/VERBO GET: Sin async / await</h4> 
                 <p>Video de este ejemplo completo: <a href="https://www.youtube.com/watch?v=dYB1UlGGmfk&list=PLvq-jIkSeTUZ6QgYYO3MwG9EMqC-KoLXA&index=108 " target="_blank"> https://www.youtube.com/watch?v=dYB1UlGGmfk&list=PLvq-jIkSeTUZ6QgYYO3MwG9EMqC-KoLXA&index=108  </a></p> 
                 <CodeBox lang="javascript"> 
@@ -158,6 +159,7 @@ const PeticionesHttp = () => {
         .finally(() => console.log("Me ejecuto siempre"))`
     }
     </CodeBox>
+    <br/> 
     <h4>EJ2: METODO/VERBO GET: Con async / await</h4> 
     <p>Video de este ejemplo completo: <a href="https://www.youtube.com/watch?v=GP8OCiJLeN4&list=PLvq-jIkSeTUZ6QgYYO3MwG9EMqC-KoLXA&index=109 " target="_blank"> https://www.youtube.com/watch?v=GP8OCiJLeN4&list=PLvq-jIkSeTUZ6QgYYO3MwG9EMqC-KoLXA&index=109  </a></p> 
 <CodeBox lang="javascript"> 
@@ -192,6 +194,7 @@ const PeticionesHttp = () => {
 getData()`
 }
 </CodeBox>
+<br/>
 <h4>EJ3: CRUD API REST CON JSON-SERVER con async await</h4> 
 <p>Video de este ejemplo completo: <a href="https://www.youtube.com/watch?v=dmkzieeLibk&list=PLvq-jIkSeTUZ6QgYYO3MwG9EMqC-KoLXA&index=118" target="_blank"> https://www.youtube.com/watch?v=dmkzieeLibk&list=PLvq-jIkSeTUZ6QgYYO3MwG9EMqC-KoLXA&index=118 </a></p> 
 <p>El archivo de este ejemplo esta en: ./peticionesAsincronas/CRUD_Fetch.html</p>
@@ -222,6 +225,7 @@ axios(url)
     .finally(console.log("Me ejecuto siempre"))`
 }
     </CodeBox>
+    <br/>
     <h4>EJ2: METODO/VERBO GET: Con async / await</h4> 
     <p>Video de este ejemplo completo: <a href="https://www.youtube.com/watch?v=SBr_EVNErPk&list=PLvq-jIkSeTUZ6QgYYO3MwG9EMqC-KoLXA&index=111" target="_blank"> https://www.youtube.com/watch?v=SBr_EVNErPk&list=PLvq-jIkSeTUZ6QgYYO3MwG9EMqC-KoLXA&index=111 </a></p> 
 <CodeBox lang="javascript"> 
@@ -246,6 +250,7 @@ axios(url)
 getData();`
 }
 </CodeBox>
+<br/>
 <h4>EJ3: CRUD API REST CON JSON-SERVER con async await</h4> 
 <p>Video de este ejemplo completo: </p> 
 <p>El archivo de este ejemplo esta en: ./peticionesAsincronas/CRUD_Axios.html</p>

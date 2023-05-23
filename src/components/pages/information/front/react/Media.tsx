@@ -8,7 +8,7 @@ const Media = () => {
         <Information>
 
             <TopicContainer topic="Media - Modos de uso">
-                <h4>Imagenes ubicadas en public (no requiere importación)</h4> 
+                <h4>Imagenes ubicadas en public (no requieren de importación)</h4> 
                 <CodeBox lang="jsx"> 
                     {
 `// Con un nombre estático
@@ -18,7 +18,7 @@ const Media = () => {
 <img src={\`./img/\${imgName}.png\`} alt="Batman"/>`
                     }
                 </CodeBox>
-                <h4>Imagenes ubicadas fuera de la carpeta pública (requiere importación)</h4> 
+                <h4>Imagenes ubicadas fuera de la carpeta pública (src) (requieren importarse)</h4> 
                 <CodeBox lang="jsx"> 
                     {
 `import Batman from './media/batman.svg';
@@ -26,14 +26,47 @@ const Media = () => {
 <img src={Batman} alt="Batman" />;`
                     }
                 </CodeBox>
-                <h4>Import dinámico</h4> 
+                <h4>Lista de imagenes ubicadas dentro de src (con un archivo js aparte para exportarlas)</h4> 
+                <CodeBox lang="jsx"> 
+                    {
+`// Simulamos el archivo imagenes.js en donde exportaremos todas las imgs
+import batman from './media/batman.svg';
+import superman from './media/batman.svg';
+
+export default [
+    {
+        "title": "Batman",
+        "img": batman
+    },
+    {
+        "title": "Superman",
+        "img": superman
+    }
+]
+
+// Simulamos el componente que utiliza alguna de estas imgs.
+import imagenes from "./assets/imgs/images.js"
+
+const Componente = () => {
+    return (
+        <>
+            <h1> {imagenes[0].title} </h1>
+            <img src={imagenes[0].img} alt={imagenes[0].title} />
+        </>
+    )
+}
+
+export default Componente;`
+                    }
+                </CodeBox>
+{/*                 <h4>Import dinámico</h4> 
                 <CodeBox lang="jsx"> 
                     {
 `const heroImages = require.context('ruta/images', true);
 
 <img src={\`./\${heroImages}\`}></img>`
                     }
-                </CodeBox>
+                </CodeBox> */}
             </TopicContainer>
 
         </Information>

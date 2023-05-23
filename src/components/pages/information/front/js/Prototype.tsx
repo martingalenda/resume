@@ -8,14 +8,14 @@ const Prototype = () => {
         <Information>
 
             <TopicContainer topic="Prototype" ytUrl="https://youtu.be/nS5FmAx4u_0?t=399">
-                <p>Como ya mencionamos, javascript es un lenguaje basado en prototipos. (POO)</p> 
+                <p>Como ya mencionamos, javascript es un lenguaje basado en prototipos.</p> 
                 <ul>
-                    <li>Los prototipos son en si mismo objetos. Todos los objetos contienen el prototipo Object.</li> 
+                    <li>Los prototipos son en si mismo objetos. Todos los objetos contienen asociado un prototipo en JS.</li> 
                     <li>Existen prototipos estandares en Javascript (ya creados) como Number, String, Object, Function, etc.</li> 
-                    <li>Un objeto hereda todas las propiedades y métodos de su prototipo.</li> 
-                    <li>Contamos la posibilidad de crear nuestros propios prototipos (lo hacemos automàticamente al crear funciones).</li> 
+                    <li>Cuando se crea un objeto en JS, este objeto hereda automáticamente todas las propiedades y métodos de su prototipo.</li> 
+                    <li>Contamos la posibilidad de crear nuestros propios prototipos (lo hacemos automáticamente al crear funciones).</li> 
                 </ul> 
-                <p>Para comprender mejor esto, repasemoslo en código:</p> 
+                <p>Para comprender mejor esto, pasemos a repasarlo en código como hacemos siempre.</p> 
                 <CodeBox lang="js"> 
                     {
 `// Proto string

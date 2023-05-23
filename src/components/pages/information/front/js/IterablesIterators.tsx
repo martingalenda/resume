@@ -7,7 +7,7 @@ const IterablesIterators = () => {
     return (
         <Information>
 
-            <TopicContainer topic="Iterables Iterators" ytUrl="https://youtu.be/N00DzBNPJEw?t=102">
+            <TopicContainer topic="Iterables & Iterators" ytUrl="https://youtu.be/N00DzBNPJEw?t=102">
                 <p>Refiere a una forma de iterar distintos tipos de datos iterables (string, arrays, sets, maps, nodeList ... etc)</p> 
                 <CodeBox lang="javascript"> 
                     {

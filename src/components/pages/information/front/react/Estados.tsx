@@ -49,22 +49,25 @@ const StateComponents = (props) => {
     let arrayUnidos = [...array, ...array2] // "concateno" arrays
 
     return (
-        <div className="test">
+        <div>
 
             <h1>Estado de componentes (Hook Component - useState)</h1>
             <h2>Titulo: {title}</h2>
             <h3>Array: {array}</h3>
 
-            <button className="btnC-test" onClick={(e) => {
-                evento(e, "Soy un mensaje modificado")}
-            }> Modifico titulo </button>
-            <button className="btnC-test" onClick={evento2}> Modifico array </button>
+            <button onClick={(e) => { evento(e, "Soy un mensaje modificado")}}>
+                Modifico titulo
+            </button>
+            <button onClick={evento2}> 
+                Modifico array 
+            </button>
 
             <h4>Sin acción del usuario...</h4>
 
             <p>Recorro e imprimo array: [valor/posicion]</p>
+
             {
-               /* { Recorro el array devolviendo cada items en un <p> }*/
+               /* { Recorro el array devolviendo cada items en un <p> } */
                array.map((item, i) => <p key={i}> {item} - {i} </p>) 
             }
 

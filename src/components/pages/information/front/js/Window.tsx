@@ -9,7 +9,8 @@ const Window = () => {
         <Information subTopic={data.menu[0].array[3].array[9]}>
 
             <TopicContainer id="general" topic="General" ytUrl="https://youtu.be/xOinGb2MZSk?t=445">
-                <p></p> 
+                <p>El objeto "window" en JS es un componente esencial para interactuar con el entorno del navegador y aprovechar sus funcionalidades. <br/>Al utilizar las propiedades y métodos proporcionados por este objeto, los desarrolladores pueden controlar y personalizar la experiencia del usuario, creando aplicaciones web dinámicas y ricas en funcionalidades. El objeto "window" actúa como un contenedor global para todo el código JS que se ejecuta en una página web.</p> 
+                <small>Cuando invocamos a una propiedad o método del objeto window, no es necesario escribir window. como tal (ya que está implicito por ser el objeto global de JS)</small> 
                 <CodeBox lang="javascript"> 
                     {
 `const youtubeURL = "https://www.youtube.com/watch?v=xOinGb2MZSk";

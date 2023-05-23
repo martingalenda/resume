@@ -116,7 +116,7 @@ console.log(resultado);`
             </TopicContainer>
             
             <TopicContainer id="ao_manipulacion" topic="Métodos de manipulación - ''exclusivos'' de Arrays" ytUrl="https://youtu.be/z95mZVUcJ-E?t=20566">
-            <small>Respecto al título: "exclusivos de arrays", intenta hacer referencia a que ninguno de los métodos mencionados a continuación, son aplicables de forma DIRECTA a un objeto.<br/> Para trabajar sobre estos, habría que complementar antes con métodos especificos de objetos, tales como: Object.entries, Object.keys, o Object.values. Vemos unos ejemplos más adelante.</small>
+            <small>Respecto al título: "exclusivos de arrays", intenta hacer referencia a que ninguno de los métodos mencionados a continuación, son aplicables de forma DIRECTA a un objeto.<br/> Para trabajar sobre estos, habría que complementar antes con métodos especificos de objetos, tales como: Object.entries, Object.keys, o Object.values. Veremos unos ejemplos más adelante.</small>
 
             <br/>
             <br/>
@@ -177,7 +177,7 @@ console.log(resultado);`
 
             <TopicContainer id="ao_consulta" topic="Métodos de consulta - Arrays o Objetos">
             <br/>
-            <h4><strong>indexOf(x) / lastIndexOf(x)</strong> = Búsqueda de texto por posición inicio/último. Devuelve la posición en la que se encuentra el parametro.</h4>
+            <h4><strong>indexOf(x) / lastIndexOf(x)</strong> = Búsqueda de texto por posición inicio/último. Devuelve la posición en la que se encuentra el argumento solicitado.</h4>
             <small>Si no encuentra el texto retorna -1. </small>
             <small>Estos métodos solo son aplicables de forma directa en los arrays.</small>
                 <CodeBox lang="javascript"> 

@@ -28,25 +28,27 @@ const POOJS = () => {
                     </ul> 
                 </ul> 
             </TopicContainer>
-            <TopicContainer id="conceptos" topic="Conceptos generales" ytUrl="https://youtu.be/nS5FmAx4u_0?list=PLvq-jIkSeTUZ6QgYYO3MwG9EMqC-KoLXA&t=170">
+            <TopicContainer id="conceptos" topic="Conceptos relacionados" ytUrl="https://youtu.be/nS5FmAx4u_0?list=PLvq-jIkSeTUZ6QgYYO3MwG9EMqC-KoLXA&t=170">
                 <ul>
                     <li><strong>Clases</strong>: Podriamos verlas como "Fabricas de objetos", o "Modelo de datos (propiedades y funciones)"</li>
                     <li><strong>Objetos</strong>: Todos los objetos creados/instanciados por "las fabricas" (es decir, las clases).</li>
                     <li><strong>Atributos</strong>: Caracteristicas/Propiedades (variables) de los objetos.</li>
                     <li><strong>Métodos</strong>: Funciones propias de los objetos en cuestión (internas).</li>
                     <li><strong>Constructor</strong>: Método principal y "obligatorio" de las clases para  crear (plantillas) objetos.</li>
-                    <li><strong>this</strong>: Hace referencia al contexto del objeto que ejecuta el método/función. + Detalles sobre esta palabra reservada en el archivo (MASTER.JS)`</li>
+                    <li><strong>this</strong>: Hace referencia al contexto del objeto que ejecuta el método/función en un momento dado.</li>
                 </ul>
             </TopicContainer>
             <TopicContainer id="metodos" topic="Tipos de métodos" ytUrl="https://www.youtube.com/watch?v=TEzu31q9MVA&list=PLvq-jIkSeTUZ6QgYYO3MwG9EMqC-KoLXA&index=27">
                 <ul>
-                    <li><strong>Métodos estáticos</strong>: Si colocamos (static) antes del nombre del metodo, podremos acceder al mismo desde la clase: (clase.metodo) sin necesidad de que haya instanciado objetos.</li>
-                    <li><strong>Métodos accesores</strong>: GETTER (Para obtener valores) Y SETTER (Para setear valores).</li>
-
+                    <li><strong>Métodos estáticos</strong>: Si colocamos (static) antes del nombre del metodo, podremos acceder al mismo desde la clase: (clase.metodo) sin necesidad de que haya instanciado objetos como tal.</li>
+                    <li><strong>Métodos accesores</strong>: Se utilizan comúnmente para encapsular la lógica y el acceso a los atributos o propiedades de la clase. Estos métodos son parte del concepto de encapsulamiento, que es uno de los principios fundamentales de la programación orientada a objetos.</li>
+                    <ul>
+                        <li><strong>get (getter)</strong>: Se utiliza para obtener los valores de un objeto (propiedades).</li>
+                        <li><strong>set (setter)</strong>: Se utiliza para manipular los valores de un objeto (métodos que modifican las propiedades).</li>
+                    </ul>
                 </ul>
             </TopicContainer>
             <TopicContainer id="objetos" topic="Ejemplo de clases/objetos" ytUrl="https://youtu.be/C86JvqET61A?list=PLvq-jIkSeTUZ6QgYYO3MwG9EMqC-KoLXA&t=93">
-                <p></p> 
                 <CodeBox lang="javascript"> 
                     {
 `class Animales {
@@ -115,13 +117,14 @@ const POOJS = () => {
                     }
                 </CodeBox>
             </TopicContainer>
-            <TopicContainer id="call_apply_bind" topic="Métodos call, apply & bind" ytUrl="https://youtu.be/qy6IIjlykD0?list=PLvq-jIkSeTUZ6QgYYO3MwG9EMqC-KoLXA&t=141">
-                <p>Son metodos que se utilizan para invocar distintos scopes/contextos de la palabra reservada (this).</p> 
-                <h4>Ejemplo "común/default", this con scope global (fuera de cualquier función):</h4> 
+            <TopicContainer id="call_apply_bind" topic="This - call, apply & bind" ytUrl="https://youtu.be/qy6IIjlykD0?list=PLvq-jIkSeTUZ6QgYYO3MwG9EMqC-KoLXA&t=141">
+                <br/>
+                <h4><strong>this</strong>: Comportamiento por defecto</h4> 
+                <p>Como vimos, anteriormente this hace referencia al contexto de ejecución en el que es invocado. Por lo que su valor variará dependiendo de ello. Veamos</p> 
                 <CodeBox lang="javascript"> 
                     {
-`// Si no se encuentra dentro de una función/método (otro scope), this pertenece siempre al objeto global de JS (window) y en NodeJS al objeto global
-// Más información del funcionamiento de la palabra reservada (this) en el archivo (MASTER.js)
+`// Si this no se encuentra dentro de una función regular, o método (otro scope), pertenecerá al objeto global de JS (window), y en NodeJS, al objeto global.
+// Si usaramos JS en modo estricto con "use strict", this pasaría a ser undefined por defecto.
 
 // console.log(this) // Por defecto como mencionamos, hace referencia al objeto global window del navegador
 this.lugar = "Scope GLOBAL (window)"
@@ -136,28 +139,33 @@ function saludar(nombre) {
     saludar("Bepi")`
 }
 </CodeBox>
+                <h4><strong>Call & Apply</strong>: Métodos útiles para declarar/invocar distintos scopes/contextos de this</h4> 
+                <CodeBox lang="javascript"> 
+                    {
+`this.lugar = "Scope GLOBAL (window)"
 
-    <h4>Ejemplo con método <strong>call & apply</strong>: Accediendo al scope de un objeto</h4> 
-    <CodeBox lang="javascript"> 
-        {
-`const obj = {
+function saludar(nombre) {
+    // this.lugar = "Scope de FUNCIÓN"
+    console.log(\`Hola \${nombre} desde el contexto: \${this.lugar}\`)
+}
+
+const obj = {
     lugar: "Scope de OBJETO LITERAL (obj)"
 }
-// El metodo call invoca la función con el contexto de this especificado. En este caso, referencia al this del objeto (obj)
+// El metodo call invoca la función con el contexto this especificado. En este caso, referencia al contexto del objeto (obj), el cual siempre es enviado como primer argumento. Como segundo argumento, los parametros solicitados, en este caso el nombre.
     saludar.call(obj, "Martín") 
 // null en este caso hace referencia al contexto por defecto de this (objeto window)
     saludar.call(null, "Bepsoñar") 
+
 // El metodo apply funciona igual que el metodo call, pero los parametros se envian en un array
     saludar.apply(obj, ["Martín"])`
-    }
-    </CodeBox> 
+}
+</CodeBox>
 
-        <h4>Ejemplo con <strong>bind</strong>:</h4> 
+        <h4><strong>bind</strong>: Vincula un método o función con un objeto determinado, pero, al contrario de call & apply, este no se ejecuta de forma inmediata, ya que no se vincula con la invocación, sino con la declaración de el método/objeto en cuestión dejandolo vinculados previamente para su posterior ejecución.</h4> 
         <CodeBox lang="javascript"> 
             {
-`// A diferencia de call y apply, bind no ejecuta la función inmediatamente. En su lugar, devuelve una función que esta vinculada al objeto, y se puede ejecutar más tarde
-
-const bindeado = {
+`const bindeado = {
     nombre: "Martincho"
 }
 

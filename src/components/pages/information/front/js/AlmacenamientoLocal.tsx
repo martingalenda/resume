@@ -10,8 +10,8 @@ const AlmacenamientoLocal = () => {
 
             <TopicContainer id="local" topic="Local storage" ytUrl="https://youtu.be/EbMi1Qj4rVE?t=7989">
                 <ul>
-                    <li>Se utiliza para guardar los datos en caché (en el hardware del usuario).</li> 
-                    <li>Los datos serán almacenados hasta que se limpia el caché, o hasta que nosotros mismos programemos el borrado de los datos.</li> 
+                    <li>Se utiliza para guardar los datos de forma persistente en el ordenador del usuario (en el disco duro).</li> 
+                    <li>Los datos serán almacenados hasta que nosotros mismos programemos el borrado de los datos, o hasta que el usuario decida borrarlos desde su navegador.</li> 
                 </ul> 
                 <CodeBox lang="javascript"> 
                     {
@@ -32,7 +32,7 @@ document.addEventListener("DOMContentLoaded", (e) => {
             </TopicContainer>
             <TopicContainer id="session" topic="Session storage" ytUrl="https://youtu.be/EbMi1Qj4rVE?t=7989">
                 <ul>
-                    <li>Se utiliza para guardar los datos en caché (en el hardware del usuario).</li> 
+                    <li>Se utiliza para guardar los datos de forma persistente en el ordenador del usuario (en la memoria RAM).</li> 
                     <li>En este caso, los datos se pierden de forma automatica cuando el usuario cierra la página/pestaña, o el navegador.</li> 
                 </ul> 
                 <CodeBox lang="javascript"> 
@@ -54,8 +54,8 @@ document.addEventListener("DOMContentLoaded", (e) => {
             </TopicContainer>
             <TopicContainer id="cookies" topic="Cookies">
                 <ul>
-                    <li>Se utiliza para guardar los datos en caché (en el hardware del usuario).</li> 
-                    <li>Los datos poseen una fecha de caducidad determinada.</li> 
+                    <li>Se utiliza para guardar los datos de forma persistente en el ordenador del usuario (en el disco duro).</li> 
+                    <li>Los datos almacenados poseen una fecha de caducidad determinada, en donde se eliminarán automaticamente.</li> 
                 </ul>
                 <CodeBox lang="javascript"> 
                     {

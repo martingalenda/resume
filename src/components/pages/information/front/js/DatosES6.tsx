@@ -6,7 +6,7 @@ import CodeBox from "../../../../global/code/CodeBox"
 const DatosES6 = () => {
 
     return (
-        <Information subTopic={data.menu[0].array[3].array[20]}>
+        <Information subTopic={data.menu[0].array[3].array[19]}>
 
             <TopicContainer id="symbol" topic="Symbol" ytUrl="https://www.youtube.com/watch?v=XVBkTsj99so&list=PLvq-jIkSeTUZ6QgYYO3MwG9EMqC-KoLXA&index=51">
                 <p>Los Symbols son un tipo de dato primitivo. Suelen ser utilizados para mantener las propiedades y los métodos de un objeto de forma privada/anonima</p> 
@@ -45,7 +45,8 @@ const DatosES6 = () => {
                 </CodeBox>
             </TopicContainer>
             <TopicContainer id="sets" topic="Sets" ytUrl="https://www.youtube.com/watch?v=lnzhtrZ8H34&list=PLvq-jIkSeTUZ6QgYYO3MwG9EMqC-KoLXA&index=52">
-                <p>Un tipo de dato complejo, muy similar a un array, pero con items/valores PRIMITIVOS únicos (no se repiten nunca).</p> 
+                <p>Un tipo de dato complejo, muy similar a un array, pero con la particularidad de que solo puede contener items/valores PRIMITIVOS únicos (no se repiten nunca).</p> 
+                <p>A diferencia de los arreglos, los conjuntos no mantienen un orden específico para sus elementos. Esto significa que no se puede acceder a los elementos de un conjunto por su índice. Sin embargo, los conjuntos ofrecen métodos para agregar, eliminar y verificar la existencia de elementos.<br/> Los conjuntos son útiles cuando se necesita almacenar una colección de valores únicos y no importa el orden en que se encuentren. Por ejemplo, se pueden utilizar para realizar operaciones de conjuntos como: la unión, intersección, o diferencia de conjuntos.</p> 
                 <CodeBox lang="javascript"> 
                     {
 `// DATA: Recordamos que los datos complejos(arrays, objetos) poseen una referencia única.
@@ -85,7 +86,8 @@ const DatosES6 = () => {
                 </CodeBox>
             </TopicContainer>
             <TopicContainer id="maps" topic="Maps" ytUrl="https://youtu.be/e2gBknyVJo8?list=PLvq-jIkSeTUZ6QgYYO3MwG9EMqC-KoLXA&t=6">
-                <p>Un tipo de dato complejo muy similar a un objeto, con la diferencia principal de que este permite claves (keys) de cualquier tipo</p> 
+                <p>Un tipo de dato complejo muy similar a un objeto, con la diferencia principal de que este permite claves (keys) de cualquier tipo de dato.</p> 
+                <p>Los mapas son especialmente útiles cuando se necesita almacenar pares de valores clave-valor, y se requiere flexibilidad en el tipo de clave utilizado. Se utilizan comúnmente para mantener asociaciones de datos más complejas o para resolver problemas que no se pueden abordar fácilmente con objetos estándar.</p> 
                 <CodeBox lang="javascript"> 
                     {
 `// Generamos el map
@@ -129,8 +131,10 @@ const DatosES6 = () => {
             <TopicContainer id="weak" topic="WeakSets & WeakMaps" ytUrl="https://www.youtube.com/watch?v=nfMEnCrBL-0&list=PLvq-jIkSeTUZ6QgYYO3MwG9EMqC-KoLXA&index=54">
                 <p>Funcionan de forma similar a set y maps, pero no son iterables, y poseen muchos menos metodos.</p> 
                 <ul>
+                    <li>Permiten almacenar objetos de forma débil, por lo que los objetos serán eliminados por el recolector de basura si no se utilizan en otros lugares del programa.</li> 
                     <li>Disponen de add, has, delete.</li> 
-                    <li>Limpian de la memoria de forma automatica los valores null o undefined.</li> 
+                    <li>No son iterables.</li> 
+                    <li>Solo permiten almacenar objetos (no valores primitivos).</li> 
                 </ul> 
             </TopicContainer>
         </Information>

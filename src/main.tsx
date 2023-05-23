@@ -24,8 +24,20 @@ const theme = createTheme({
     },
     background: {
       paper: '#131828',
-    },
+    }, 
   },
+  components: {
+    MuiAlert: {
+        variants: [
+            {
+              props: { variant: 'standard', severity: 'info' },
+              style: {
+                backgroundColor: 'rgb(0 15 22 / 30%)', 
+              },
+            },
+        ],
+    },
+  }
 });
 
 ReactDOM.createRoot(document.getElementById('root') as HTMLElement).render(

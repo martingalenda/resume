@@ -8,7 +8,7 @@ const Temporizadores = () => {
         <Information>
 
             <TopicContainer topic="Temporizadores" ytUrl="https://www.youtube.com/watch?v=fcB-ShJmUxk&list=PLvq-jIkSeTUZ6QgYYO3MwG9EMqC-KoLXA&index=46">
-                <p></p> 
+                <p>Los temporizadores e intervalos en JavaScript son funciones que permiten ejecutar código en un momento específico, o repetidamente después de un intervalo de tiempo determinado. Estas funciones son útiles para realizar tareas programadas, realizar animaciones, actualizar información en tiempo real, y muchas otras cosas más.</p> 
                 <CodeBox lang="js"> 
                     {
 `// setTimeout(función,tiempo) / setInterval(función,tiempo)

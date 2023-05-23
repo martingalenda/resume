@@ -44,7 +44,6 @@
   import ModulosJS from './components/pages/information/front/js/Modulos';
   import AlmacenamientoLocal from './components/pages/information/front/js/AlmacenamientoLocal';
   import SpreadOperator from './components/pages/information/front/js/SpreadOperator';
-  import RestParam from './components/pages/information/front/js/RestParam';
   import Destructuracion from './components/pages/information/front/js/Destructuracion';
   import DatosES6 from './components/pages/information/front/js/DatosES6';
   import IterablesIterators from './components/pages/information/front/js/IterablesIterators';
@@ -172,7 +171,6 @@ function App() {
           <Route path="/front/js/modulos" element={<ModulosJS/>}/>
           <Route path="/front/js/almacenamiento" element={<AlmacenamientoLocal/>}/>
           <Route path="/front/js/spread_operator" element={<SpreadOperator/>}/>
-          <Route path="/front/js/rest_param" element={<RestParam/>}/>
           <Route path="/front/js/destructuracion" element={<Destructuracion/>}/>
           <Route path="/front/js/datos_es6" element={<DatosES6/>}/>
           <Route path="/front/js/iterables_iterators" element={<IterablesIterators/>}/>

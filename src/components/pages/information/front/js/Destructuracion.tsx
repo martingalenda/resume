@@ -8,14 +8,14 @@ const Destructuracion = () => {
         <Information>
 
             <TopicContainer topic="Destructuración" ytUrl="https://youtu.be/YTtZ9TUQ48E?t=34">
-                <p>Refiere a una expresión implementada en ES6, que permite "desempacar/desenvolver/destructurar" arrays y objetos.</p> <br/> 
-                <h4>En arrays</h4> 
+                <p>Es una expresión ({`> ES6`}) que permite extraer valores de objetos o arreglos de una forma más concisa, asignándolos a variables individuales en una sola línea de código.</p> <br/> 
+                <h4>En arrays:</h4> 
                 <CodeBox lang="javascript"> 
                     {
 `const arreglo = ["Martin", "Pepe", "Laurita"]
     
 // EJ1: Estariamos asignando una variable a cada posición del arreglo. A excepción del segundo valor, que lo estaríamos ignorando
-    const [primero, , tercero] = arreglo // 
+    const [primero, , tercero] = arreglo 
     console.log(primero,tercero) // Retorna: "Martin", "Laurita"
        
     
@@ -24,7 +24,8 @@ const Destructuracion = () => {
     console.log(primero, resto) // Retorna: "Martin", ["Pepe", "Laurita"]`
     }
     </CodeBox>
-    <h4>En objetos</h4> 
+    <br/>
+    <h4>En objetos:</h4> 
 <CodeBox lang="javascript"> 
     {
 `const objeto = {
@@ -59,6 +60,7 @@ const Destructuracion = () => {
     `
 }
 </CodeBox>
+<br/>
 <h4>En función que retorna un array</h4> 
 <small>Así es como funcionan los hooks en react. A fin de cuentas, estamos destructurando el array que nos retorna la función (myState)</small> 
 <CodeBox lang="javascript"> 

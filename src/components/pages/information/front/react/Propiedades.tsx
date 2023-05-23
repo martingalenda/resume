@@ -2,6 +2,7 @@ import Information from "../../Information"
 import data from "../../../../data/data"
 import TopicContainer from "../../../../global/topicContainer/TopicContainer"
 import CodeBox from "../../../../global/code/CodeBox"
+import { Alert } from "@mui/material"
 
 const PropiedadesReact = () => {
 
@@ -31,7 +32,7 @@ const componentePadre = () => {
 const componenteHijo = (props) => {
     return (
         <>
-            <p>La propiedad recibida fue: {props.name}</p>
+            <p> La propiedad recibida fue: {props.name} </p>
         </>
     )
 }`
@@ -51,7 +52,7 @@ const componenteHijo = (props) => {
 const componenteHijo = ({name}) => {
     return (
         <>
-            <p>La propiedad recibida fue: {name}</p>
+            <p> La propiedad recibida fue: {name} </p>
         </>
     )
 }`
@@ -73,7 +74,7 @@ const componenteHijo = ({name}) => {
         return(
             <div>
                 {/* Así llamamos a la prop nombre */}
-                <h2>Nombre: {this.props.nombre}</h2> 
+                <h2> Nombre: {this.props.nombre} </h2> 
             </div>
         );
     }
@@ -85,13 +86,13 @@ export default ClassComponents;`
             </TopicContainer>
 
             <TopicContainer id="children" topic="Propiedad children" ytUrl="https://www.youtube.com/watch?v=2ZhZwTOTM48&list=PLvq-jIkSeTUZ5XcUw8fJPTBKEHEKPMTKk&index=53&pp=iAQB&ab_channel=jonmircha">
-                <p>La prop "children" es utilizada para representar los elementos hijos de un componente. En resúmen, permite que reutilizemos un componente con distintos contenidos.</p> 
+                <p>La prop "children" es utilizada para añadir distintos tipos de contenidos dinámicos sobre un mismo componente.</p> 
                 <CodeBox lang="jsx"> 
                     {
 `const HijoChildrenProp = ({children}) => {
     return (
         <div>
-            <h2>Children Info</h2>
+            <h2> Children Info </h2>
             {children} {/* Aquí se imprimirá el contenido interno recibido*/}
         </div>
     )
@@ -103,11 +104,11 @@ const ChildrenProp = () => {
             <h1>Children Prop</h1>
 
             <HijoChildrenProp>
-                <p> Todo el contenido interno de este componente representa al children</p>
+                <p> Todo el contenido interno de este componente representa al children </p>
             </HijoChildrenProp>
 
             <HijoChildrenProp>
-                <p> Esto nos permite llamar al mismo componente, enviandole un contenido interno distinto!</p>
+                <p> Esto nos permite llamar al mismo componente, enviandole un contenido interno distinto! </p>
             </HijoChildrenProp>
         </>
     )
@@ -119,21 +120,39 @@ export default ChildrenProp`
             </TopicContainer>
 
             <TopicContainer id="types" topic="PropTypes" docUrl="https://www.npmjs.com/package/prop-types">
-                <p>En React, los propTypes son una forma de validar las props que se pasan a un componente y asegurarse de que tienen el tipo correcto. Se definen en una propiedad estática propTypes dentro del componente y se utiliza la biblioteca prop-types para especificar el tipo de cada prop. Para instalar la librería: " npm i prop-types "<br/>  Por ejemplo, si tenemos un componente que espera una prop llamada texto de tipo string, y se requiere si o sí, podemos definir los propTypes de la siguiente manera:</p> 
+                <p>Los propTypes son una librería utilizada en React para validar las props que se pasan a un componente, asegurandose de que posean los tipos de dato correctos.<br/> Por ejemplo, si tenemos un componente que espera una prop llamada texto de tipo string, y se requiere si o sí, debeemos definir los propTypes de la siguiente manera:</p> 
+                <Alert variant="outlined" severity="info">Para instalar la librería: " npm i prop-types "</Alert> 
                 <CodeBox lang="jsx"> 
                     {
 `import PropTypes from 'prop-types';
                         
 function MiComponente(props) {
-  return <div>{props.texto}</div>;
+  return <div> {props.texto} </div>;
 }
 
 MiComponente.propTypes = {
     texto: PropTypes.string.isRequired,
+
+    // Otros tipos de datos:
+    // numero: PropTypes.number,
+    // booleano: PropTypes.bool,
+    // objeto: PropTypes.object,
+    // arreglo: PropTypes.array,
+    // funcion: PropTypes.func,
+    // elementoReact: PropTypes.element,
+    // componentePropio: PropTypes.instanceOf(MiComponente),
+    // enumeracion: PropTypes.oneOf(['opcion1', 'opcion2', 'opcion3']),
+    // union: PropTypes.oneOfType([PropTypes.string, PropTypes.number]),
+    // arregloDe: PropTypes.arrayOf(PropTypes.number)
+    // objetoDe: PropTypes.objectOf(PropTypes.string),
+    // objetoConForma: PropTypes.shape({
+        color: PropTypes.string,
+        tamaño: PropTypes.number
+        }),
 };`
                     }
                 </CodeBox>
-<p>En este ejemplo, PropTypes.string indica que la prop texto debe ser una cadena de texto, y isRequired indica que es obligatoria.<br/> El uso correcto de propTypes puede ayudar a evitar errores en tiempo de ejecución y mejorar la mantenibilidad del código.</p> 
+<p>En este ejemplo, PropTypes.string indica que la prop texto debe ser una cadena de texto, y isRequired indica que es obligatoria.<br/> El uso correcto de propTypes puede ayudar a evitar errores en tiempo de ejecución, y mejorar la mantenibilidad del código.</p> 
 
             </TopicContainer>
         </Information>

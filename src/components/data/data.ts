@@ -417,7 +417,7 @@ const data = {
                                     "url": "/front/js/poo#requerimientos"
                                 },
                                 { 
-                                    "subTopic": "Conceptos generales",
+                                    "subTopic": "Conceptos relacionados",
                                     "url": "/front/js/poo#conceptos"
                                 },
                                 { 
@@ -429,7 +429,7 @@ const data = {
                                     "url": "/front/js/poo#objetos"
                                 },
                                 { 
-                                    "subTopic": "Métodos call, apply & bind",
+                                    "subTopic": "This: call, apply & bind",
                                     "url": "/front/js/poo#call_apply_bind"
                                 },
                             ]
@@ -667,15 +667,17 @@ const data = {
                             ]
                         },
                         {
-                            "topic": "Spread Operator",
+                            "topic": "Spread Operator & Rest Param",
                             "url": "/front/js/spread_operator",
                             "subTopic": [
-                            ]
-                        },
-                        {
-                            "topic": "Rest Param",
-                            "url": "/front/js/rest_param",
-                            "subTopic": [
+                                { 
+                                    "subTopic": "Spread operator",
+                                    "url": "/front/js/spread_operator#so"
+                                },
+                                { 
+                                    "subTopic": "Rest Param",
+                                    "url": "/front/js/spread_operator#rp"
+                                },
                             ]
                         },
                         {
@@ -713,7 +715,7 @@ const data = {
                             ]
                         },
                         {
-                            "topic": "Prototype",
+                            "topic": "Prototypes",
                             "url": "/front/js/prototype",
                             "subTopic": [
                             ]

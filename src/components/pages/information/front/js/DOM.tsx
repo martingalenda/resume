@@ -9,7 +9,7 @@ const DOM = () => {
         <Information subTopic={data.menu[0].array[3].array[8]}>
 
             <TopicContainer id="definicion" topic="DOM (Document Object Model) - Definición"  ytUrl="https://www.youtube.com/watch?v=dF7lp_qBfV0&list=PLvq-jIkSeTUZ6QgYYO3MwG9EMqC-KoLXA&index=62&pp=iAQB"> 
-                <p>Es la estructura y la representación de todos los nodos HTML requeridos para imprimir la página. (Podríamos verlo como un arbol genealógico de nodos html)</p> 
+                <p>Es la estructura y la representación de todos los nodos HTML requeridos para imprimir la página. (Podríamos verlo como un arbol genealógico de elementos html)</p> 
             </TopicContainer>
             <TopicContainer id="nodos" topic="Tipos de nodos" docUrl="https://developer.mozilla.org/es/docs/Web/API/Node/nodeType" ytUrl="https://youtu.be/zBmtmlB5b5g?list=PLvq-jIkSeTUZ6QgYYO3MwG9EMqC-KoLXA&t=434">
                 <ul>

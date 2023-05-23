@@ -8,7 +8,8 @@ const ModulosJS = () => {
         <Information>
 
             <TopicContainer topic="Modularización" ytUrl="https://youtu.be/0GEUyQXe3NI?list=PLvq-jIkSeTUZ6QgYYO3MwG9EMqC-KoLXA&t=121">
-                <p></p> 
+                <p>La modularización es una práctica común en el desarrollo de Software, ya que proporciona una serie de beneficios. Al dividir un programa en módulos más pequeños y bien definidos, se mejora la legibilidad, el mantenimiento, y la reutilización del código. Cada módulo se puede desarrollar, probar, y mantener de forma independiente, lo que facilita la colaboración entre desarrolladores, y la gestión del proyecto.</p> 
+                <p>Los módulos pueden exportarse e importarse para ser reutilizados cada vez que así se lo requiera. Veamos como hacerlo:</p> <br/>
 
 <h4>EJ1:</h4> 
 <CodeBox lang="javascript"> 
@@ -35,6 +36,7 @@ const ModulosJS = () => {
     saludar()`
     }
     </CodeBox>
+    <br/>
     <h4>EJ2:</h4> 
 <CodeBox lang="javascript"> 
     {
@@ -65,11 +67,11 @@ const ModulosJS = () => {
     func2()`
 }
 </CodeBox>
+<br/>
 <h4>EJ3: COMMON.JS (requiere)</h4> 
 <CodeBox lang="javascript"> 
     {
-`// ! Tuve errores de instalación para poder aplicarlo....
-// Con common.js la importación y la exportación es un tanto distinta, para exportar sería así:
+`// Con common.js la importación y la exportación es un tanto distinta, para exportar sería así:
 // Simulamos el archivo que exporta las variables (module.js)
     const mnsj = "Exportando constante"
 

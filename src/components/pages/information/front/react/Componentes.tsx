@@ -9,13 +9,13 @@ const Componentes = () => {
     return (
         <Information subTopic={data.menu[0].array[5].array[1]}>
             <TopicContainer id="intro" topic="Componentes" docUrl="https://es.react.dev/learn/your-first-component">
-                <p>Como vimos anteriormente, los componentes representan bloques de funcionalidad en la interfaz de usuario, pueden representar desde la porción más pequeña, hasta el conjunto total de todas esas porciones. La gran ventaja de los componentes es que son reutilizables, lo que facilita la construcción y el mantenimiento de la aplicación. Podríamos pensar en los componentes como un conjunto anidado de elementos HTML que encapsulan la lógica, y el maquetado. En React, se invocan como si fueran etiquetas HTML personalizadas, y el componente raíz representa el ReactDOM.</p> 
+                <p>Como vimos anteriormente, los componentes representan intereses en la interfaz de usuario, pueden representar desde la porción más pequeña, hasta el conjunto total de todas esas porciones. La gran ventaja de los componentes es que son reutilizables, lo que facilita la construcción, y el mantenimiento de la aplicación. Podríamos pensar en los componentes como un conjunto jerarquico de elementos HTML, que encapsulan la lógica, y el maquetado. En React, se invocan como si fueran etiquetas HTML personalizadas, y el componente raíz representa el ReactDOM (del cual hablaremos más adelante)</p> 
                 <br/> 
                 <h4>Tipos de componentes:</h4> 
                 <ul>
                     <li>Tipo hook: Son la forma moderna de crear componentes, otorgan la posibilidad de trabajar con componentes de tipo función, generando un código más reducido/limpio/legible, y brindandonos todas las herramientas necesarias (ciclo de vida, estado, etc).</li> 
                     <li>Tipo function: En la antiguedad no existían los hooks, por lo que los componentes de tipo función solo podían recibir propiedades (se los llamaba componentes tontos), ya que no podían definir un constructor, y no tenían acceso a la API del ciclo de vida (cosa que siempre tuvieron los componentes de tipo clase).</li> 
-                    <li>Tipo clase: Es un método anticuado que se basa en clases (POO), es útil conocerlos si nos enfrentaremos a proyectos desactualizados.</li> 
+                    <li>Tipo clase: Es un método anticuado (pero funcional) que se basa en clases (POO), es útil conocerlos si nos enfrentaremos a proyectos desactualizados.</li> 
                 </ul> 
                 <h4>Reglas:</h4> 
                 <ul>
@@ -37,7 +37,7 @@ const Componentes = () => {
                     <small>Veremos la mayoría de estas formas más adelante</small> 
                 </ul> 
                 <br/> 
-                <Alert variant="outlined" severity="info">Los ejemplos que veremos a continuación son algo avanzados con respecto a lo que vimos hasta ahora, ya que manejan estados y propiedades (algo en lo que aún no nos hemos explayado). Pero me parece interesante que puedan ir viendo un ejemplo de cada tipo de componente, antes de profundizar en que es el estado, y que son las propiedades (lo que veremos en los siguientes dos tópicos).</Alert>
+                <Alert variant="outlined" severity="info">Los ejemplos que veremos a continuación son algo avanzados con respecto a lo que vimos hasta ahora, ya que manejan estados y propiedades (algo en lo que aún no hemos profundizado). Pero me parece interesante que puedan ir viendo un ejemplo de cada tipo de componente, antes de profundizar en que es el estado, y que son las propiedades (lo que veremos en los siguientes dos tópicos).</Alert>
                 <br/> 
             </TopicContainer>
             <TopicContainer id="hook" topic="Componentes - Hook" ytUrl="https://www.youtube.com/watch?v=2NDLa2pNoh0&list=PLvq-jIkSeTUZ5XcUw8fJPTBKEHEKPMTKk&index=19&ab_channel=jonmircha">
@@ -55,8 +55,8 @@ const HookComponent = ({apodo}) => {
 
     return (
         <>
-            <h1> Componente Tipo: Hook  </h1>
-            <p>{user}</p>
+            <h1> Componente Tipo: Hook </h1>
+            <p> Usuario: {user} </p>
             <h2 onClick={(e)=> setData(e)}> Apodo: {apodo} </h2>
         </>
 
@@ -71,7 +71,7 @@ export default HookComponent; `
             <TopicContainer id="funcion" topic="Componentes - Function ( Sin hooks - 'componentes tontos' )">
                 <CodeBox lang="jsx"> 
                     {
-`function FunctionComponents(props) {
+`function FunctionComponent(props) {
     return (
         <>
             <h1> Componente Tipo: Función </h1>
@@ -80,7 +80,7 @@ export default HookComponent; `
     );
 }
 
-export default FunctionComponents; `
+export default FunctionComponent; `
                     }
                 </CodeBox>
             </TopicContainer>

@@ -9,7 +9,7 @@ const Asincronia = () => {
         <Information subTopic={data.menu[0].array[3].array[13]}>
 
             <TopicContainer id="bloqueante" topic="Código sincrono bloqueante">
-                <p>Se refiere a un orden en la ejecución de código. En este, la tarea en ejecución debe completarse en su totalidad, antes de continuar con la siguiente. El término "bloqueante" refiere al hecho de que una tarea puede bloquear el progreso de otras tareas hasta que sea finalizada.</p> 
+                <p>Se refiere a un orden en el flujo de ejecución de código, en donde la tarea en ejecución debe completarse en su totalidad, antes de continuar con la siguiente.<br/> El término "bloqueante" refiere al hecho de que una tarea bloquea el progreso de otras tareas hasta ser finalizada. Veamos un ejemplo:</p> 
                 <CodeBox lang="javascript"> 
                     {
 `const sincrono = () => {
@@ -35,7 +35,7 @@ sincrono();`
                 </CodeBox>
             </TopicContainer>
             <TopicContainer id="no_bloqueante" topic="Código asincrono no bloqueante">
-            <p>Se refiere a un orden en la ejecución de código. En este, varias tareas pueden ejecutarse en paralelo, sin bloquear el progreso de otras tareas. En el siguiente ejemplo simularemos la asincronía con temporizadores, setTimeout()</p> 
+            <p>Se refiere a un orden en el flujo de ejecución de código, en donde varias tareas pueden ejecutarse en paralelo (sin bloquearse entre si). Es decir, al contrario del código sincrono bloqueante, con esta técnica de desarrollo, las tareas no esperarán a que otras terminen. En el siguiente ejemplo simularemos la asincronía con temporizadores:</p> 
                 <CodeBox lang="javascript"> 
                     {
 `const asincrono = () => {
@@ -65,11 +65,11 @@ asincrono();`
                 </CodeBox>
             </TopicContainer>
             <TopicContainer id="callbacks" topic="Callbacks" ytUrl="https://www.youtube.com/watch?v=TYG2_iUr8XY&list=PLvq-jIkSeTUZ6QgYYO3MwG9EMqC-KoLXA&index=48">
-                <p>Un callback es una función que se pasa como argumento a otra función. El callback se ejecutará cuando se complete cierta operación, o evento. En otras palabras, es una forma de permitir que una función llame a otra función después de que se haya completado una operación asíncrona.</p> 
+                <p>Un callback es una función pasada como argumento a otra función. Se utiliza para manipular el flujo de ejecución, obteniendo operaciones asíncronas. Gracias a los callbascks, podemos hacer que ciertas funciones se ejecuten con seguridad despues de otras, o en respuesta a un evento específico. </p> 
                 <ul>
-                    <li>Ya no es tan utilizado, salvo en algunas librerías para casos especificos. Las promesas son una forma más moderna de trabajar la asincronia.</li> 
-                    <li>Cuenta con la desventaja conocida como "callback hell". Que refiere a un conjunto de callbacks anidados, el cual se termina volviendo sumamente engorroso de leer y mantener.</li> 
-                    <li>También puede contar con la desventaja de tener que hacer validaciones constantes en/tras cada callback, cuando (como veremos a continuación con las promesas), el método catch maneja desde un solo lugar (contexto) los errores que podrían existir.</li> 
+                    <li>Ya no es tan utilizado, salvo en algunas librerías para casos especificos (las promesas son consideradas una forma más moderna de trabajar la asincronia).</li> 
+                    <li>Cuentan con una desventaja conocida como: "callback hell", un conjunto de callbacks anidados que termina por convertirse en un código engorroso de mantener.</li> 
+                    <li>También puede contar con la desventaja de tener que hacer validaciones constantes en cada callback, cuando (como veremos a continuación con las promesas), el método catch maneja desde un solo lugar (contexto) los errores que podrían existir en todo el contexto de ejecución.</li> 
                 </ul> 
                 <h4>EJ1:</h4> 
                 <CodeBox lang="javascript"> 
@@ -134,8 +134,8 @@ cuadradoCallback(2, (value, result) => {
                 </CodeBox>
             </TopicContainer>
             <TopicContainer id="promises" topic="Promises" ytUrl="https://www.youtube.com/watch?v=ppzrpTjwEC8&list=PLvq-jIkSeTUZ6QgYYO3MwG9EMqC-KoLXA&index=49"> 
-            <p>Sirven para cuando tenemos una concatenación de procesos asincronos. Nos otorgan un mejor control de flujo</p>
-            <span>Son un objeto que recibe 2 métodos como parametros:</span>
+            <p>Son útiles para trabajar multiples operaciones asincronas. Nos otorgan un mejor control de flujo respecto a las callbacks.</p>
+            <span>Las promesas son un objeto que recibe 2 métodos como parametros:</span>
             <ul>
                 <li><strong>resolve</strong> = ("RETURN POSITIVO") Representa la resolución de una operación asíncrona (esta relacionado/vinculado con el método then)</li>
                 <li><strong>reject</strong> = ("RETURN NEGATIVO") Representa el fracaso de una operación asíncrona (esta relacionado/vinculado con el método catch)</li>
@@ -144,7 +144,7 @@ cuadradoCallback(2, (value, result) => {
                 <li><strong>then</strong> = Es el método utilizado para acceder al resultado satisfactorio de la promesa (resolve). El método then espera siempre a que el .then anterior se encuentre resuelto (así es como se maneja la asincronía con las promesas)</li>
                 <li><strong>catch</strong> = Es utilizado para el manejo de errores, en este caso, referido a la promesa (reject)</li>
             </ul>
-                <h4>EJ1</h4> 
+                <h4>EJ1:</h4> 
                 <CodeBox lang="javascript"> 
                     {
 `const nombre = "pedro";
@@ -167,7 +167,7 @@ promesa
                     }
                 </CodeBox>
 <small>En este caso, la promesa es almacenada en una variable, pero bien podría también ser el retorno de una función, la cual, a posterior, podriamos concatenarle el .then , o .catch, quedando algo así promesa().then().catch (Se ve en el siguiente ejemplo EJ2)</small><br/><br/><br/>
-<h4>EJ2: Similar al anterior pero con dos promesas y màs detallado:</h4>
+<h4>EJ2: Similar al anterior pero con dos promesas y más detallado:</h4>
                 <CodeBox lang="javascript"> 
                     {
 `// Fiesta premium para todos los Pedros del mundo, mayores de edad xD
@@ -365,9 +365,9 @@ const profesion = {
 
 
             <TopicContainer id="async_await" topic="Await & async" ytUrl="https://www.youtube.com/watch?v=PbI5EEpodPM&list=PLvq-jIkSeTUZ6QgYYO3MwG9EMqC-KoLXA&index=49&pp=iAQB">
-            <p>Await & Async trabajan en conjunto con las promesas. Es "azucar sintactico" para trabajar la asincronia con un código más estructurado.</p>
+            <p>Await & Async trabajan en conjunto con las promesas. Es "azucar sintactico" para trabajar la asincronia con un código más digerible aún.</p>
             <ul>
-                <li><strong>async</strong> = Permite que la funcion se comporte implicitamente de forma asíncrona con las promesas.</li>
+                <li><strong>async</strong> = Permite que la función se comporte implicitamente de forma asíncrona con las promesas.</li>
                 <li><strong>await</strong> = Espera a recibir el valor de una promesa para continuar operando con las sentencias de la función (sería el reemplazo de .then en promesas)</li>
                 <li><strong>try & catch</strong> = Reaparece la utilidad de try (flujo de ejecución "normal") y catch (manejo de errores)</li>
             </ul>

@@ -141,12 +141,12 @@ persona.readName("Parametro") // Ejecutamos el método/función readName del obj
             <TopicContainer id="generadora" topic="Función generadora" ytUrl="https://youtu.be/oO-D4PsaI1A?list=PLvq-jIkSeTUZ6QgYYO3MwG9EMqC-KoLXA&t=66">
 
                 <p>
-                Las funciones generadoras son funciones especiales que permiten la creación de iteradores personalizados. A diferencia de las funciones regulares, las funciones generadoras pueden pausar y reanudar su ejecución en múltiples puntos a lo largo del tiempo, lo que las hace especialmente útiles para trabajar con secuencias de datos o tareas que se pueden dividir en partes más pequeñas.
+                Las funciones generadoras son funciones especiales en JS que nos permiten crear objetos llamados iteradores personalizados. En lugar de obtener todos los valores de una vez (ejecutando todo el cuerpo de la función de forma inmediata), los iteradores generados nos permiten obtener un valor a la vez a medida que los necesitemos, lo cual puede ser útil en situaciones donde trabajar con todos los elementos a la vez podría ser ineficiente o innecesario. A diferencia de las funciones regulares, las funciones generadoras pueden pausar y reanudar su ejecución en múltiples puntos a lo largo del tiempo, lo que las hace especialmente útiles para trabajar con secuencias de datos, o tareas que se pueden dividir en partes más pequeñas, complementando la asincronía.
                 </p>
                 <ul>
-                    <li>Todas las funciones generadoras poseen un ( * ) despues de la palabra reservada function.  </li>
-                    <li>Estas gozan la posibilidad de ejecutarse hasta cierto lugar de la propia función (determinados por yields), regresar un valor (opcional por cada yield) y detenerse hasta recibir la instrucción del método iterativo (next), quien retoma la función hasta encontrar el siguiente yield</li>
-                    <li>En resumen, son útiles cuando se requiere generar secuencias de datos bajo demanda, iterar sobre estructuras de datos complejas, trabajar con operaciones asincrónicas, o generar secuencias infinitas.</li>
+                    <li>Todas las funciones generadoras poseen un ( * ) despues de la palabra reservada function.</li>
+                    <li>La llamada a una función generadora no ejecuta su cuerpo inmediatamente; se devuelve un objeto iterador para la función en su lugar.</li>
+                    <li>Estas gozan la posibilidad de ejecutarse hasta cierto lugar de la propia función (determinados por yields), regresar un valor (opcional por cada yield) y detenerse hasta recibir la instrucción del método iterativo (next), quien retoma la función hasta alcanzar el siguiente yield</li>
                 </ul> 
                 <CodeBox lang="javascript"> 
                     {

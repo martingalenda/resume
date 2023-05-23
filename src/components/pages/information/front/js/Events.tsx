@@ -9,9 +9,8 @@ const Events = () => {
         <Information subTopic={data.menu[0].array[3].array[10]}>
 
             <TopicContainer id="general" topic="Eventos - Métodos generales" ytUrl="https://youtu.be/xOinGb2MZSk?t=6741">
-                <p>Una función manejadora de eventos no puede recibir otro parametro más que el default (event).<br/> 
-                Si quisieramos enviar un parametro adicional, deberíamos utilizar una arrow function onClick={`{(e) => handlerEvent(e, paramX)}`}
-                </p> 
+                <p> Los eventos son acciones o sucesos que ocurren en el navegador web. Estos pueden ser detectados y manejados gracias a Javascript.<br/>  Los eventos pueden ser desencadenados por el usuario (como al hacer clic en un elemento, o presionar una tecla), o bien pueden ser generados por el propio navegador (como cargar una página o cambiar el tamaño de la ventana). En resúmen, los eventos son una pieza fundamental para hacer aplicaciones interactivas.</p> 
+                <br/>
                 <h4>addEventListener - removeEventListener</h4> 
                 <small>Estos métodos quedan "obsoletos" en React, ya que React utiliza lo que se conoce como Eventos sintéticos.</small>
                 <p>Video-tutorial: <a href="https://youtu.be/xOinGb2MZSk?t=6842" target="_blank"> https://youtu.be/xOinGb2MZSk?t=6842 </a></p> 
@@ -40,10 +39,16 @@ const Events = () => {
                     }
                 </CodeBox>
 
+                <ul>
+                    <li>Una función manejadora de eventos no puede recibir otro parametro más que el default (event). 
+                    Si quisieramos enviar un argumento adicional, deberíamos utilizar una función dentro de la función manejadora, como por ejemplo:  onClick={`{(e) => handlerEvent(e, paramX)}`}
+                    </li>
+                </ul> 
+                <br/>
                 <h4>Flujo de eventos: Bubbling (Defecto) - Capture (Inverso) & preventDefault & stopPropagation</h4> 
                 <p>Video-tutorial: <a href="https://youtu.be/xOinGb2MZSk?t=7389" target="_blank"> https://youtu.be/xOinGb2MZSk?t=7389 </a></p> 
                 
-                <p>Refiere al flujo (Al orden) en el que se ejecutan los eventos de los elementos afectados (3er parametro de addEventListener)</p> 
+                <p>Refiere al flujo (al orden) en el que se ejecutan los eventos de los elementos afectados (3er parametro del método addEventListener)</p> 
                 <CodeBox lang="javascript"> 
                     {
 `// En el siguiente ejemplo podemos ver el flujo por defecto (bubbling) afectado en el subcontenedor
