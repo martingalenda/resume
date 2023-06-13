@@ -9,7 +9,7 @@ const Memorizacion = () => {
         <Information subTopic={data.menu[0].array[5].array[11]}>
 
             <TopicContainer id="tecnicas" topic="Técnicas de memorización">
-                <p>Cuando se trabaja con React, es común encontrarse con la necesidad de memorizar y recordar información importante, como ser: nombres de variables, funciones, componentes, etc. Existen diversas técnicas de memorización que pueden ayudar a mejorar la retención de información, y a aumentar el rendimiento y la productividad de nuestras aplicaciones. Veremos las técnicas más utilizadas a continuación:</p> 
+                <p>Cuando se trabaja con React, es común encontrarse con la necesidad de memorizar y recordar información importante, como: nombres de variables, funciones, componentes, etc. Existen diversas técnicas de memorización que pueden ayudar a mejorar la retención de información, y a aumentar el rendimiento y la productividad de nuestras aplicaciones. Veremos las técnicas más utilizadas a continuación:</p> 
             </TopicContainer>
 
             <TopicContainer id="memo" topic="MEMO" docUrl="https://es.react.dev/reference/react/memo" ytUrl="https://www.youtube.com/watch?v=d8MaIRB8HfQ&list=PLvq-jIkSeTUZ5XcUw8fJPTBKEHEKPMTKk&index=77&ab_channel=jonmircha">

@@ -8,7 +8,7 @@ const Referencias = () => {
         <Information>
 
             <TopicContainer topic="Referencias - useRef & componentRef" docUrl="https://es.react.dev/learn/referencing-values-with-refs" ytUrl="https://www.youtube.com/watch?v=jAimlsxuhaY&list=PLvq-jIkSeTUZ5XcUw8fJPTBKEHEKPMTKk&index=25&ab_channel=jonmircha">
-                <p>Las referencias son una característica importante en React ya que permiten acceder directamente a los nodos de los elementos del DOM (real/nativo) y a los componentes creados dentro de la jerarquía. Las referencias proporcionan una forma de interactuar con los elementos del DOM fuera del flujo normal de datos y eventos, lo que puede ser útil en situaciones específicas. Esto quiere decir que, al contrario de las propiedades y el estado, los componentes no se renderizan cuando una referencia es modificada.
+                <p>Las referencias son una característica importante en React que permite acceder a los elementos del DOM, y a los componentes creados dentro de la jerarquía. Las referencias proporcionan una forma de interactuar con los elementos del DOM fuera del flujo normal de datos y eventos, lo que puede ser útil en situaciones específicas. Esto quiere decir que, al contrario de las propiedades y el estado, los componentes no se renderizan cuando una referencia es modificada.
                 <br/> <br/>
                 Con las referencias, se puede acceder directamente a un elemento del DOM o a un componente desde cualquier lugar de la aplicación. Esto puede ser útil para realizar operaciones como obtener el valor de un campo de entrada, establecer el enfoque en un elemento, o realizar animaciones personalizadas en elementos específicos.
                 <br/> <br/>

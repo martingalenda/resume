@@ -138,7 +138,29 @@ const GestionandoCambios = () => {
 
 
             </TopicContainer>
-
+            <TopicContainer id="pull_request" topic="Pull Request">
+                
+                <li>Hacemos pullrequest cuando no somos dueño del repositorio en el que vamos trabajar. Esto resulta de extrema utilidad en el trabajo colaborativo de equipos. En resúmen, bifurcaremos el repositorio, crearemos una rama, haremos todas las modificaciones necesarias, subiremos los cambios, y luego propondremos la implementación de estos cambios en el repositorio original. Todo esto gracias al pull request.</li>
+                <br/>
+                <ol>
+                    <li>Hacer un fork del repositorio original. Ve al repositorio original y busca el botón "Fork" (en la esquina superior derecha del viewport). Esto duplicará el repositorio original, y lo podrás ver en el listado de tus repositorios, en tu cuenta de github por ejemplo.</li>
+                    <li>Clona el repositorio bifurcado de forma local.</li>
+                    <li>Crea una nueva rama para la implementación de lo que desees hacer.</li>
+                    <li>Realiza todos los cambios necesarios.</li>
+                    <li>Agrega los archivos al area de stage.</li>
+                    <li>Realiza el commit pertinente.</li>
+                    <li>Sube la rama al repositorio remoto.</li>
+                    <li>Crea el pullrequest. Ve al repositorio bifurcado, y busca la opción en la parte central/superior del viewport.</li>
+                </ol>
+            </TopicContainer>
+            <TopicContainer id="pull_request" topic="Actualizar un repositorio bifurcado">
+                
+                <li>Bien, tenemos un repositorio ya bifurcado, pero... Que sucede cuando el repositorio original se actualiza? Como podemos traer esos cambios a nuestro repositorio bifurcado? Veamos como hacerlo.</li>
+                <br/>
+                <ol>
+                    <li>.</li>
+                </ol>
+                </TopicContainer>
 
         </Information>
     )

@@ -13,7 +13,7 @@ const UtilidadesReact = () => {
                 <h4>React Route = <a href="https://reactrouter.com/en/main/components/routes" target="_blank">Link</a> Librería para la gestión de rutas.</h4> <br/>
                 <h4>Styled Component = <a href="https://styled-components.com/" target="_blank">Link</a> Librería para la gestión de rutas.</h4> <br/>
                 <h4>React WOW = <a href="https://www.npmjs.com/package/react-wow" target="_blank">Link</a> Librería para de animaciones (Animate.css).</h4> <br/><br/><br/>
-                <h4>Preguntas típicas = <a href="https://arc.dev/developer-blog/reactjs-interview-questions" target="_blank">Link</a> Librería para de animaciones (Animate.css).</h4> <br/>
+                <h4>Preguntas típicas = <a href="https://arc.dev/developer-blog/reactjs-interview-questions" target="_blank">Link</a> Preguntas típicas de react para entrevistas, tanto para nivel básico, como para nivel avanzado.</h4> <br/>
             </TopicContainer>
 
         </Information>

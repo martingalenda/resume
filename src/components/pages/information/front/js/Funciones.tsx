@@ -116,8 +116,8 @@ console.log(persona.apodo)
 
 persona.readName("Parametro") // Ejecutamos el método/función readName del objeto Person
 
-// Para añadir un mètodo o una propiedad a cualquier objeto (nativo y/o personalizado) luego de haberlo declarado (sin usar el constructor)  podemos usar el objetoprototype, + info de los prototipos en MASTER.js
-// En el siguiente ejemplo, modificamos la funciòn constructora Person, añadièndole un nuevo mètodo
+// Para añadir un método o una propiedad a cualquier objeto (nativo y/o personalizado) luego de haberlo declarado (sin usar el constructor)  podemos usar el objeto prototype
+// En el siguiente ejemplo, modificamos la función constructora Person, añadiéndole un nuevo método
     Person.prototype.greet = function () {
         return \`Hello \${this.name}\`
     }
@@ -129,7 +129,7 @@ persona.readName("Parametro") // Ejecutamos el método/función readName del obj
             </TopicContainer>
             <TopicContainer id="auto_ejecutable" topic="Función auto-ejecutable" ytUrl="https://youtu.be/gbHr5qJjLRg?list=PLvq-jIkSeTUZ6QgYYO3MwG9EMqC-KoLXA&t=384">
                 <p>Son aquellas que se "auto-ejecutan" por única vez al momento de ser interpretadas.</p> 
-                <small>Hay varias sintaxis/formas para declarar una función autoejecutable, la siguiente solo es una.</small> 
+                <small>Hay varias sintaxis/formas para declarar una función autoejecutable, la siguiente solo es una de ellas.</small> 
                 <CodeBox lang="javascript"> 
                     {
 `((nombre) => {

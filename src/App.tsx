@@ -77,6 +77,8 @@
   import EstadosGlobales from './components/pages/information/front/react/EstadosGlobales';
   import PeticionesApi from './components/pages/information/front/react/PeticionesApi';
   import ReactRouter from './components/pages/information/front/react/ReactRouter';
+  import HOCyRprops from './components/pages/information/front/react/HOCyRprops';
+  import DefinicionesReact from './components/pages/information/front/react/DefinicionesReact';
   import UtilidadesReact from './components/pages/information/front/react/Utilidades';
 
   import IntroduccionMUI from './components/pages/information/front/mui/Introduccion';
@@ -121,6 +123,7 @@
 /* Rutas */
   import { Routes, Route } from "react-router-dom";
 import AtajosVSCODE from './components/pages/information/general/vscode/VSCODE';
+import LazyLoading from './components/pages/information/front/react/LazyLoading';
 
 
 
@@ -204,6 +207,9 @@ function App() {
           <Route path="/front/react/global_state" element={<EstadosGlobales/>}/>
           <Route path="/front/react/peticiones" element={<PeticionesApi/>}/>
           <Route path="/front/react/router" element={<ReactRouter/>}/>
+          <Route path="/front/react/hocrp" element={<HOCyRprops/>}/>
+          <Route path="/front/react/lazy" element={<LazyLoading/>}/>
+          <Route path="/front/react/definiciones" element={<DefinicionesReact/>}/>
           <Route path="/front/react/utilidades" element={<UtilidadesReact/>}/>
         {/* REACT MUI */}
           <Route path="/front/mui/introduccion" element={<IntroduccionMUI/>}/>

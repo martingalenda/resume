@@ -1104,6 +1104,32 @@ const data = {
                             ]
                         },
                         {
+                            "topic": "HOC & Render Props",
+                            "url": "/front/react/hocrp",
+                            "subTopic": [
+                                { 
+                                    "subTopic": "HOC",
+                                    "url": "/front/react/hocrp#hoc"
+                                },
+                                { 
+                                    "subTopic": "Render Props",
+                                    "url": "/front/react/hocrp#rp"
+                                },
+                            ]
+                        },
+                        {
+                            "topic": "Lazy Loading",
+                            "url": "/front/react/lazy",
+                            "subTopic": [
+                            ]
+                        },
+                        {
+                            "topic": "Definiciones React",
+                            "url": "/front/react/definiciones",
+                            "subTopic": [
+                            ]
+                        },
+                        {
                             "topic": "Utilidades",
                             "url": "/front/react/utilidades",
                             "subTopic": [

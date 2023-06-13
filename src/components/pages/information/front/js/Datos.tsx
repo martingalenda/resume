@@ -32,6 +32,37 @@ estado = true
                     }
                 </CodeBox>
                 <Alert variant="outlined" severity="warning">Se debe evitar utilizar las variables de tipo (var), para evitar conflictos entre variables.</Alert> 
+                <br/> 
+               
+                <p>Algo curioso ocurre cuando asignamos el valor de un variable, a otra. El valor final dependerá del tipo de dato al que estemos haciendo referencia.</p> 
+                <h4>EJ: Datos primitivos</h4> 
+                <p>Las variables que poseen como valor datos primitivos, almacenan en sí, una copia de su valor. Cada variable representa un espacio/referencia distinto en memoria. Por más que se modifique el valor de (a) ... (b) seguirá manteniendo el valor inicial con el que fue instanciado.</p> 
+                <CodeBox lang="javascript"> 
+                    {
+`let a = 30
+let b = a
+
+console.log(b) // 30
+
+a = 10
+
+console.log(b) // 30`
+                    }
+                </CodeBox>
+                <h4>EJ: Datos complejos</h4> 
+                <p>En cambio, si las variables almacenan valores complejos, es distinto, ya que lo que se almacena en realidad es un "id", correspondiente a una referencia/posicion en memoria. Aquí (d) siempre mantendrá como referencia (c), incluso cuando esta se vea modificada.</p>
+                <CodeBox lang="javascript"> 
+                    {
+`const c = [1,2,3,4,5,6]
+const d = c
+
+console.log(d) // [1,2,3,4,5,6]
+
+c.push(7,8,9,10)
+
+console.log(d) // [1,2,3,4,5,6,7,8,9,10]`
+                    }
+                </CodeBox>
             </TopicContainer>
             <TopicContainer id="primitivos" topic="Datos Primitivos" ytUrl="https://www.youtube.com/watch?v=cC65D2q5f8I">
                 <CodeBox lang="javascript"> 

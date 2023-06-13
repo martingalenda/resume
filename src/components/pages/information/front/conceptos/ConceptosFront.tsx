@@ -7,7 +7,7 @@ const ConceptosFront = () => {
         <Information subTopic={data.menu[0].array[7].array[0]}>
 
             <TopicContainer topic="Conceptos relacionados al Front-end">
-            <p>Aprovecharemos este tópico para hablar sobre varios conceptos generales relacionados al desarrollo Front-end. En nuestra jerga es habitual encontrarnos con infinidad de nuevos conceptos técnicos. En ocasiones, muchos de ellos no son tratados en profundidad en los cursos que consumimos para capacitarnos, o inclusive en la facultad. Por eso vengp a resumir varios de estos términos tipicos en nuestra profesión, y los incentivo por supuesto a profundizar en ellos.</p> 
+            <p>Aprovecharemos este tópico para hablar sobre varios conceptos generales relacionados al desarrollo Front-end. En nuestra jerga es habitual encontrarnos con infinidad de nuevos conceptos técnicos. En ocasiones, muchos de ellos no son tratados en profundidad en los cursos o documentación que consumimos para capacitarnos. Por eso vengo a resumir varios de estos términos tipicos de nuestra profesión, y los incentivo por supuesto a profundizar en ellos.</p> 
             </TopicContainer>
             <br/> 
              
@@ -26,6 +26,7 @@ const ConceptosFront = () => {
                     <li>Estas sentencias se centran en describir el resultado deseado sin especificar los pasos detallados para lograrlo. Se enfocan en qué se debe lograr en lugar de cómo se debe hacer. El programador declara el objetivo o el resultado esperado y confía en que el lenguaje de programación o el entorno se encargará de ejecutar las operaciones subyacentes. Los ejemplos comunes de sentencias declarativas son consultas de bases de datos, manipulación de listas, operaciones matemáticas y funciones de transformación de datos. Las sentencias declarativas tienden a ser más concisas y expresivas.</li> 
                 </ul> 
             </TopicContainer>
+            <br/> 
             <TopicContainer topic="API">
             <p>API (Application Programming Interface) es un conjunto de reglas y protocolos que permiten que diferentes aplicaciones y sistemas se comuniquen entre sí. Básicamente, una API define cómo interactuar con un software o servicio específico, proporcionando una interfaz que expone funciones, métodos y datos que se pueden utilizar y manipular.</p> 
             <p>Una API actúa como un intermediario entre las aplicaciones, permitiendo que una aplicación haga uso de las funcionalidades o acceda a los datos de otra aplicación de manera controlada y segura. Al utilizar una API, los desarrolladores pueden aprovechar la funcionalidad existente de un sistema sin necesidad de conocer todos los detalles internos de su implementación.</p> 
@@ -45,8 +46,17 @@ const ConceptosFront = () => {
                 <li><strong>HATEOAS</strong>: HATEOAS (Hypertext As The Engine Of Application State) es un principio de diseño en las APIs REST que proporciona enlaces hipertexto en las respuestas para permitir a los clientes descubrir y navegar los recursos relacionados de manera dinámica.</li> 
             </ul> 
             </TopicContainer>
-            <TopicContainer topic=".">
-                <p>.</p> 
+            <br/> 
+            <TopicContainer topic="Micro front-end" docUrl="https://devjaime.medium.com/microfrontend-4eecf1498cd1">
+                <p>Es una arquitectura de software aplicada al frontend basada en la arquitectura de microservicios del backend. En resumen, cada MFE (micro frontend) puede renderizar sus propios componentes y coexistir con otros en una aplicación contenedora. Es decir, cada funcionalidad relevante de una aplicación monolitica, pasa a convertirse en una aplicación independiente, para luego unirse al resto bajo un mismo contenedor (la aplicación final como tal)</p> 
+                <p>Esta arquitectura de software nos otorga grandes ventajas, como ser:</p> 
+                <ul>
+                    <li>Posibilidad de usar diferentes tecnologías para cada MFE/sistema en una misma aplicación.</li> 
+                    <li>Código mucho más pequeño/simple y desacoplado, por tanto, más fácil de mantener.</li> 
+                    <li>Evita conflictos de código, como los típicos merge en git, en donde los desarrolladores se pisan entre si.</li> 
+                    <li>Facilita el delivery continuo, porque le otorga independencia absoluta a los distintos equipos de desarrollo.</li> 
+                    <li>Despliegues independientes, desde la planeación, hasta la puesta en producción.</li> 
+                </ul> 
             </TopicContainer>
         </Information>
     )
